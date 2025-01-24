@@ -93,7 +93,21 @@ rule all_ohe:
                kmer_width=KMER_WIDTH,
                kmer_step=KMER_STEP,
                FILE = ["nonzero_coefficients_annotated.tsv", "confusion_matrices.pdf"])
-# "nonzero_coefficients_blast_annotated.tsv"
+
+
+rule all_dinucleotide_freqs:
+    input:
+        expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", 
+                    "{dataset}_{model}_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
+               dataset=DATASETS,
+               select_type=["filter1"],
+               cluster_type=["shiftDist-levFilter"],
+               model=["dinucleotideFreqs"],
+               num_clusters=[20000],
+               kmer_width=KMER_WIDTH,
+               kmer_step=KMER_STEP,
+               normalize=NORMALIZE,
+               FILE = ["nonzero_coefficients_annotated.tsv", "confusion_matrices.pdf"])
 
 rule all_test_aa:
     input:
@@ -422,6 +436,31 @@ rule prepare_data_for_glmnet_top_variance:
         ml R/4.3.3
         Rscript --vanilla {params.script} --embeddings {input.embeddings} --ordering {input.ordering} \
         --output {output} --temp_dir {params.tmp_dir} --num_threads {threads} --num_to_keep 100 {params.normalized_flag}
+    """
+
+rule calculate_kmer_dinucleotide_freqs:
+    """
+    This rule calculates the dinucleotide frequencies for each kmer in the dataset
+    and outputs an X matrix similarly formatted to rule prepare_data_for_glmnet_top_variance.
+    It is a drop in for both embedding and formatting a matrix for input to adelie/glmnet.
+    """
+    input:
+        unique_kmers = Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta"),
+        ordering = Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_kmer_ordering.tsv")
+    params:
+        script = Path(config["scripts"]["calculate_dinucleotide_freqs"]),
+        normalized_flag = lambda wildcards: "--normalized" if wildcards.normalize =="normalized" else ""
+    threads: 16
+    resources:
+        # dynamically allocate memory based on the attempt
+        mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 32000),
+        time = "3:00:00"
+    output:
+        Path(TEMP_DIR, "{dataset}", "{dataset}_dinucleotideFreqs_top_variance_features_for_glmnet_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.feather")
+    shell:"""
+        ml R/4.3.3
+        Rscript --vanilla {params.script} --kmers {input.unique_kmers} --ordering {input.ordering} \
+        --output {output} --threads {threads} {params.normalized_flag}
     """
 
 rule run_glmnet:

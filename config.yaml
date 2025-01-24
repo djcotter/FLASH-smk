@@ -61,3 +61,4 @@ scripts:
   merge_annotations: src/annotation/merge_coefs_with_annotations.R
   run_blast: src/annotation/blast_code/run_blast.sh
   merge_blast_results: src/annotation/merge_coefs_with_blast.R
+  calculate_dinucleotide_freqs: src/dinucleotide_embedding/calculate_kmer_dinucleotide_freqs.R
