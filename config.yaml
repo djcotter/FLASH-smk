@@ -1,19 +1,19 @@
 # main files
 data_table: dataset_table.csv
-temp_dir: /scratch/users/dcotter1/metaSPLASH_workflows
+temp_dir: /labs/horence/dcotter1/temp/metaSPLASH_temp
 splash_bin: /oak/stanford/groups/horence/dcotter1/splash-2.11.1/
 
 # annotation lookup table
-lookup_table_for_annotation: /oak/stanford/groups/horence/dcotter1/lookup_tables/microbial_lookup/microbial_v2_lookup.slt
+lookup_table_for_annotation: /oak/stanford/groups/horence/SPLASH_reference_fastas/eukaryote/human/T2T_human_genome/human_T2T_both_genome_transcriptome_lookup_table/lookup.slt
 
 # path to directory with genomes
-genomes_dir: /scratch/groups/horence/dcotter1/data/Hyun_etAl_2023_AMR_genomes
+genomes_dir: ''
 
 # set paths to python venvs
 envs:
-  default_python: /oak/stanford/groups/horence/dcotter1/envs/biopython/bin/activate
-  esm_env: /oak/stanford/groups/horence/dcotter1/envs/esm_venv/bin/activate
-  adelie: /oak/stanford/groups/horence/dcotter1/envs/adelie_venv/bin/activate
+  default_python: /labs/horence/dcotter1/envs/biopython/bin/activate
+  esm_env: ''
+  adelie: /labs/horence/dcotter1/envs/adelie_venv/bin/activate
 
 # define all scripts
 scripts:

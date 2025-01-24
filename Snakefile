@@ -85,14 +85,15 @@ rule all_genomes:
 rule all_ohe:
     input:
         expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "ohe", 
-                    "{dataset}_ohe_glmnet_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
+                    "{dataset}_ohe_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
                dataset=DATASETS,
-               select_type=SELECT_TYPES,
-               cluster_type=CLUSTER_TYPES,
-               num_clusters=["10000", "20000"],
+               select_type=["filter1"],
+               cluster_type=["shiftDist-levFilter"],
+               num_clusters=["10000"],
                kmer_width=KMER_WIDTH,
                kmer_step=KMER_STEP,
-               FILE = ["nonzero_coefficients_annotated.tsv", "confusion_matrices.pdf", "nonzero_coefficients_blast_annotated.tsv"])
+               FILE = ["nonzero_coefficients_annotated.tsv", "confusion_matrices.pdf"])
+# "nonzero_coefficients_blast_annotated.tsv"
 
 rule all_test_aa:
     input:
@@ -117,7 +118,6 @@ rule all_test_aa:
                kmer_step=KMER_STEP,
                FILE = ["nonzero_coefficients_annotated.tsv", "confusion_matrices.pdf", "nonzero_coefficients_blast_annotated.tsv"])
 
-
 rule choose_anchors:
     """
     This rule selects the top anchors from the SPLASH results based on various criteria (select_type)
@@ -137,7 +137,7 @@ rule choose_anchors:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_selected_anchors_{select_type}.txt")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --input {input} --output {output} \
         --lookup_table {params.lookup_table} --temp_dir {params.tmp_dir}
     """
@@ -164,8 +164,8 @@ rule cluster_anchors:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_clustered_anchors_{select_type}_{cluster_type}.txt")
     shell:"""
-        ml R/4.3.2
-        ml python/3.9.0
+        ml R/4.3.3
+        ml python/3.9.17
         source {params.python_env}
         {params.script} --input {input} --output {output} --temp_dir {params.tmp_dir}
     """
@@ -192,7 +192,7 @@ rule reorder_clusters:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_reordered_clusters_{select_type}_{cluster_type}.txt")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --input_anchor_clusters {input.clusters} \
         --splash_stats {input.splash_results} --output {output} --temp_dir {params.tmp_dir} \
         --num_cores {threads}
@@ -236,7 +236,7 @@ rule prepare_sequences:
         fasta = Path(TEMP_DIR, "{dataset}", "{dataset}_prepared_sequences_{select_type}_{cluster_type}_top{num_clusters}_sample_sequences.fasta"),
         tsv = Path(TEMP_DIR, "{dataset}", "{dataset}_prepared_sequences_{select_type}_{cluster_type}_top{num_clusters}_sample_sequences.tsv")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --anchor_file {input.anchor_file} \
         --cluster_file {input.cluster_file} --id_mapping {input.id_mapping} \
         --satc_files {params.satc_dir} --output_prefix {params.output_prefix} \
@@ -266,7 +266,7 @@ rule decompose_kmers:
         mem_mb = lambda _, attempt: 32000 + ((attempt - 1) * 32000),
         time = "3:00:00"
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         python {params.script} -k {wildcards.kmer_width} -s {wildcards.kmer_step} \
         {input} {params.output_prefix}
@@ -288,7 +288,7 @@ rule match_kmers_to_clusters:
     output:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{dataset}_sequences_per_cluster_top{num_clusters}-clusters_k{kmer_width}_s{kmer_step}.tsv")
     shell:"""
-    ml R/4.3.2
+    ml R/4.3.3
     Rscript --vanilla {params.script} --ordering {input.order} --kmers {input.unique_kmers} --output {output}
     """
 
@@ -306,7 +306,7 @@ rule translate_kmers_ESM:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_translated_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta")
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         python {params.script} -t {params.translation_table} {input} {output}
     """
@@ -336,7 +336,7 @@ rule embed_kmers_ESM:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_esm-embeddings_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.tsv")
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         export TORCH_HOME={params.torch_dir}
         esm-extract esm2_t33_650M_UR50D {input} {params.tmp_dir} --include mean per_tok
@@ -419,7 +419,7 @@ rule prepare_data_for_glmnet_top_variance:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_{model}_top_variance_features_for_glmnet_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.feather")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --embeddings {input.embeddings} --ordering {input.ordering} \
         --output {output} --temp_dir {params.tmp_dir} --num_threads {threads} --num_to_keep 100 {params.normalized_flag}
     """
@@ -443,7 +443,7 @@ rule run_glmnet:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_glmnet_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv"),
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_glmnet_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_confusion_matrices.pdf"),
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --embeddings {input.embeddings} \
         --metadata {input.metadata} --output_prefix {params.output_prefix} \
         --even_classes
@@ -470,7 +470,7 @@ rule run_adelie:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv"),
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_confusion_matrices.pdf"),
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         python {params.script} --data {input.embeddings} \
         --metadata {input.metadata} --output_prefix {params.output_prefix} \
@@ -497,7 +497,7 @@ rule run_regression_trees:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_randomForests_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_important_features.tsv"),
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_randomForests_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_confusion_matrices.pdf")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --embeddings {input.embeddings} \
         --metadata {input.metadata} --output_prefix {params.output_prefix} \
         --even_classes
@@ -519,7 +519,7 @@ rule prepare_data_for_glmnet_ohe:
         mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 32000),
         time = "3:00:00"
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --input {input} --output {output} --kmer_width {params.kmer_width}
     """
 
@@ -539,7 +539,7 @@ rule run_glmnet_ohe:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_glmnet_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv"),
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_glmnet_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_confusion_matrices.pdf"),
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --embeddings {input.features} \
         --metadata {input.metadata} --output_prefix {params.output_prefix} \
         --even_classes
@@ -563,7 +563,7 @@ rule run_adelie_ohe:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv"),
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_confusion_matrices.pdf"),
     shell:"""
-                ml python/3.9.0
+                ml python/3.9.17
         source {params.python_env}
         python {params.script} --data {input.features} \
         --metadata {input.metadata} --output_prefix {params.output_prefix} \
@@ -622,7 +622,7 @@ rule decompose_kmers_genomes:
         mem_mb = lambda _, attempt: 16000 + ((attempt - 1) * 16000),
         time = "3:00:00"
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         python {params.script} -k {wildcards.kmer_width} -s {wildcards.kmer_step} \
         {input} {params.output_prefix}
@@ -642,7 +642,7 @@ rule translate_kmers_ESM_genomes:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_translated_kmers_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta")
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         python {params.script} -t {params.translation_table} {input} {output}
     """
@@ -671,7 +671,7 @@ rule embed_kmers_ESM_genomes:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_esm-embeddings_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.tsv")
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         export TORCH_HOME={params.torch_dir}
         esm-extract esm2_t33_650M_UR50D {input} {params.tmp_dir} --include mean per_tok
@@ -755,7 +755,7 @@ rule prepare_data_for_glmnet_genomes:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_{model}_top_variance_features_for_glmnet_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.feather")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --embeddings {input.embeddings} --ordering {input.ordering} --original_feather {input.original_embeddings_feather} \
         --output {output} --temp_dir {params.tmp_dir} --num_threads {threads} {params.normalized_flag} 
     """
@@ -783,7 +783,7 @@ rule run_adelie_genomes:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "genomes", "{normalize}", "{dataset}_{model}_adelie_genomes_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv"),
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "genomes", "{normalize}", "{dataset}_{model}_adelie_genomes_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_confusion_matrices.pdf"),
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         python {params.script} --train_features {input.train_features} --train_metadata {input.train_metadata} \
         --test_features {input.test_features} --test_metadata {input.test_metadata} --output_prefix {params.output_prefix} \
@@ -812,7 +812,7 @@ rule annotate_clusters:
     output:
         Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{dataset}_sequences_per_cluster_top{num_clusters}-clusters_k{kmer_width}_s{kmer_step}_annotated.tsv")
     shell:"""
-        ml python/3.9.0
+        ml python/3.9.17
         source {params.python_env}
         python {params.script} --cluster_seqs {input.cluster_seqs} --lookup_table {input.lookup_table} \
         --output {output} --temp_dir {params.temp_dir} --splash_bin {params.splash_bin} 
@@ -835,7 +835,7 @@ rule merge_annotations:
         coefs = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients_annotated.tsv"),
         fasta = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_significant_sequences.fasta")
     shell:"""
-    ml R/4.3.2
+    ml R/4.3.3
     Rscript --vanilla {params.script} --annotations {input.annotations} --coefficients {input.coefficients} --output {output.coefs}
     """
 
@@ -874,7 +874,7 @@ rule merge_blast_results:
     output:
         Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients_blast_annotated.tsv")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --blast_annotations {input.blast_annotations} --coefficients {input.coefficients} --output {output}
     """
 
@@ -894,7 +894,7 @@ rule merge_annotations_OHE:
         coefs = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients_annotated.tsv"),
         fasta = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_significant_sequences.fasta")
     shell:"""
-    ml R/4.3.2
+    ml R/4.3.3
     Rscript --vanilla {params.script} --annotations {input.annotations} --coefficients {input.coefficients} --output {output.coefs}
     """
 
@@ -933,7 +933,7 @@ rule merge_blast_results_OHE:
     output:
         Path('results', "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients_blast_annotated.tsv")
     shell:"""
-        ml R/4.3.2
+        ml R/4.3.3
         Rscript --vanilla {params.script} --blast_annotations {input.blast_annotations} --coefficients {input.coefficients} --output {output}
     """
 
@@ -953,6 +953,6 @@ rule merge_annotations_genomes:
     output:
         Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "genomes", "{normalize}", "{dataset}_{model}_{predictionTask}_genomes_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients_annotated.tsv")
     shell:"""
-    ml R/4.3.2
+    ml R/4.3.3
     Rscript --vanilla {params.script} --annotations {input.annotations} --coefficients {input.coefficients} --output {output}
     """

@@ -124,14 +124,16 @@ wide_satc <- merge(satc_dt, anchor_clusters, by="anchor", all.x=TRUE)
 missing_clusters <- setdiff(anchor_clusters$cluster_id, wide_satc$cluster_id)
 
 # add the missing cluster for one sample with the representative anchor and Ns
-missing_df <- data.frame(sample=unique(head(wide_satc$sample))[1],
-                         anchor=representative_anchors[missing_clusters],
-                         target=strrep("N", nchar(representative_anchors[missing_clusters])),
-                         count=0,
-                         cluster_id=missing_clusters,
-                         rank=1)
-
-wide_satc <- rbind(wide_satc, missing_df)
+if (!is_empty(missing_clusters)) {
+  missing_df <- data.frame(sample=unique(head(wide_satc$sample))[1],
+                           anchor=representative_anchors[missing_clusters],
+                           target=strrep("N", nchar(representative_anchors[missing_clusters])),
+                           count=0,
+                           cluster_id=missing_clusters,
+                           rank=1)
+  
+  wide_satc <- rbind(wide_satc, missing_df)
+}
 
 wide_satc <- as.data.table(wide_satc)
 wide_satc <- wide_satc[order(cluster_id, rank)]
