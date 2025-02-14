@@ -58,7 +58,7 @@ rule all:
                dataset=DATASETS,
                select_type=SELECT_TYPES,
                cluster_type=CLUSTER_TYPES,
-               model=MODELS,
+               model=["hyena", "esm"],
                num_clusters=["10000", "20000"],
                kmer_width=KMER_WIDTH,
                kmer_step=KMER_STEP,
@@ -215,7 +215,7 @@ rule reorder_clusters:
     threads: 32
     resources:
         # dynamically allocate memory based on the attempt
-        mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 64000),
+        mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 32000),
         time = "5:00:00"
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_reordered_clusters_{select_type}_{cluster_type}.txt")

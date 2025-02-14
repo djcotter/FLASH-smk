@@ -48,7 +48,7 @@ def get_metadata_columns(metadata, min_samples=50):
     """
     filtered_metadata = metadata.loc[:, metadata.columns != "sample_name"]
     # filter out columns with less than 2 unique values
-    filtered_metadata = filtered_metadata.loc[:, filtered_metadata.apply(lambda x: len(x.unique()) > 2, axis=0)]
+    filtered_metadata = filtered_metadata.loc[:, filtered_metadata.apply(lambda x: len(x.unique()) >= 2, axis=0)]
     # only grab columns with two or more categories that have more than min_samples
     filtered_metadata = filtered_metadata.loc[:, filtered_metadata.apply(lambda x: sum(x.value_counts() > min_samples) > 1, axis=0)]
     return filtered_metadata.columns
