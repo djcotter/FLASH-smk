@@ -108,7 +108,6 @@ rule all_genomes:
                
                
 
-
 rule all_ohe:
     input:
         expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "ohe", 
@@ -215,6 +214,7 @@ rule choose_anchors:
         num_anchors = 3000000,
         effect_size = 0.6
     threads: 4
+    benchmark: benchmarks/choose_anchors/"{dataset}_{select_type}.txt"
     resources:
         # 128 GB of memory
         mem_mb = 128000,
@@ -244,6 +244,7 @@ rule cluster_anchors:
         tmp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type),
         translation_table = lambda wildcards: f"--translation_table {metadata_table.loc[wildcards.dataset, "translation_table"]}"  if wildcards.cluster_type == "masked-aa-clustered" else ""
     threads: 4
+    benchmark: benchmarks/cluster_anchors/"{dataset}_{select_type}_{cluster_type}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda wildcards, attempt: 640000 + ((attempt - 1) * 128000) if (wildcards.cluster_type == "masked-aa-clustered" or wildcards.cluster_type == "masked-nucleotide-clustered") else 64000 + ((attempt - 1) * 128000), # change back to 256000 after next run
@@ -272,6 +273,7 @@ rule reorder_clusters:
         script = lambda wildcards: Path(config["scripts"]["reorder_script"][wildcards.cluster_type]),
         tmp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type)
     threads: 32
+    benchmark: benchmarks/reorder_clusters/"{dataset}_{select_type}_{cluster_type}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 64000),
@@ -294,6 +296,7 @@ rule select_N_clusters:
     output:
         clusters = Path(TEMP_DIR, "{dataset}", "{dataset}_selected_clusters_{select_type}_{cluster_type}_top{num_clusters}-clusters.txt"),
         anchors = Path(TEMP_DIR, "{dataset}", "{dataset}_selected_anchors_{select_type}_{cluster_type}_top{num_clusters}-clusters.txt")
+    benchmark: benchmarks/select_N_clusters/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}-clusters.txt"
     shell:"""
         awk '$1 <= {wildcards.num_clusters}' {input} > {output.clusters}
         cut -f2 {output.clusters} > {output.anchors}
@@ -317,6 +320,7 @@ rule prepare_sequences:
         tmp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, wildcards.num_clusters + "-clusters"),
         single_cell = lambda wildcards: "--single_cell" if "SC10X" in wildcards.dataset else ""
     threads: 16
+    benchmark: benchmarks/prepare_sequences/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}-clusters.txt"
     resources:
         # 128 GB of memory
         mem_mb = 128000
@@ -349,6 +353,7 @@ rule decompose_kmers:
     output:
         unique_kmers = Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta"),
         order = Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_kmer_ordering.tsv")
+    benchmark: benchmarks/decompose_kmers/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 32000 + ((attempt - 1) * 32000),
@@ -371,6 +376,7 @@ rule match_kmers_to_clusters:
         unique_kmers = Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta")
     params:
         script = Path(config["scripts"]["match_kmers_to_clusters"])
+    benchmark: benchmarks/match_kmers_to_clusters/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         mem_mb = lambda _, attempt: 16000 + ((attempt - 1) * 16000),
     output:
@@ -393,6 +399,7 @@ rule translate_kmers_ESM:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_translated_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta")
     threads: 32
+    benchmark: benchmarks/translate_kmers_ESM/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "3:00:00",
@@ -421,6 +428,7 @@ rule embed_kmers_ESM:
                                          "k" + wildcards.kmer_width + "_s" + wildcards.kmer_step, "esm_embeddings", "raw_embeddings"),
         python_env = Path(config["envs"]["esm_env"])
     threads: 8
+    benchmark: benchmarks/embed_kmers_ESM/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "3:00:00",
@@ -444,6 +452,7 @@ rule embed_kmers_hyena:
     params:
         script = config["scripts"]["embed_kmers_hyena"]
     threads: 8
+    benchmark: benchmarks/embed_kmers_hyena/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "6:00:00",
@@ -462,6 +471,7 @@ rule embed_kmers_hyena_marlowe:
     params:
         script = config["scripts"]["embed_kmers_hyena_marlowe_nov2024"]
     threads: 8
+    benchmark: benchmarks/embed_kmers_hyena_marlowe/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "3:00:00",
@@ -481,6 +491,7 @@ rule embed_kmers_hyena_defaultHG38:
     params:
         script = config["scripts"]["embed_kmers_hyena_defaultHG38"]
     threads: 8
+    benchmark: benchmarks/embed_kmers_hyena_defaultHG38/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "3:00:00",
@@ -507,6 +518,7 @@ rule prepare_data_for_glmnet_top_variance:
                                          "k" + wildcards.kmer_width + "_s" + wildcards.kmer_step, wildcards.model + "_embeddings", wildcards.normalize),
         normalized_flag = lambda wildcards: "--normalized_embeddings" if wildcards.normalize =="normalized" else ""
     threads: 32
+    benchmark: benchmarks/prepare_data_for_glmnet_top_variance/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 256000),
@@ -533,6 +545,7 @@ rule prepare_data_for_umap_top_variance:
                                          "k" + wildcards.kmer_width + "_s" + wildcards.kmer_step, wildcards.model + "_umap_embeddings", wildcards.normalize),
         normalized_flag = lambda wildcards: "--normalized_embeddings" if wildcards.normalize =="normalized" else ""
     threads: 32
+    benchmark: benchmarks/prepare_data_for_umap_top_variance/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 256000),
@@ -556,6 +569,7 @@ rule run_glmnet:
         script = Path(config["scripts"]["glmnet_script"]),
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"{wildcards.model}", f"{wildcards.normalize}", f"{wildcards.dataset}_{wildcards.model}_glmnet_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}")
     threads: 32
+    benchmark: benchmarks/run_glmnet/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 64000),
@@ -583,6 +597,7 @@ rule run_adelie:
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"{wildcards.model}", f"{wildcards.normalize}", f"{wildcards.dataset}_{wildcards.model}_adelie_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}"),
         python_env = Path(config["envs"]["adelie"])
     threads: 32
+    benchmark: benchmarks/run_adelie/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 512000 + ((attempt - 1) * 128000),
@@ -610,6 +625,7 @@ rule run_train_only_adelie:
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"{wildcards.model}", f"{wildcards.normalize}", f"{wildcards.dataset}_{wildcards.model}_adelie-train-only_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}"),
         python_env = Path(config["envs"]["adelie"])
     threads: 32
+    benchmark: benchmarks/run_train_only_adelie/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 512000 + ((attempt - 1) * 128000),
@@ -636,6 +652,7 @@ rule run_regression_trees:
         script = Path(config["scripts"]["rand_forests_script"]),
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"{wildcards.model}", f"{wildcards.normalize}", f"{wildcards.dataset}_{wildcards.model}_randomForests_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}")
     threads: 16
+    benchmark: benchmarks/run_regression_trees/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 64000),
@@ -661,6 +678,7 @@ rule prepare_data_for_glmnet_ohe:
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_ohe_features_for_glmnet_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.feather")
     threads: 4
+    
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 96000 + ((attempt - 1) * 64000),
@@ -678,6 +696,7 @@ rule run_glmnet_ohe:
         script = Path(config["scripts"]["glmnet_script"]),
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"ohe", f"{wildcards.dataset}_ohe_glmnet_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}")
     threads: 16
+    
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 64000),
@@ -702,6 +721,7 @@ rule run_adelie_ohe:
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"ohe", f"{wildcards.dataset}_ohe_adelie_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}"),
         python_env = Path(config["envs"]["adelie"])
     threads: 16
+    benchmark: benchmarks/run_adelie_ohe/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 128000 + ((attempt - 1) * 64000),
@@ -726,6 +746,7 @@ rule run_train_only_adelie_ohe:
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"ohe", f"{wildcards.dataset}_ohe_adelie-train-only_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}"),
         python_env = Path(config["envs"]["adelie"])
     threads: 16
+    benchmark: benchmarks/run_train_only_adelie_ohe/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 128000 + ((attempt - 1) * 64000),
@@ -756,8 +777,8 @@ rule process_genome_to_sample_sequences:
         script = Path(config["scripts"]["genome_to_sample_sequences"]),
         tmp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, wildcards.num_clusters + "-clusters", "genomes"),
         output_prefix = lambda wildcards: Path(TEMP_DIR, f"{wildcards.dataset}", f"{wildcards.dataset}_prepared_sequences_{wildcards.select_type}_{wildcards.cluster_type}_top{wildcards.num_clusters}_genomes"),
-    threads:
-        16
+    threads:16
+    benchmark: benchmarks/process_genome_to_sample_sequences/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}.txt"
     resources:
         # 128 GB of memory
         mem_mb = 128000
@@ -788,6 +809,7 @@ rule decompose_kmers_genomes:
     output:
         unique_kmers = Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta"),
         order = Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_kmer_ordering.tsv")
+    benchmark: benchmarks/decompose_kmers_genomes/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 16000 + ((attempt - 1) * 16000),
@@ -810,6 +832,7 @@ rule translate_kmers_ESM_genomes:
         script = Path(config["scripts"]["translate_script"]),
         translation_table = lambda wildcards: metadata_table.loc[wildcards.dataset, "translation_table"],
         python_env = Path(config["envs"]["default_python"])
+    benchmark: benchmarks/translate_kmers_ESM_genomes/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_translated_kmers_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_unique_kmers.fasta")
     shell:"""
@@ -833,6 +856,7 @@ rule embed_kmers_ESM_genomes:
                                          "k" + wildcards.kmer_width + "_s" + wildcards.kmer_step, "esm_embeddings", "raw_genome_embeddings"),
         python_env = Path(config["envs"]["esm_env"])
     threads: 8
+    benchmark: benchmarks/embed_kmers_ESM_genomes/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "3:00:00",
@@ -855,6 +879,7 @@ rule embed_kmers_hyena_genomes:
     params:
         script = config["scripts"]["embed_kmers_hyena"]
     threads: 8
+    benchmark: benchmarks/embed_kmers_hyena_genomes/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "24:00:00",
@@ -874,6 +899,7 @@ rule embed_kmers_hyena_marlowe_genomes:
     params:
         script = config["scripts"]["embed_kmers_hyena_marlowe_nov2024"]
     threads: 8
+    benchmark: benchmarks/embed_kmers_hyena_marlowe_genomes/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "3:00:00",
@@ -893,6 +919,7 @@ rule embed_kmers_hyena_defaultHG38_genomes:
     params:
         script = config["scripts"]["embed_kmers_hyena_defaultHG38"]
     threads: 8
+    benchmark: benchmarks/embed_kmers_hyena_defaultHG38_genomes/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         time = "3:00:00",
@@ -920,6 +947,7 @@ rule prepare_data_for_glmnet_genomes:
                                          "k" + wildcards.kmer_width + "_s" + wildcards.kmer_step, wildcards.model + "_embeddings", wildcards.normalize),
         normalized_flag = lambda wildcards: "--normalized_embeddings" if wildcards.normalize =="normalized" else ""
     threads: 16
+    benchmark: benchmarks/prepare_data_for_glmnet_genomes/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 512000 + ((attempt - 1) * 256000),
@@ -947,6 +975,7 @@ rule run_adelie_genomes:
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"{wildcards.model}", "genomes", f"{wildcards.normalize}", f"{wildcards.dataset}_{wildcards.model}_adelie_genomes_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}"),
         python_env = Path(config["envs"]["adelie"])
     threads: 64
+    benchmark: benchmarks/run_adelie_genomes/"{dataset}_{model}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.txt"
     resources:
         # dynamically allocate memory based on the attempt
         mem_mb = lambda _, attempt: 512000 + ((attempt - 1) * 128000),
@@ -978,6 +1007,7 @@ rule annotate_clusters:
         temp_dir = lambda wildcards: Path(TEMP_DIR, f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}"),
         splash_bin = config["splash_bin"]
     threads: 4
+    benchmark: benchmarks/annotate_clusters/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 32 GB of memory
         mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 32000),
@@ -1004,6 +1034,7 @@ rule annotate_clusters_amr:
         temp_dir = lambda wildcards: Path(TEMP_DIR, f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}"),
         splash_bin = config["splash_bin"]
     threads: 4
+    benchmark: benchmarks/annotate_clusters_amr/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 32 GB of memory
         mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 32000),
@@ -1026,6 +1057,7 @@ rule merge_annotations:
         coefficients = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_annotations"]
+    benchmark: benchmarks/merge_annotations/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 32 GB of memory
         mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 32000),
@@ -1050,6 +1082,7 @@ rule merge_annotations_AMR:
     resources:
         # 32 GB of memory
         mem_mb = lambda _, attempt: 64000 + ((attempt - 1) * 32000),
+    benchmark: benchmarks/merge_annotations_AMR/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     output:
         coefs = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients_AMR-annotated.tsv")
     shell:"""
@@ -1068,6 +1101,7 @@ rule run_blast_nonzero_features:
         blast_temp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, wildcards.model, wildcards.num_clusters, wildcards.normalize, wildcards.predictionTask, "blast"),
         split_fasta_temp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, wildcards.model, wildcards.num_clusters, wildcards.normalize, wildcards.predictionTask, "split_fasta"),
         taxid = lambda wildcards: int(metadata_table.loc[wildcards.dataset, "taxid"])
+    benchmark: benchmarks/run_blast_nonzero_features/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         mem_mb = 128000,
@@ -1091,6 +1125,7 @@ rule run_blastp_nonzero_features:
         split_fasta_temp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, wildcards.model, wildcards.num_clusters, wildcards.normalize, wildcards.predictionTask, "split_fasta_blastp"),
         taxid = lambda wildcards: int(metadata_table.loc[wildcards.dataset, "taxid"]),
         translation_table = lambda wildcards: metadata_table.loc[wildcards.dataset, "translation_table"]
+    benchmark: benchmarks/run_blastp_nonzero_features/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
          mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 128000),
@@ -1111,6 +1146,7 @@ rule merge_blast_results:
         coefficients = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_blast_results"]
+    benchmark: benchmarks/merge_blast_results/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 8 GB of memory
         mem_mb = 8000
@@ -1130,6 +1166,7 @@ rule merge_blastp_results:
         coefficients = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_blast_results"]
+    benchmark: benchmarks/merge_blastp_results/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 8 GB of memory
         mem_mb = 8000
@@ -1153,6 +1190,7 @@ rule plot_blast_features:
         feather = Path(TEMP_DIR, "{dataset}", "{dataset}_{model}_top_variance_features_for_glmnet_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.feather")
     params:
         script = config["scripts"]["plot_blast_results"]
+    benchmark: benchmarks/plot_blast_features/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 128 GB of memory
         mem_mb = 128000,
@@ -1187,6 +1225,7 @@ rule plot_blast_heatmaps:
     resources:
         # 128 GB of memory
         mem_mb = 128000
+    benchmark: benchmarks/plot_blast_heatmaps/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     output:
         Path('results', "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", "{dataset}_{model}_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients_heatmaps.pdf")
     shell:"""
@@ -1210,6 +1249,7 @@ rule merge_annotations_OHE:
         coefficients = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_annotations"]
+    benchmark: benchmarks/merge_annotations_OHE/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 32 GB of memory
         mem_mb = 32000
@@ -1230,6 +1270,7 @@ rule merge_annotations_OHE_AMR:
         coefficients = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_annotations"]
+    benchmark: benchmarks/merge_annotations_OHE_AMR/"{dataset}_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 32 GB of memory
         mem_mb = 32000
@@ -1251,6 +1292,7 @@ rule run_blast_nonzero_features_OHE:
         blast_temp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, "ohe", wildcards.num_clusters, wildcards.predictionTask, "blast"),
         split_fasta_temp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, "ohe", wildcards.num_clusters, wildcards.predictionTask, "split_fasta"),
         taxid = lambda wildcards: int(metadata_table.loc[wildcards.dataset, "taxid"])
+    benchmark: benchmarks/run_blast_nonzero_features_OHE/"{dataset}_{select_type}_{cluster_type}_ohe_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 128 GB of memory
         mem_mb = 128000,
@@ -1274,6 +1316,7 @@ rule run_blastp_nonzero_features_OHE:
         split_fasta_temp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, "ohe", wildcards.num_clusters, wildcards.predictionTask, "split_fasta_blastp"),
         taxid = lambda wildcards: int(metadata_table.loc[wildcards.dataset, "taxid"]),
         translation_table = lambda wildcards: metadata_table.loc[wildcards.dataset, "translation_table"]
+    benchmark: benchmarks/run_blastp_nonzero_features_OHE/"{dataset}_{select_type}_{cluster_type}_ohe_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 64 GB of memory
         mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 128000),
@@ -1294,6 +1337,7 @@ rule merge_blast_results_OHE:
         coefficients = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_blast_results"]
+    benchmark: benchmarks/merge_blast_results_OHE/"{dataset}_{select_type}_{cluster_type}_ohe_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 8 GB of memory
         mem_mb = 8000
@@ -1313,6 +1357,7 @@ rule merge_blastp_results_OHE:
         coefficients = Path('results', "{dataset}", "{select_type}", "{cluster_type}", "ohe", "{dataset}_ohe_{predictionTask}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_blast_results"]
+    benchmark: benchmarks/merge_blastp_results_OHE/"{dataset}_{select_type}_{cluster_type}_ohe_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 8 GB of memory
         mem_mb = 8000
@@ -1336,6 +1381,7 @@ rule plot_blast_features_OHE:
         feather = Path(TEMP_DIR, "{dataset}", "{dataset}_ohe_features_for_glmnet_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.feather")
     params:
         script = config["scripts"]["plot_blast_results"]
+    benchmark: benchmarks/plot_blast_features_OHE/"{dataset}_{select_type}_{cluster_type}_ohe_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 128 GB of memory
         mem_mb = 128000,
@@ -1366,6 +1412,7 @@ rule plot_blast_heatmaps_OHE:
         feather = Path(TEMP_DIR, "{dataset}", "{dataset}_ohe_features_for_glmnet_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.feather")
     params:
         script = config["scripts"]["plot_blast_heatmaps"]
+    benchmark: benchmarks/plot_blast_heatmaps_OHE/"{dataset}_{select_type}_{cluster_type}_ohe_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 128 GB of memory
         mem_mb = 128000
@@ -1391,6 +1438,7 @@ rule merge_annotations_genomes:
         coefficients = Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "genomes", "{normalize}", "{dataset}_{model}_{predictionTask}_genomes_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_nonzero_coefficients.tsv")
     params:
         script = config["scripts"]["merge_annotations"]
+    benchmark: benchmarks/merge_annotations_genomes/"{dataset}_{select_type}_{cluster_type}_{model}_{normalize}_top{num_clusters}_k{kmer_width}_s{kmer_step}.txt"
     resources:
         # 32 GB of memory
         mem_mb = 32000
