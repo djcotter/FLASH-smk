@@ -32,13 +32,14 @@ NUM_CLUSTERS = [20000]
 KMER_WIDTH = [54]
 KMER_STEP = [54]
 MODELS = ["hyena"]
-NORMALIZE=["normalized", "unnormalized"]
+NORMALIZE=["normalized"]
 #MODELS = ["esm", "hyena"]
 #"hyenaMarlowe"
 
 # for temp testing
-DATASETS = ["eFaecium-CollEtAl", "eColi-arcadia-amr", "pneumo-ERP001505", "staph-aureus-SRP126135", "klebsiella-AMR-PRJEB42462", "H5N1-cattle", "canTrop-AzoleResistance-PRJNA946688", "GBS-ERP015737", "aspergillus-PRJNA632561", "strepA", "test-data-tracy-SC10X"] # "strepA", "tuberculosis-PZAres", "y1000-genomes-data", "y1000-genomes-resistance"
+DATASETS = ["eFaecium-CollEtAl", "eColi-arcadia-amr", "pneumo-ERP001505", "staph-aureus-SRP126135", "klebsiella-AMR-PRJEB42462", "H5N1-cattle", "canTrop-AzoleResistance-PRJNA946688", "GBS-ERP015737", "aspergillus-PRJNA632561", "strepA", "test-data-tracy-SC10X", "y1000-genomes-data", "y1000-genomes-resistance"] # "strepA", "tuberculosis-PZAres", 
 
+GENOMES_DATASETS = ["eFaecium-CollEtAl-nanopore", "eColi-arcadia-amr-nanopore"]
 
 ## testing
 #DATASETS = ["y1000-genomes-withinOrder"]
@@ -58,9 +59,9 @@ wildcard_constraints:
     normalize=r"[A-Za-z]+"
     
 ## 
-DATASETS = ["eFaecium-CollEtAl-splitByStudy"]
-MODELS = ["hyena"]
-NORMALIZE=["normalized"]
+DATASETS = ["polz-phage-infection-2025"]
+# MODELS = ["hyena"]
+# NORMALIZE=["normalized"]
 
 ## Define the rules for the pipeline
 rule all:
@@ -84,7 +85,7 @@ rule all_genomes:
             # all genome coefficients files
             expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "genomes", "{normalize}", 
                 "{dataset}_{model}_adelie_genomes_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
-               dataset=DATASETS,
+               dataset=GENOMES_DATASETS,
                select_type=SELECT_TYPES,
                cluster_type=CLUSTER_TYPES,
                model=MODELS,
@@ -95,7 +96,7 @@ rule all_genomes:
                FILE = ["nonzero_coefficients_annotated.tsv", "confusion_matrices.pdf"]),
             expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", 
                     "{dataset}_{model}_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
-               dataset=DATASETS,
+               dataset=GENOMES_DATASETS,
                select_type=SELECT_TYPES,
                cluster_type=CLUSTER_TYPES,
                model=MODELS,
@@ -124,19 +125,19 @@ rule all_y1000:
     input:
         expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", 
                     "{dataset}_{model}_{task}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
-               dataset=["y1000-genomes-data", "y1000-genomes-resistance"],
-               task=["adelie", "adelie-train-only"],
+               dataset=["y1000-genomes-resistance", "y1000-genomes-data"],
+               task=["adelie"],
                select_type=SELECT_TYPES,
-               cluster_type=CLUSTER_TYPES,
+               cluster_type=["masked-aa-clustered"],
                model=MODELS,
                num_clusters=NUM_CLUSTERS,
                kmer_width=KMER_WIDTH,
                kmer_step=KMER_STEP,
-               normalize=NORMALIZE,
-               FILE = ["nonzero_coefficients_annotated.tsv", "nonzero_coefficients_AMR-annotated.tsv", "confusion_matrices.pdf", "nonzero_coefficients_heatmaps.pdf", "nonzero_coefficients_blastp_annotated.tsv"]), # "nonzero_coefficients_blast_annotated_plots.pdf",
+               normalize=["normalized"],
+               FILE = ["nonzero_coefficients_annotated.tsv", "nonzero_coefficients_AMR-annotated.tsv", "confusion_matrices.pdf", "nonzero_coefficients_heatmaps.pdf", "nonzero_coefficients_blastp_annotated.tsv", "nonzero_coefficients_blast_annotated_plots.pdf"]), # ",
         expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "ohe",  "{dataset}_ohe_{task}_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
                dataset=["y1000-genomes-data", "y1000-genomes-resistance"],
-               task=["adelie", "adelie-train-only"],
+               task=["adelie"],
                select_type=SELECT_TYPES,
                cluster_type=CLUSTER_TYPES,
                num_clusters=NUM_CLUSTERS,
@@ -171,6 +172,32 @@ rule all_8mers_ohe:
                kmer_step=39,
                normalize=["normalized"],
                FILE = ["nonzero_coefficients_blast_annotated.tsv", "confusion_matrices.pdf"])
+
+rule all_hg38:
+    input:
+        expand(Path("results", "{dataset}", "{select_type}", "{cluster_type}", "{model}", "{normalize}", 
+                    "{dataset}_{model}_adelie_results_top{num_clusters}_k{kmer_width}_s{kmer_step}_{FILE}"),
+               dataset=DATASETS,
+               select_type=SELECT_TYPES,
+               cluster_type=CLUSTER_TYPES,
+               model=["hyenaHG38"],
+               num_clusters=NUM_CLUSTERS,
+               kmer_width=KMER_WIDTH,
+               kmer_step=KMER_STEP,
+               normalize=["normalized"],
+               FILE = ["nonzero_coefficients.tsv"]) # , 
+               
+rule all_umap:
+    input:
+        expand(Path(TEMP_DIR, "{dataset}", "{dataset}_{model}_top_variance_features_for_umap_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.feather"),
+        dataset=["strepA", "GBS-ERP015737", "pneumo-ERP001505", "klebsiella-AMR-PRJEB42462"],
+        select_type=["filter1"],
+        cluster_type=["shiftDist-levFilter"],
+        model=["hyena"],
+        num_clusters=NUM_CLUSTERS,
+        kmer_width=KMER_WIDTH,
+        kmer_step=KMER_STEP,
+        normalize=["normalized"])
 
 
 rule choose_anchors:
@@ -491,6 +518,32 @@ rule prepare_data_for_glmnet_top_variance:
         Rscript --vanilla {params.script} --embeddings {input.embeddings} --ordering {input.ordering} \
         --output {output} --temp_dir {params.tmp_dir} --num_threads {threads} --num_to_keep 100 {params.normalized_flag}
     """
+    
+rule prepare_data_for_umap_top_variance:
+    """
+    This rule processes the embeddings to fit into a glmnet model by grabbing the top variance embeddings per cluster
+    and then saves the resulting data frame as a feather object to be used in the glmnet model.
+    """
+    input:
+        embeddings = lambda wildcards: Path(TEMP_DIR, "{dataset}", "{dataset}_{model}-embeddings_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.tsv"),
+        ordering = lambda wildcards: Path(TEMP_DIR, "{dataset}", "{dataset}_decomposed_kmers_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_kmer_ordering.tsv")
+    params:
+        script = Path(config["scripts"]["format_embeddings_variance"]),
+        tmp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, wildcards.num_clusters + "-clusters", 
+                                         "k" + wildcards.kmer_width + "_s" + wildcards.kmer_step, wildcards.model + "_umap_embeddings", wildcards.normalize),
+        normalized_flag = lambda wildcards: "--normalized_embeddings" if wildcards.normalize =="normalized" else ""
+    threads: 32
+    resources:
+        # dynamically allocate memory based on the attempt
+        mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 256000),
+        time = "6:00:00"
+    output:
+        Path(TEMP_DIR, "{dataset}", "{dataset}_{model}_top_variance_features_for_umap_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.feather")
+    shell:"""
+        ml R/4.3.2
+        Rscript --vanilla {params.script} --embeddings {input.embeddings} --ordering {input.ordering} \
+        --output {output} --temp_dir {params.tmp_dir} --num_threads {threads} --num_to_keep 1 {params.normalized_flag}
+    """
 
 rule run_glmnet:
     """
@@ -542,9 +595,8 @@ rule run_adelie:
         source {params.python_env}
         python {params.script} --data {input.embeddings} \
         --metadata {input.metadata} --output_prefix {params.output_prefix} \
-        --n_threads {threads} --train_prop 0.5
+        --n_threads {threads} --train_prop 0.5 
     """
-# change train prop back to 0.6
 
 rule run_train_only_adelie:
     """
@@ -662,7 +714,7 @@ rule run_adelie_ohe:
         source {params.python_env}
         python {params.script} --data {input.features} \
         --metadata {input.metadata} --output_prefix {params.output_prefix} \
-        --n_threads {threads} --train_prop 0.6
+        --n_threads {threads} --train_prop 0.5
     """
     
 rule run_train_only_adelie_ohe:
@@ -805,9 +857,9 @@ rule embed_kmers_hyena_genomes:
     threads: 8
     resources:
         # 64 GB of memory
-        time = "3:00:00",
+        time = "24:00:00",
         mem_mb = 32000,
-        partition = "horence,gpu,owners",
+        partition = "horence",
         slurm_extra = "-G 1 -C 'GPU_GEN:HPR|GPU_GEN:AMP|GPU_GEN:TUR'"
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_hyena-embeddings_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}.tsv")
@@ -867,10 +919,11 @@ rule prepare_data_for_glmnet_genomes:
         tmp_dir = lambda wildcards: Path(TEMP_DIR, wildcards.dataset, wildcards.select_type, wildcards.cluster_type, wildcards.num_clusters + "-clusters", 
                                          "k" + wildcards.kmer_width + "_s" + wildcards.kmer_step, wildcards.model + "_embeddings", wildcards.normalize),
         normalized_flag = lambda wildcards: "--normalized_embeddings" if wildcards.normalize =="normalized" else ""
-    threads: 32
+    threads: 16
     resources:
         # dynamically allocate memory based on the attempt
-        mem_mb = lambda _, attempt: 256000 + ((attempt - 1) * 256000),
+        mem_mb = lambda _, attempt: 512000 + ((attempt - 1) * 256000),
+        time = "9:00:00",
     output:
         Path(TEMP_DIR, "{dataset}", "{dataset}_{model}_top_variance_features_for_glmnet_genomes_{select_type}_{cluster_type}_top{num_clusters}_k{kmer_width}_s{kmer_step}_{normalize}.feather")
     shell:"""
