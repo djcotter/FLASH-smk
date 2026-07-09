@@ -92,6 +92,30 @@ get_first_class <- function(x) {
   })
 }
 
+clean_blast_label <- function(x) {
+  x <- replace_na(x, "")
+  x <- str_replace_all(x, "LOC\\d+[- ]*", "")
+  x <- str_replace_all(x, "\\s+", " ")
+  x <- str_replace_all(x, "\\s*[,;]\\s*$", "")
+  x <- str_trim(x)
+  ifelse(nchar(x) == 0, NA_character_, x)
+}
+
+extract_feature_qualifier <- function(features, qualifier) {
+  pattern <- paste0("'", qualifier, "': \\['([^']+)'\\]")
+  str_extract(features, pattern, group=1) %>% clean_blast_label()
+}
+
+choose_feature_label <- function(products, genes, prefer_products = FALSE) {
+  products <- clean_blast_label(products)
+  genes <- clean_blast_label(genes)
+  genes_are_loc <- !is.na(genes) & str_detect(genes, "^LOC\\d+$")
+  use_products <- prefer_products | genes_are_loc | is.na(genes) | nchar(genes) < 2
+  label <- ifelse(use_products & !is.na(products) & nchar(products) > 1, products, genes)
+  label <- ifelse((is.na(label) | nchar(label) < 2) & !is.na(products), products, label)
+  clean_blast_label(label)
+}
+
 # read in input files
 dt <- fread(opt$nonzero_annotations)
 if (TRUE) {dt2 <- fread(gsub("blastp_annotated", "blast_annotated", opt$nonzero_annotations))}
@@ -137,8 +161,8 @@ for (category in categories) {
     if (TRUE) {
       summ_dt2 <- dt2 %>% filter(metadata_category==category) %>%
         separate_longer_delim(features, delim = "},") %>% 
-        mutate(products=str_extract(features, "'product': \\['([\\w\\s-]+)'\\]", group=1)) %>% 
-        mutate(genes=str_extract(features, "'gene': \\['([\\w\\s-]+)'\\]", group=1)) %>% 
+        mutate(products=extract_feature_qualifier(features, "product")) %>% 
+        mutate(genes=extract_feature_qualifier(features, "gene")) %>% 
         select(-features) %>% mutate(first_coef=get_first_coef(coefficients)) %>% mutate(max_coefficient=abs(first_coef)) %>% 
         arrange(-max_coefficient) %>% mutate(first_class=get_first_class(classes)) %>%
         rowwise() %>%
@@ -150,15 +174,11 @@ for (category in categories) {
         ungroup() %>%
         distinct(cluster,products,query,genes,.keep_all = T) %>% group_by(cluster) 
       
-      if (opt$products) {
-        summ_dt2 <- summ_dt2 %>% group_by(cluster,query) %>%
-          mutate(label=ifelse(!is_empty(unique(na.omit(products))), paste(unique(na.omit(products)),collapse=";"), paste(unique(na.omit(genes)), collapse=","))) %>% 
-          distinct(cluster, query, label, .keep_all=T) %>% ungroup()
-      } else {
-        summ_dt2 <- summ_dt2 %>% group_by(cluster,query) %>%
-          mutate(label=ifelse(!is_empty(unique(na.omit(genes))), paste(unique(na.omit(genes)), collapse=";"), paste(unique(na.omit(products)),collapse=","))) %>% 
-          distinct(cluster, query, label, .keep_all=T) %>% ungroup()
-      }
+      summ_dt2 <- summ_dt2 %>%
+        mutate(label = choose_feature_label(products, genes, opt$products)) %>%
+        group_by(cluster,query) %>%
+        mutate(label=ifelse(!is_empty(unique(na.omit(label))), paste(unique(na.omit(label)),collapse=";"), NA)) %>%
+        distinct(cluster, query, label, .keep_all=T) %>% ungroup()
       if (!"qcovs" %in% colnames(summ_dt2)) {
         summ_dt2$qcovs <- NA
       }

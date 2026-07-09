@@ -657,6 +657,7 @@ rule run_adelie_genomes:
         python {params.script} --train_features {input.train_features} --train_metadata {input.train_metadata} \
         --test_features {input.test_features} --test_metadata {input.test_metadata} --output_prefix {params.output_prefix} \
         --n_threads {threads} \
+        --min_samples {params.min_samples} \
         --alpha {params.alpha} \
         {params.grouped_flag}
     """

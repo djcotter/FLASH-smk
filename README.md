@@ -180,7 +180,13 @@ snakemake --sdm conda -j $NUM_CORES all_embeddings # for embedding mode
 snakemake --sdm conda -j $NUM_CORES all_genomes # for genomes mode, requires additional files/setup
 ```
 
-The code can also be run using an automatic scheduler. The included example submission script (`resources/utility_scripts/run_snakemake.sbatch`) and profile (`slurm_profile/config.v8+.yaml`) can submit the pipeline and request the required resources including GPU resources. For running on a cluster using `slurm` you can use this config using the --profile slurm_profile/config.v8+.yaml.
+The code can also be run using an automatic scheduler. The included example submission script (`resources/utility_scripts/run_snakemake.sbatch`) and profile (`slurm_profile/config.v8+.yaml`) can submit the pipeline and request the required resources including GPU resources. For running on a cluster using `slurm` you can use this config using the --profile slurm_profile/config.v8+.yaml. On some clusters, Snakemake needs to know where the shared Conda/Miniforge installation lives. In that case, explicitly pass the Conda base path.
+
+```{bash}
+snakemake --sdm conda --use-conda --conda-base-path /path/to/miniforge3 --profile slurm_profile/ all_embeddings
+
+snakemake --sdm conda --use-conda --conda-base-path /path/to/miniforge3 --profile slurm_profile/ all_embeddings
+```
 
 **NOTE: You must modify the profile to match your own partitions resources, and constraints necessary for your cluster. The provided config is an example for our local HPC resources. This can be adapted to different schedulers by modifying the profile but is currently only set to work for `slurm`.**
 
@@ -191,7 +197,7 @@ Input files and paths are detailed in `dataset_table.csv` and the columns are de
 - `dataset_short_name`: A short name for the dataset (Don't include underscores).
 
 - `SPLASH_results`: Path to the SPLASH run folder containing results. Should contain `result.after_correction.scores.tsv`, `sample_name_to_id.mapping.txt`, and the folder `result_satc`. (An example script for running SPLASH to produce these outputs is in the `resources/helper_scripts` folder).
-  - If using the flag `seqs_from_raw_data: true` in the config file, this step will additionaly allow the script to find the `sample_sheet.tsv` file. This file is the default one used to run SPLASH and contains two columns (`sample_name` and `file_path`) that map sample names to raw FASTQ files. This will allow the script to extract sequences directly from the raw data instead of from the SPLASH outputs which circumvents the limitations of SPLASH in terms of outputting sequences that appear less frequently.
+  - If using the flag `seqs_from_raw_data: true` in the config file, this step will additionaly allow the script to find the `sample_sheet.txt` file. This file is the default one used to run SPLASH and contains two columns (`sample_name` and `file_path`) that map sample names to raw FASTQ files. This will allow the script to extract sequences directly from the raw data instead of from the SPLASH outputs which circumvents the limitations of SPLASH in terms of outputting sequences that appear less frequently.
 
 - `metadata_file`: Path to the metadata file associated with the dataset.
   - The metadata file must contain a column named `sample_name` that matches the sample names used in the SPLASH run.
@@ -415,7 +421,7 @@ Key outputs include:
 In principal FLASH has been written to run on any data with sturctured phenotype/metadata labels provided. However, there are some caveats to this. 
 
 #### Very small datasets
-The FLASH paramaters are built to only include metadata categories from a metadata file with >= 28 samples in the smallest class of a metadata category. This means that only datasets with exactly 56 samples (that are evenly split into 28 and 28 will pass the adelie step of the pipeline. 
+The FLASH paramaters are built to only include metadata categories from a metadata file with >= 28 samples in the smallest class of a metadata category. This means that only datasets with exactly 56 samples that are evenly split into 28 and 28 will pass the adelie step of the pipeline. 
 This can be changed by adjusting the paramater `min_samples_adelie` in the `extended_options` section of the `config.yml` file. The default number was chosen after extensive testing in many datasets but feel free to experiment with smaller datasets. It is possilbe the the unsupervised clustering mode will still work for smaller amounts of data. 
 
 #### Data where SPLASH has very few significant anchors or anchors that pass the threshold 

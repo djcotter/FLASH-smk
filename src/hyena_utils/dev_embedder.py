@@ -139,13 +139,19 @@ if __name__ == "__main__":
     # sample sequence, can pass a list of seqs (themselves a list of chars)
     seqs = []
     names = []
+    current_seq = []
     with open(args.seq_file, 'r') as f:
         for line in f:
             line = line.strip()
             if line.startswith('>'):
+                if current_seq:
+                    seqs.append(''.join(current_seq))
+                    current_seq = []
                 names.append(line[1:])
             else:
-                seqs.append(line)
+                current_seq.append(line)
+    if current_seq:
+        seqs.append(''.join(current_seq))
     # verify that the sequences are loaded correctly
     if not (len(seqs) == len(names)):
         print('Error: Number of sequences and names do not match.', flush=True)
