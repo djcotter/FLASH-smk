@@ -30,3 +30,4 @@ dependencies:
   - r-umap
   - r-fossil
   - r-seqinr
+  - r-arrow

@@ -29,6 +29,12 @@ option_list <- list(
   make_option(c("--satc_util_bin"), "Path to SATC Util binary folder",
     type = "character", default = ""
   ),
+  make_option(c("--anchor_len"), "Anchor length to pass to fafq_filter",
+    type = "integer", default = 27
+  ),
+  make_option(c("--target_len"), "Target length to pass to fafq_filter",
+    type = "integer", default = 27
+  ),
   make_option(c("--num_cores"), "Number of cores to use", type = "integer", default = 8)
 )
 
@@ -73,16 +79,26 @@ if (!file.exists(anchor_filter)) {
     write_lines(anchor_filter)
 }
 
-# list all of the genome files in the genome directory
-genome_files <- list.files(opt$genome_files, pattern = ".fna|.fasta|.fa|.fastq|.fq", full.names = T)
-genome_files <- genome_files[str_remove(basename(tools::file_path_sans_ext(str_remove(genome_files, ".gz$"))), "_1") %in% fread(opt$genome_list, header = F, col.names = c("genome"))$genome]
+# list all of the genome files in the genome directory, or use explicit sample/file pairs
+genome_list <- fread(opt$genome_list, header = F)
+if (ncol(genome_list) >= 2) {
+  genome_files <- genome_list %>%
+    select(genome_name = 1, genome = 2) %>%
+    mutate(genome = ifelse(str_detect(genome, "^/"), genome, file.path(opt$genome_files, genome)))
+} else {
+  colnames(genome_list) <- "genome"
+  genome_files <- list.files(opt$genome_files, pattern = ".fna|.fasta|.fa|.fastq|.fq", full.names = T)
+  genome_files <- genome_files[str_remove(basename(tools::file_path_sans_ext(str_remove(genome_files, ".gz$"))), "_1") %in% genome_list$genome]
 
-if (any(str_detect(genome_files, "_1"))) {
-  genome_files <- genome_files[str_detect(genome_files, "_1")]
+  if (any(str_detect(genome_files, "_1"))) {
+    genome_files <- genome_files[str_detect(genome_files, "_1")]
+  }
+
+  genome_files <- data.frame(genome = genome_files) %>%
+    mutate(genome_name = str_remove(basename(tools::file_path_sans_ext(str_remove(genome, ".gz$"))), "_1"))
 }
 
-genome_files <- data.frame(genome = genome_files) %>%
-  mutate(genome_name = str_remove(basename(tools::file_path_sans_ext(str_remove(genome_files, ".gz$"))), "_1")) %>%
+genome_files <- genome_files %>%
   mutate(
     genome_capitalized = file.path(temp_dir, "capitalized", genome_name),
     genome_oneline = file.path(temp_dir, "oneline", genome_name),
@@ -126,7 +142,7 @@ if (!file.exists(all_genome_file)) {
     paste0(
       file.path(opt$satc_util_bin, "fafq_filter"), " -i ", x, " -o ", y,
       " -d ", anchor_filter,
-      " -n 2 --anchor_len 27 --target_len 27"
+      " -n 2 --anchor_len ", opt$anchor_len, " --target_len ", opt$target_len
     )
   ))
 

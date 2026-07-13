@@ -23,12 +23,19 @@ option_list <- list(
   make_option(c("--products"), type= "logical", default=FALSE, action="store_true",
               help = "default to using products for column names instead of genes"),
   make_option(c("--num_hits"), type="numeric", default=10,
-              help = "num nonzero coefficients to plot", metavar = "numeric")
+              help = "num nonzero coefficients to plot", metavar = "numeric"),
+  make_option(c("--cluster_length"), type="integer", default=NULL,
+              help = "Length of each concatenated anchor-target sequence. Defaults to k value parsed from input filename, then 54.", metavar = "integer")
 )
 
 # Parse command line options
 opt_parser <- OptionParser(option_list = option_list)
 opt <- parse_args(opt_parser)
+
+if (is.null(opt$cluster_length)) {
+  inferred_cluster_length <- suppressWarnings(as.integer(str_extract(opt$nonzero_annotations, "_k(\\d+)_s", group = 1)))
+  opt$cluster_length <- ifelse(is.na(inferred_cluster_length), 54L, inferred_cluster_length)
+}
 
 # Check if all required arguments are provided
 if (is.null(opt$nonzero_annotations) || is.null(opt$output)) {
@@ -102,10 +109,33 @@ get_nth_class <- function(x,n=1) {
   })
 }
 
+clean_blast_label <- function(x) {
+  x <- replace_na(x, "")
+  x <- str_replace_all(x, "LOC\\d+[- ]*", "")
+  x <- str_replace_all(x, "\\s+", " ")
+  x <- str_replace_all(x, "\\s*[,;]\\s*$", "")
+  x <- str_trim(x)
+  ifelse(nchar(x) == 0, NA_character_, x)
+}
+
+extract_feature_qualifier <- function(features, qualifier) {
+  pattern <- paste0("'", qualifier, "': \\['([^']+)'\\]")
+  str_extract(features, pattern, group=1) %>% clean_blast_label()
+}
+
+choose_feature_label <- function(products, genes, prefer_products = FALSE) {
+  products <- clean_blast_label(products)
+  genes <- clean_blast_label(genes)
+  genes_are_loc <- !is.na(genes) & str_detect(genes, "^LOC\\d+$")
+  use_products <- prefer_products | genes_are_loc | is.na(genes) | nchar(genes) < 2
+  label <- ifelse(use_products & !is.na(products) & nchar(products) > 1, products, genes)
+  label <- ifelse((is.na(label) | nchar(label) < 2) & !is.na(products), products, label)
+  clean_blast_label(label)
+}
+
 # function to read the nth cluster out of the sample sequences file 
-read_nth_cluster <- function(file_path, n) {
+read_nth_cluster <- function(file_path, n, cluster_length) {
   # Calculate start and end positions for the nth cluster
-  cluster_length <- 54
   start <- n * cluster_length + 1  # n is now 0-indexed
   end <- (n + 1) * cluster_length
   
@@ -204,6 +234,8 @@ if (str_detect(opt$nonzero_annotations, "adelie-train-only")) {
 
 pdf(opt$output, width=12, height=8)
 all_features_summary <- data.table()
+all_blastp_summary <- data.table()
+all_blast_summary <- data.table()
 
 # write a title page first
 plot(0:10, type = "n", xaxt="n", yaxt="n", bty="n", xlab = "", ylab = "")
@@ -234,11 +266,13 @@ for (category in categories) {
       mutate(label=ifelse(!is_empty(unique(na.omit(annotation))), paste0(unique(na.omit(annotation)),collapse=";"), NA)) %>%
       distinct(cluster, query, label, .keep_all=T) %>% ungroup()
 
+    summ_dt_blastp_only <- summ_dt
+
     if (TRUE) {
       summ_dt2 <- dt2 %>% filter(metadata_category==category) %>%
         separate_longer_delim(features, delim = "},") %>% 
-        mutate(products=str_extract(features, "'product': \\['([\\w\\s-]+)'\\]", group=1)) %>% 
-        mutate(genes=str_extract(features, "'gene': \\['([\\w\\s-]+)'\\]", group=1)) %>% 
+        mutate(products=extract_feature_qualifier(features, "product")) %>% 
+        mutate(genes=extract_feature_qualifier(features, "gene")) %>% 
         select(-features) %>% mutate(first_coef=get_first_coef(coefficients)) %>% mutate(max_coefficient=abs(first_coef)) %>% 
         arrange(-max_coefficient) %>% mutate(first_class=get_first_class(classes)) %>%
         rowwise() %>%
@@ -250,15 +284,11 @@ for (category in categories) {
         ungroup() %>%
         distinct(cluster,products,query,genes,.keep_all = T) %>% group_by(cluster) 
       
-      if (opt$products) {
-        summ_dt2 <- summ_dt2 %>% group_by(cluster,query) %>%
-          mutate(label=ifelse(!is_empty(unique(na.omit(products))), paste0(unique(na.omit(products)),collapse=";"), paste(unique(na.omit(genes)), collapse=","))) %>% 
-          distinct(cluster, query, label, .keep_all=T) %>% ungroup()
-      } else {
-        summ_dt2 <- summ_dt2 %>% group_by(cluster,query) %>%
-          mutate(label=ifelse(!is_empty(unique(na.omit(genes))), paste0(unique(na.omit(genes)), collapse=";"), paste(unique(na.omit(products)),collapse=","))) %>% 
-          distinct(cluster, query, label, .keep_all=T) %>% ungroup()
-      }
+      summ_dt2 <- summ_dt2 %>%
+        mutate(label = choose_feature_label(products, genes, opt$products)) %>%
+        group_by(cluster,query) %>%
+        mutate(label=ifelse(!is_empty(unique(na.omit(label))), paste0(unique(na.omit(label)),collapse=";"), NA)) %>%
+        distinct(cluster, query, label, .keep_all=T) %>% ungroup()
       if (!"qcovs" %in% colnames(summ_dt2)) {
         summ_dt2$qcovs <- NA
       }
@@ -282,6 +312,29 @@ for (category in categories) {
       mutate(label = str_replace(label, " ,", ", ") %>% str_replace(" ;", "; ")) %>%
       mutate(label = map2_vec(label, hypothetical, \(x,y) if (y) {str_c(str_trim(unlist(str_split(x, ";"))[str_detect(unlist(str_split(x, ";")), "(?i)hypothetical|uncharact", negate=T)]),sep = ",", collapse=",")} else {x})) %>%
       ungroup()
+
+    blastp_all_dt <- summ_dt_blastp_only %>%
+      group_by(feature) %>%
+      mutate(label = ifelse(rep(sum(!is.na(label))==0, length(label)) & (is.na(label)) & !is.na(identity), "NO PROTEIN/GENE HIT", label)) %>%
+      group_by(cluster) %>%
+      mutate(label = ifelse(rep(sum(!is.na(label))==0, length(label)), "NO MATCH", label)) %>%
+      ungroup() %>%
+      mutate(blast_source = "blastp") %>%
+      mutate(classes = map_chr(classes, \(x) paste(x, collapse=","))) %>%
+      select(any_of(c("metadata_category", "accuracy", "classes", "first_class", "first_coef", "second_coef", "second_class",
+                      "max_coefficient", "cluster", "feature", "query", "identity", "qcovs", "label", "blast_source")))
+
+    blast_all_dt <- summ_dt %>%
+      mutate(blast_source = "blast") %>%
+      mutate(label = ifelse(is.na(label2) | nchar(label2) < 2, label, label2)) %>%
+      mutate(label = ifelse(is.na(label), "NO MATCH", label)) %>%
+      mutate(classes = map_chr(classes, \(x) paste(x, collapse=","))) %>%
+      select(any_of(c("metadata_category", "accuracy", "classes", "first_class", "first_coef", "second_coef", "second_class",
+                      "max_coefficient", "cluster", "feature", "query", "identity.y", "qcovs.y", "label", "blast_source"))) %>%
+      dplyr::rename(identity = `identity.y`, qcovs = `qcovs.y`)
+
+    all_blastp_summary <- bind_rows(all_blastp_summary, blastp_all_dt)
+    all_blast_summary <- bind_rows(all_blast_summary, blast_all_dt)
     
     plot_dt <- summ_dt %>%
       mutate(label=ifelse(label=="",annotation,label)) %>%
@@ -341,7 +394,7 @@ for (category in categories) {
       first_class = unique(dt_sub$first_class)
       all_classes = dt_sub[1,]$classes %>% unlist()
       
-      seq_sub <- read_nth_cluster(opt$sample_seqs, as.numeric(str_extract(my_cluster, "\\d+")))
+      seq_sub <- read_nth_cluster(opt$sample_seqs, as.numeric(str_extract(my_cluster, "\\d+")), opt$cluster_length)
       emb_sub <- feather_dt %>% select(sample_name, !!my_feature)
       
       seq_sub <- seq_sub %>% 
@@ -453,3 +506,5 @@ for (category in categories) {
 dev.off()
 
 all_features_summary %>% relocate(metadata_category, feature, cluster) %>% write_tsv(file = str_replace(opt$output, ".pdf", "_summary.tsv"))
+all_blastp_summary %>% relocate(metadata_category, feature, cluster) %>% write_tsv(file = str_replace(opt$nonzero_annotations, "blastp_annotated.tsv$", "blastp_all.tsv"))
+all_blast_summary %>% relocate(metadata_category, feature, cluster) %>% write_tsv(file = str_replace(gsub("blastp_annotated", "blast_annotated", opt$nonzero_annotations), "blast_annotated.tsv$", "blast_all.tsv"))

@@ -348,7 +348,7 @@ wide_satc <- dcast(wide_satc, sample ~ cluster_id, value.var = "seq")
 wide_satc <- as.data.frame(wide_satc)
 
 # add the representative anchors to the wide satc
-wide_satc <- cbind(wide_satc[1], map2_df(
+wide_satc <- cbind(wide_satc[1], map2_dfc(
   wide_satc[, 2:ncol(wide_satc)],
   seq_along(representative_anchors),
   function(x, y) {
