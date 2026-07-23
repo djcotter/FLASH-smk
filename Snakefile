@@ -646,6 +646,7 @@ rule run_adelie_genomes:
     params:
         script = Path(config["scripts"]["glmnet_genomes_script"]),
         output_prefix = lambda wildcards: Path("results", f"{wildcards.dataset}", f"{wildcards.select_type}", f"{wildcards.cluster_type}", f"{wildcards.model}", "genomes", f"{wildcards.normalize}", f"{wildcards.dataset}_{wildcards.model}_adelie_genomes_results_top{wildcards.num_clusters}_k{wildcards.kmer_width}_s{wildcards.kmer_step}_trainProp{wildcards.train_proportion}"),
+        min_samples = config["extended_options"]["min_samples_adelie"],
         alpha = config["extended_options"]["adelie_alpha"],
         grouped_flag = "--grouped" if config["options"]["grouped_model"] else ""
     output:
