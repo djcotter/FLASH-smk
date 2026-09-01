@@ -26,7 +26,7 @@ FORCE_RULES=("$@")
 
 # ---- activate conda environment ----
 source "${MINIFORGE_DIR}/etc/profile.d/conda.sh"
-mamba activate "$FLASH_ENV"
+conda activate "$FLASH_ENV"
 
 # ---- pick target meta-rule for the chosen mode ----
 case "$MODE" in
