@@ -1,0 +1,105 @@
+# main files
+data_table: dataset_table.csv
+temp_dir: tmp/
+splash_bin: splash-2.11.6/
+satc_util_bin: splash-2.11.6/ # usually the same as the splash_bin
+
+# annotation lookup table
+lookup_table_for_annotation: resources/lookup_tables/amr_split.slt
+lookup_table_for_artifact_filtering: resources/lookup_tables/mini_artifact_lookup.slt
+
+# entrez email
+entrez_email: "" # YOUR_EMAIL
+
+# blast database path (if using local databases)
+blast_db_path: "" # provide with path to local blast databases if available
+
+# set paths to conda env definitions
+envs:
+  default_r: envs/default-R.yaml
+  biopython_env: envs/biopython_env.yaml
+  biopython_env_r: envs/biopython_env_r.yaml
+  adelie_env: envs/adelie_env.yaml
+
+# paths to singularity containers
+containers:
+  hyena_embedder: containers/hyena_embedder.sif
+
+# boolean and paramater options
+options:
+  seqs_from_raw_data: true # set to true if starting from raw FASTQ files, false if starting from pre-processed SPLASH results # must set to false if using anchor length shorter than 10 (i.e. 8-mers or 9-mers).
+  feature_processing:
+   method: "top_variance" # set to either 'top_variance' or 'pca' for how to process embeddings prior to glmnet. default: 'top_variance'
+   recode_missing: false # set to true to recode missing values to 0 after processing the embeddings by either method (i.e. top variance or pca) prior to glmnet modeling. # This circumvents the problem where the NNNN embedding can be a large outlier.
+  grouped_model: true # set to true to use cluster groups for glmnet modeling instead of individual embeddings or PCs
+  generate_plots: false # set to true to generate plots after model training
+  num_clusters: 2000 # number of clusters to use for clustering anchors
+  filters: ["filter1"] # define which anchor selection filters to use
+  cluster_types: ["noCluster"] # define which clustering methods to use # see scripts section for available options
+  models: ["hyena"] # currently only 'hyena' is supported
+  normalize_embeddings: ['normalized'] # define whether to use normalized or unnormalized embeddings (for pca whether to scale/center prior to pca)
+  train_proportion: 0.8 # proportion of samples to use for training GLMnet models
+  min_samples_adelie: 28 # minimum number of samples in the smallest class for running adelie (requires at least N samples per class)
+  anchor_length: 10 # this is the length of the anchor in nucleotides, change as needed for different SPLASH runs
+  target_length: 31 # this is the length of the target in nucleotides, change as needed for different SPLASH runs
+  target_rank: 1 # this is the rank of the target to use when assembling the anchor-target pairs, change as needed
+  cluster_filter:
+    # reccomend increasing the number of clusters if applying a cluster filter to ensure that you have enough clusters after filtering for embedding and prediction.
+    # leaving the cluster filter off will retain more clusters for processing and prediction.
+    apply: false # set to true to apply a cluster filter to the SPLASH data prior to embedding
+    type: "fractionMissing" # set to either 'fractionMissing' or 'binaryTarget' for the type of cluster filter to apply if applying a cluster filter
+    threshold: 0.05 # if using the fraction missing filter, this is the fraction (i.e. 0.05) of anchors that are allowed to be missing in a cluster for it to be retained
+
+# you should not need to change anything below this line but you can alter them if needed
+extended_options:
+  num_anchors_to_select: 3000000 # number of anchors to select from each dataset for clustering
+  effect_size_cutoff: 0.6 # this is the cutoff for selecting an anchor from the SPLASH results
+  distance_threshold: 5 # distance threshold for filtering anchors after clustering
+  num_embedding_features_to_keep:
+    by_variance: 100 # number of top variance embedding features to keep for GLMnet
+    by_pca: 5 # number of principal components to keep for GLMnet
+    umap: 1 # number of top variance embedding features to keep for UMAP
+  num_PCs_umap: 10 # number of principal components to use for UMAP plotting
+  adelie_alpha: 1 # alpha parameter for elastic net regularization in adelie (0 = ridge, 1 = lasso)
+
+
+# define all scripts and parameters used in the pipeline
+scripts:
+  anchor_select_script: # filtering options
+    filter1: src/anchor_selection/select_anchors_filter1.R # arrange by nonzero samples then head
+  cluster_script: # clustering options
+    shiftDist-levFilter: 'python src/clustering/shiftDist_clustering.py'
+    masked-aa-clustered: 'python src/clustering/fuzzy_lookup_clustering_AA.py'
+    masked-nucleotide-clustered: 'python src/clustering/fuzzy_lookup_clustering.py'
+    noCluster: 'python src/clustering/noClustering.py' # used for short anchors primarily
+  clustering_params:
+    fuzzy_nt_clustering_params: "--m 5 --N 1000 --j 5"
+    fuzzy_aa_clustering_params: "--m 3 --N 300 --j 2"
+  reorder_script:
+    shiftDist-levFilter: "src/clustering/filter_clusters_by_distance.R --distance_metric lev"
+    masked-aa-clustered: "src/clustering/filter_clusters_by_distance.R --distance_metric lev"
+    masked-nucleotide-clustered: "src/clustering/filter_clusters_by_distance.R --distance_metric lev"
+    noCluster: "src/clustering/filter_clusters_by_distance.R --distance_metric noCluster" # used for short anchors
+  match_kmers_to_clusters: src/process_seqs/id_kmers_per_cluster.R
+  prepare_sequences: src/process_seqs/process_fastqs_for_embedding_and_ohe.R
+  prepare_sequences_single_cell: src/process_seqs/process_splash_data_for_embedding.R
+  decompose_kmers: src/process_seqs/kmer_decomposition.py
+  translate_script: src/process_seqs/translate_kmers_by_cluster.R
+  extract_embeddings: src/esm_utils/extract_embeddings_from_torch_objects.py
+  embed_kmers_hyena: src/hyena_utils/embed_fasta_H100.sh
+  hyena_kmer_embedder: src/hyena_utils/dev_embedder.py
+  format_embeddings_variance: src/glmnet/grab_top_embeddings_by_variance.R
+  format_embeddings_pca: src/glmnet/perform_PCA_on_embeddings.R
+  format_sequences_ohe: src/process_seqs/one_hot_encode_anchor_clusters.R
+  adelie: src/glmnet/run_adelie.py
+  genome_to_sample_sequences: src/process_genomes/sample_sequences_from_genomes.R
+  format_embeddings_genomes: src/process_genomes/grab_overlapping_features.R
+  glmnet_genomes_script: src/glmnet/run_adelie_genomes.py
+  annotate_clusters: src/annotation/annotate_with_lookup_table.py
+  merge_annotations: src/annotation/merge_coefs_with_annotations.R
+  run_blast: src/annotation/blast_code/run_blast.sh
+  run_blastp: src/annotation/blast_code/run_blastp.sh
+  merge_blast_results: src/annotation/merge_coefs_with_blast.R
+  plot_blast_results: src/annotation/blast_code/plot_blast_annotations_each_feature.R
+  plot_blast_heatmaps: src/annotation/blast_code/plot_nonzero_features_heatmap.R
+  plot_embeddings_umap: src/umap/plot_embeddings_umap.R

@@ -95,18 +95,37 @@ if (str_detect(opt$blast_annotations, "blastp|swissprot")) {
   align_cluster <- function(aa_dt) {
     aa_dt_filtered <- aa_dt %>%
       mutate(translated_sequence = str_remove(translated_sequence, "\\*.+$")) %>%
-      filter(nchar(translated_sequence) > 5)
+      filter(!is.na(translated_sequence), nchar(translated_sequence) > 5)
+
     if (nrow(aa_dt_filtered) == 0) {
-      return(aa_dt %>% select(-translated_sequence) %>% mutate(aligned_sequence = NA))
+      return(aa_dt %>%
+              select(-translated_sequence) %>%
+              mutate(aligned_sequence = NA_character_))
     } else if (nrow(aa_dt_filtered) == 1) {
-      return(aa_dt_filtered %>% rename(aligned_sequence = translated_sequence))
+      return(aa_dt_filtered %>%
+              transmute(query = query, aligned_sequence = translated_sequence))
     }
-    aas <- Biostrings::AAStringSet(aa_dt_filtered$translated_sequence %>% str_remove("\\*.+$"))
+
+    aas <- Biostrings::AAStringSet(aa_dt_filtered$translated_sequence)
     names(aas) <- aa_dt_filtered$query
-    aligned <- msa::msa(aas, order = "input")
+
+    aligned <- tryCatch(
+      msa::msa(aas, order = "input"),
+      error = function(e) {
+        message("Skipping amino-acid MSA for cluster ",
+                aa_dt_filtered$cluster[[1]],
+                " because msa failed: ", conditionMessage(e))
+        return(NULL)
+      }
+    )
+
+    if (is.null(aligned)) {
+      return(aa_dt_filtered %>%
+              transmute(query = query, aligned_sequence = translated_sequence))
+    }
+
     aligned <- Biostrings::AAStringSet(aligned)
-    aligned_seqs <- data.frame(query = names(aligned), aligned_sequence = aligned)
-    return(aligned_seqs)
+    data.frame(query = names(aligned), aligned_sequence = as.character(aligned))
   }
 
   aa_aligned <- map(aa_temps, align_cluster)
