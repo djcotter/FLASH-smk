@@ -14,6 +14,24 @@ MAX_RETRIES = 100
 REQUEST_DELAY = 4  # Delay in seconds between requests
 INITIAL_DELAY_RANGE = (0.1, 8)  # Range for initial random delay
 
+BLAST_FEATURE_COLUMNS = [
+    "query",
+    "identity",
+    "evalue",
+    "qcovs",
+    "features",
+    "features_10000_window",
+]
+
+
+def blast_feature_columns(window):
+    columns = BLAST_FEATURE_COLUMNS.copy()
+    window_col = f"features_{window}_window"
+    if window_col != "features_10000_window":
+        columns[-1] = window_col
+    return columns
+
+
 def load_cache(cache_file):
     """Load cached records from a file."""
     if os.path.exists(cache_file):
@@ -143,7 +161,10 @@ def process_blast_file(blast_out, blast_feat_out, blast_window, sacc_records):
         df_features.to_csv(blast_feat_out, index=None, sep="\t")
         print(f"Featurize blast output complete for {blast_out}. Output file: {blast_feat_out}")
     else:
-        print(f"Featurize blast output failed for {blast_out}. File was empty.")
+        pd.DataFrame(columns=blast_feature_columns(blast_window)).to_csv(
+            blast_feat_out, index=None, sep="\t"
+        )
+        print(f"BLAST output {blast_out} was empty. Wrote header-only feature file: {blast_feat_out}")
     
 
 if __name__ == "__main__":
@@ -184,6 +205,9 @@ if __name__ == "__main__":
 
     # Concatenate all .blastfeatout.tsv files into the output file
     all_feat_outs = [pd.read_csv(join(blast_folder, f), sep="\t") for f in os.listdir(blast_folder) if f.endswith(".blastfeatout.tsv")]
-    concatenated_df = pd.concat(all_feat_outs, ignore_index=True)
+    if all_feat_outs:
+        concatenated_df = pd.concat(all_feat_outs, ignore_index=True)
+    else:
+        concatenated_df = pd.DataFrame(columns=blast_feature_columns(blast_window))
     concatenated_df.to_csv(output_file, index=None, sep="\t")
     print(f"All .blastfeatout.tsv files have been concatenated into {output_file}")

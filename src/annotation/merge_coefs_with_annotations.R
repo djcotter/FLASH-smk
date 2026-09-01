@@ -38,13 +38,22 @@ coefficients <- coefficients %>% mutate(cluster = str_extract(feature, "(^.*clus
 
 # because we have run grouped elastic net there will be multiple rows per cluster. We want to keep the one with the highest absolute coefficient
 get_max_coef <- function(coef_string) {
-  coefs <- as.numeric(strsplit(gsub("\\[|\\]", "", coef_string), split = ",", fixed = TRUE)[[1]])
+  coef_string <- as.character(coef_string)
+  if (length(coef_string) == 0 || is.na(coef_string) || !nzchar(coef_string)) {
+    return(NA_real_)
+  }
+  coef_string <- gsub("\\[|\\]|c\\(|\\)", "", coef_string)
+  coefs <- suppressWarnings(as.numeric(unlist(strsplit(coef_string, "[,;[:space:]]+"))))
+  coefs <- coefs[is.finite(coefs)]
+  if (length(coefs) == 0) {
+    return(NA_real_)
+  }
   return(max(abs(coefs)))
 }
 
 coefficients <- coefficients %>%
   rowwise() %>%
-  mutate(max_coef = get_max_coef(coefficients)) %>%
+  mutate(max_coef = get_max_coef(.data$coefficients)) %>%
   arrange(metadata_category, cluster, -max_coef) %>%
   group_by(metadata_category, cluster) %>%
   dplyr::slice(1) %>%
@@ -69,8 +78,7 @@ if (!opt$noFasta) {
     # get fasta of all nonzero_seqeunces 
     sig_seqs <- merged_data %>% filter(!grepl("rcept", feature)) %>% 
       rowwise() %>% 
-      mutate(max_coef=max(abs(as.numeric(
-        strsplit(gsub("\\[|\\]", "", coefficients), split=",", fixed=TRUE)[[1]])))) %>% 
+      mutate(max_coef = get_max_coef(.data$coefficients)) %>% 
       group_by(metadata_category) %>% ungroup() %>% select(cluster, anno) %>% 
       distinct(cluster, .keep_all = T) %>% 
       mutate(seqs = sapply(str_extract_all(anno, "[ACTGN]{30,70}"), \(x) toString(unique(x)))) %>% 

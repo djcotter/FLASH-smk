@@ -33,6 +33,7 @@ options:
    recode_missing: false # set to true to recode missing values to 0 after processing the embeddings by either method (i.e. top variance or pca) prior to glmnet modeling. # This circumvents the problem where the NNNN embedding can be a large outlier.
   grouped_model: true # set to true to use cluster groups for glmnet modeling instead of individual embeddings or PCs
   generate_plots: false # set to true to generate plots after model training
+  minimal_blast: false # set to true to BLAST only sequences from clusters that will appear in BLAST plots
   num_clusters: 2000 # number of clusters to use for clustering anchors
   filters: ["filter1"] # define which anchor selection filters to use
   cluster_types: ["noCluster"] # define which clustering methods to use # see scripts section for available options
@@ -60,6 +61,7 @@ extended_options:
     by_pca: 5 # number of principal components to keep for GLMnet
     umap: 1 # number of top variance embedding features to keep for UMAP
   num_PCs_umap: 10 # number of principal components to use for UMAP plotting
+  num_blast_plot_hits: 10 # number of top coefficient clusters per metadata category shown in BLAST plots
   adelie_alpha: 1 # alpha parameter for elastic net regularization in adelie (0 = ridge, 1 = lasso)
 
 

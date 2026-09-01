@@ -41,23 +41,56 @@ plan(multisession, workers=opt$max_workers)
 # Read in the data
 blast_files <- list.files(path=opt$blast_folder, pattern="blastout.tsv", full.names = T)
 
-blast_dfs <- future_map(blast_files, \(x) ifelse(ncol(fread(x, sep="\t", nrow=5)) == 19, return(fread(x, sep="\t", col.names = c("query", "subject", "identity", "alignment_length", 
-                                                   "mismatches", "gap_opens", "q_start", "q_end",
-                                                   "s_start", "s_end", "sstrand", "evalue", "qcovs", "qframe",
-                                                   "sgi", "sacc", "slen", "staxids", "stitle"))),
-                                                 return(fread(x, sep="\t", col.names = c("query", "subject", "identity", "alignment_length", 
-                                                                        "mismatches", "gap_opens", "q_start", "q_end",
-                                                                        "s_start", "s_end", "sstrand", "evalue", "qcovs",
-                                                                        "sgi", "sacc", "slen", "staxids", "stitle")) %>% mutate(qframe="-"))))
+empty_blastp_df <- function() {
+  tibble(query=character(), subject=character(), identity=numeric(),
+         alignment_length=numeric(), mismatches=numeric(), gap_opens=numeric(),
+         q_start=numeric(), q_end=numeric(), s_start=numeric(), s_end=numeric(),
+         sstrand=character(), evalue=numeric(), qcovs=numeric(), qframe=character(),
+         sgi=character(), sacc=character(), slen=numeric(), staxids=character(),
+         stitle=character())
+}
+
+read_blastp_file <- function(file) {
+  if (!file.exists(file) || file.info(file)$size == 0) {
+    return(empty_blastp_df())
+  }
+  preview <- tryCatch(fread(file, sep="\t", nrow=5), error=function(e) NULL)
+  if (is.null(preview) || ncol(preview) == 0) {
+    return(empty_blastp_df())
+  }
+  if (ncol(preview) == 19) {
+    return(fread(file, sep="\t", col.names = c("query", "subject", "identity", "alignment_length",
+                                               "mismatches", "gap_opens", "q_start", "q_end",
+                                               "s_start", "s_end", "sstrand", "evalue", "qcovs", "qframe",
+                                               "sgi", "sacc", "slen", "staxids", "stitle")))
+  }
+  fread(file, sep="\t", col.names = c("query", "subject", "identity", "alignment_length",
+                                      "mismatches", "gap_opens", "q_start", "q_end",
+                                      "s_start", "s_end", "sstrand", "evalue", "qcovs",
+                                      "sgi", "sacc", "slen", "staxids", "stitle")) %>%
+    mutate(qframe="-")
+}
+
+blast_dfs <- future_map(blast_files, read_blastp_file)
 
 # remove any data frames that had no data 
-valid_blast_dfs <- map_vec(blast_dfs, \(x) nrow(x)>1)
+valid_blast_dfs <- map_vec(blast_dfs, \(x) nrow(x)>0)
 blast_files <- blast_files[valid_blast_dfs]
 blast_dfs <- blast_dfs[valid_blast_dfs]
 
 df_lengths <- map(blast_dfs, \(x) nrow(x)) %>% unlist()
 
-if (mean(df_lengths) > 350) {
+if (length(df_lengths) == 0) {
+  empty_blastp_df() %>%
+    mutate(NCBI_protein_accession=character(), UniProt_accession=character(),
+           method=character(), GO=character()) %>%
+    select(query, identity, evalue, qcovs, qframe, staxids, stitle,
+           NCBI_protein_accession, UniProt_accession, method, GO) %>%
+    write_tsv(opt$output_file, col_names = T, quote="needed")
+  quit(save="no", status=0)
+}
+
+if (mean(as.numeric(df_lengths), na.rm=TRUE) > 350) {
   plan(multisession, workers=4)
 }
 

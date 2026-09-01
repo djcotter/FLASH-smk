@@ -106,6 +106,10 @@ genome_files <- genome_files %>%
     genome_dump = file.path(temp_dir, "dumped", paste0(genome_name, ".satc.dump"))
   )
 
+cat("Genome files selected for processing: ", nrow(genome_files), "\n")
+if (nrow(genome_files) == 0) {
+  stop("No genome files matched --genome_list. Check sample IDs, file basenames, and genome_files path.")
+}
 
 system(paste("mkdir -p", file.path(temp_dir, "capitalized")))
 system(paste("mkdir -p", file.path(temp_dir, "oneline")))
@@ -189,19 +193,34 @@ wide_satc <- as.data.table(wide_satc)
 wide_satc <- wide_satc[order(cluster_id, rank)]
 wide_satc <- unique(wide_satc, by = c("sample", "cluster_id"))
 
-missing_sample <- anchor_clusters %>%
+representative_anchor_dt <- anchor_clusters %>%
   arrange(cluster_id, rank) %>%
   distinct(cluster_id, .keep_all = T) %>%
+  select(cluster_id, anchor, rank)
+
+missing_sample <- representative_anchor_dt %>%
   mutate(sample = "NULLSAMPLE") %>%
-  mutate(target = "NNNN") %>%
+  mutate(target = strrep("N", opt$target_len)) %>%
   mutate(count = 1)
 
-wide_satc <- rbind(wide_satc, missing_sample)
+requested_missing_samples <- tidyr::crossing(
+  sample = unique(genome_files$genome_name),
+  representative_anchor_dt
+) %>%
+  mutate(target = strrep("N", opt$target_len)) %>%
+  mutate(count = 0)
+
+wide_satc <- bind_rows(as_tibble(wide_satc), missing_sample, requested_missing_samples) %>%
+  mutate(is_missing_placeholder = count == 0) %>%
+  arrange(sample, cluster_id, is_missing_placeholder, rank) %>%
+  distinct(sample, cluster_id, .keep_all = TRUE) %>%
+  select(-is_missing_placeholder)
 
 wide_satc <- wide_satc %>%
   mutate(seq = str_c(anchor, target, sep = "")) %>%
   select(sample, cluster_id, seq)
 
+wide_satc <- as.data.table(wide_satc)
 wide_satc <- dcast(wide_satc, sample ~ cluster_id, value.var = "seq")
 wide_satc <- as.data.frame(wide_satc)
 
@@ -308,7 +327,7 @@ wide_satc <- base::cbind(
   map2_df(
     wide_satc[, 2:ncol(wide_satc)],
     1:length(representative_anchors),
-    \(x, y) ifelse(is.na(x), str_c(representative_anchors[y], strrep("N", 27), sep = ""), x)
+    \(x, y) ifelse(is.na(x), str_c(representative_anchors[y], strrep("N", opt$target_len), sep = ""), x)
   )
 )
 wide_satc <- wide_satc %>% ungroup()

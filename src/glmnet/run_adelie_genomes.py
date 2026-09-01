@@ -13,6 +13,7 @@ import pyarrow.feather as feather
 import pandas as pd
 
 import argparse
+from pathlib import Path
 
 np.random.seed(42)
 
@@ -52,7 +53,7 @@ def parse_args():
     parser.add_argument(
         "--min_samples",
         type=int,
-        default=100,
+        default=28,
         help="Minimum number of samples per category to keep",
     )
     parser.add_argument(
@@ -99,9 +100,16 @@ def read_feather_data(file_path):
     return feather.read_feather(file_path)
 
 
+def get_metadata_delimiter(file_path):
+    suffix = Path(file_path).suffix.lower()
+    if suffix == ".csv":
+        return ","
+    return "\t"
+
+
 def read_metadata(file_path):
     # Read all metadata columns as strings to avoid dtype mismatches later
-    metadata = pd.read_table(file_path, dtype=str)
+    metadata = pd.read_csv(file_path, sep=get_metadata_delimiter(file_path), dtype=str)
     if "sample_name" not in metadata.columns:
         raise ValueError("Metadata file must contain a sample_name column")
     # Ensure all columns are strings (defensive)
@@ -235,11 +243,28 @@ def train_adelie_model(
     return model, oh
 
 
+def append_confusion_matrix_rows(rows, metadata_col, matrix_name, cm, labels):
+    labels = list(map(str, labels))
+    for i, true_label in enumerate(labels):
+        for j, predicted_label in enumerate(labels):
+            count = int(cm[i, j]) if i < cm.shape[0] and j < cm.shape[1] else 0
+            rows.append(
+                {
+                    "metadata_category": metadata_col,
+                    "matrix": matrix_name,
+                    "true_label": true_label,
+                    "predicted_label": predicted_label,
+                    "n_samples": count,
+                }
+            )
+
+
 def main():
     args = parse_args()
     output_prefix = args.output_prefix
     output_pdf = output_prefix + "_confusion_matrices.pdf"
     output_coef = output_prefix + "_nonzero_coefficients.tsv"
+    output_confusion_tsv = output_prefix + "_confusion_matrices.tsv"
 
     train_features = read_feather_data(args.train_features)
     train_metadata = read_metadata(args.train_metadata)
@@ -255,6 +280,7 @@ def main():
     ]
 
     all_model_features = None
+    confusion_matrix_rows = []
 
     with PdfPages(output_pdf) as pdf:
         for metadata_col in metadata_columns:
@@ -349,6 +375,21 @@ def main():
             cm_train = confusion_matrix(y_train, y_train_pred, labels=oh.categories_[0])
             print(f"Train confusion matrix for {metadata_col}")
             print(cm_train)
+
+            append_confusion_matrix_rows(
+                confusion_matrix_rows,
+                metadata_col,
+                "test",
+                cm,
+                oh.categories_[0],
+            )
+            append_confusion_matrix_rows(
+                confusion_matrix_rows,
+                metadata_col,
+                "train",
+                cm_train,
+                oh.categories_[0],
+            )
 
             # Extract coefficients
             coef = model.coef_
@@ -492,6 +533,17 @@ def main():
             all_model_features.to_csv(
                 output_coef, sep="\t", index=False, float_format="%.4f"
             )
+
+    pd.DataFrame(
+        confusion_matrix_rows,
+        columns=[
+            "metadata_category",
+            "matrix",
+            "true_label",
+            "predicted_label",
+            "n_samples",
+        ],
+    ).to_csv(output_confusion_tsv, sep="\t", index=False)
 
 
 if __name__ == "__main__":

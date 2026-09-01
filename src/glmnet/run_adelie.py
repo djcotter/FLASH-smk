@@ -18,6 +18,7 @@ from math import floor
 
 # from os.path import basename
 import argparse
+from pathlib import Path
 
 np.random.seed(42)
 
@@ -88,8 +89,15 @@ def read_feather_data(file_path):
     return feather.read_feather(file_path)
 
 
+def get_metadata_delimiter(file_path):
+    suffix = Path(file_path).suffix.lower()
+    if suffix == ".csv":
+        return ","
+    return "\t"
+
+
 def read_metadata(file_path):
-    metadata = pd.read_table(file_path)
+    metadata = pd.read_csv(file_path, sep=get_metadata_delimiter(file_path))
     if "sample_name" not in metadata.columns:
         raise ValueError("Metadata file must contain a sample_name column")
     # mutate all columns to strings for categorical analysis
@@ -269,11 +277,28 @@ def train_adelie_model(
     return model, oh
 
 
+def append_confusion_matrix_rows(rows, metadata_col, matrix_name, cm, labels):
+    labels = list(map(str, labels))
+    for i, true_label in enumerate(labels):
+        for j, predicted_label in enumerate(labels):
+            count = int(cm[i, j]) if i < cm.shape[0] and j < cm.shape[1] else 0
+            rows.append(
+                {
+                    "metadata_category": metadata_col,
+                    "matrix": matrix_name,
+                    "true_label": true_label,
+                    "predicted_label": predicted_label,
+                    "n_samples": count,
+                }
+            )
+
+
 def main():
     args = parse_args()
     output_prefix = args.output_prefix
     output_pdf = output_prefix + "_confusion_matrices.pdf"
     output_coef = output_prefix + "_nonzero_coefficients.tsv"
+    output_confusion_tsv = output_prefix + "_confusion_matrices.tsv"
 
     # Load teh data and metadata
     data = read_feather_data(args.data)
@@ -283,6 +308,7 @@ def main():
     metadata_columns = get_metadata_columns(metadata, min_samples=args.min_samples)
 
     all_model_features = None
+    confusion_matrix_rows = []
 
     # Iterate over the metadata columns
     with PdfPages(output_pdf) as pdf:
@@ -407,10 +433,26 @@ def main():
                     train_accuracy = 0
                     continue
 
+            metadata_categories = oh.categories_[0]
+            if args.train_prop < 1:
+                append_confusion_matrix_rows(
+                    confusion_matrix_rows,
+                    metadata_col,
+                    "test",
+                    cm,
+                    metadata_categories,
+                )
+            append_confusion_matrix_rows(
+                confusion_matrix_rows,
+                metadata_col,
+                "train",
+                cm_train,
+                metadata_categories,
+            )
+
             # extract the nonzero coefficients
             coef = model.coef_
             # get the feature names for the nonzero coefficients
-            metadata_categories = oh.categories_[0]
             model_features = [
                 f"{feature}+{category}"
                 for feature in model_features
@@ -604,6 +646,17 @@ def main():
             all_model_features.to_csv(
                 output_coef, sep="\t", index=False, float_format="%.4f"
             )
+
+    pd.DataFrame(
+        confusion_matrix_rows,
+        columns=[
+            "metadata_category",
+            "matrix",
+            "true_label",
+            "predicted_label",
+            "n_samples",
+        ],
+    ).to_csv(output_confusion_tsv, sep="\t", index=False)
 
 
 if __name__ == "__main__":
