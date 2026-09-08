@@ -4,6 +4,7 @@ import time
 import argparse
 import sys
 import os
+import re
 from os.path import join, basename
 from concurrent.futures import ThreadPoolExecutor
 from math import floor
@@ -14,23 +15,66 @@ MAX_RETRIES = 100
 REQUEST_DELAY = 4  # Delay in seconds between requests
 INITIAL_DELAY_RANGE = (0.1, 8)  # Range for initial random delay
 
-BLAST_FEATURE_COLUMNS = [
-    "query",
-    "identity",
-    "evalue",
-    "qcovs",
+
+def species_from_stitle(value):
+    """Extract the trailing bracketed organism name from an NCBI BLAST title."""
+    if pd.isna(value):
+        return None
+    matches = re.findall(r"\[([^\]]+)\]", str(value))
+    return matches[-1].strip() if matches else None
+
+
+def clean_species_name(value):
+    if pd.isna(value):
+        return None
+    value = str(value).strip()
+    if not value or value.upper() in {"NA", "N/A", "NONE", "NAN"}:
+        return None
+    return value
+
+
+def species_from_blast_fields(row):
+    return clean_species_name(row.get("sscinames")) or species_from_stitle(row.get("stitle"))
+
+
+BLASTN_COLUMNS = [
+    "query", "subject", "identity", "alignment_length", "mismatches", "gap_opens",
+    "q_start", "q_end", "s_start", "s_end", "sstrand", "evalue", "qcovs", "sgi",
+    "sacc", "slen", "staxids", "sscinames", "stitle",
+]
+BLASTN_COLUMNS_LEGACY = [
+    "query", "subject", "identity", "alignment_length", "mismatches", "gap_opens",
+    "q_start", "q_end", "s_start", "s_end", "sstrand", "evalue", "qcovs", "sgi",
+    "sacc", "slen", "staxids", "stitle",
+]
+BLAST_FEATURE_COLUMNS = BLASTN_COLUMNS[:13] + [
+    "qframe",
+] + BLASTN_COLUMNS[13:] + [
+    "species_origin",
+    "NCBI_protein_accession",
+    "UniProt_accession",
+    "method",
+    "GO",
     "features",
     "features_10000_window",
+    "features_all",
+    "blast_mode",
 ]
 
 
-def blast_feature_columns(window):
-    columns = BLAST_FEATURE_COLUMNS.copy()
-    window_col = f"features_{window}_window"
-    if window_col != "features_10000_window":
-        columns[-1] = window_col
-    return columns
-
+def read_blastn_output(path):
+    df = pd.read_csv(path, sep="\t", header=None)
+    if df.shape[1] == len(BLASTN_COLUMNS):
+        df.columns = BLASTN_COLUMNS
+    elif df.shape[1] == len(BLASTN_COLUMNS_LEGACY):
+        df.columns = BLASTN_COLUMNS_LEGACY
+        df["sscinames"] = None
+    else:
+        raise ValueError(
+            f"Unexpected BLASTN column count in {path}: {df.shape[1]} "
+            f"(expected {len(BLASTN_COLUMNS)} with sscinames or {len(BLASTN_COLUMNS_LEGACY)} legacy columns)"
+        )
+    return df
 
 def load_cache(cache_file):
     """Load cached records from a file."""
@@ -51,10 +95,7 @@ def extract_unique_accessions(blast_folder):
     
     for blast_out in blast_outs:
         try:
-            df = pd.read_csv(blast_out, sep="\t", header=None)
-            df.columns = ["query", "subject", "identity", "alignment_length", "mismatches", "gap_opens",
-                      "q_start", "q_end", "s_start", "s_end", "sstrand", "evalue", "qcovs", "sgi",
-                      "sacc", "slen", "staxids", "stitle"]
+            df = read_blastn_output(blast_out)
             unique_accessions.update(df["sacc"].unique())
         except pd.errors.EmptyDataError:
             print(f"File {blast_out} is empty. Skipping...")
@@ -129,10 +170,8 @@ def find_overlapping_features(record, window_start, window_end, strand):
     return overlapping_features
 
 def featurize_blast_out(blast_out, window, sacc_records):
-    df = pd.read_csv(blast_out, sep="\t", header=None)
-    df.columns = ["query", "subject", "identity", "alignment_length", "mismatches", "gap_opens",
-                  "q_start", "q_end", "s_start", "s_end", "sstrand", "evalue", "qcovs", "sgi",
-                  "sacc", "slen", "staxids", "stitle"]
+    df = read_blastn_output(blast_out)
+    df["species_origin"] = df.apply(species_from_blast_fields, axis=1)
     df["features"] = None
     df[f"features_{window}_window"] = None
 
@@ -150,20 +189,58 @@ def featurize_blast_out(blast_out, window, sacc_records):
         features = find_overlapping_features(record, window_start, window_end, strand)
         df.at[index, f"features_{window}_window"] = features
     
-    return df[["query", "identity", "evalue", "qcovs", "features", f"features_{window}_window"]]
+    df["qframe"] = None
+    df["NCBI_protein_accession"] = None
+    df["UniProt_accession"] = None
+    df["method"] = None
+    df["GO"] = None
+    df["features_all"] = df["features"]
+    df["blast_mode"] = "blastn"
+    columns = BLAST_FEATURE_COLUMNS.copy()
+    window_col = f"features_{window}_window"
+    if window_col != "features_10000_window":
+        columns[columns.index("features_10000_window")] = window_col
+    return df[columns]
+
+
+def featurized_output_is_current(blast_feat_out, blast_window):
+    required_columns = {
+        "query",
+        "subject",
+        *BLASTN_COLUMNS,
+        "qframe",
+        "species_origin",
+        "NCBI_protein_accession",
+        "UniProt_accession",
+        "method",
+        "GO",
+        "features",
+        f"features_{blast_window}_window",
+        "features_all",
+        "blast_mode",
+    }
+    try:
+        header = pd.read_csv(blast_feat_out, sep="\t", nrows=0)
+    except Exception:
+        return False
+    return required_columns.issubset(set(header.columns))
 
 def process_blast_file(blast_out, blast_feat_out, blast_window, sacc_records):
     if os.path.exists(blast_feat_out) and os.path.getsize(blast_feat_out) > 0:
-        print(f"Output file {blast_feat_out} exists and has data. Skipping.")
-        return
+        if featurized_output_is_current(blast_feat_out, blast_window):
+            print(f"Output file {blast_feat_out} exists and has origin metadata. Skipping.")
+            return
+        print(f"Output file {blast_feat_out} is missing origin metadata. Regenerating.")
     if os.path.getsize(blast_out) > 0:
         df_features = featurize_blast_out(blast_out, blast_window, sacc_records)
         df_features.to_csv(blast_feat_out, index=None, sep="\t")
         print(f"Featurize blast output complete for {blast_out}. Output file: {blast_feat_out}")
     else:
-        pd.DataFrame(columns=blast_feature_columns(blast_window)).to_csv(
-            blast_feat_out, index=None, sep="\t"
-        )
+        columns = BLAST_FEATURE_COLUMNS.copy()
+        window_col = f"features_{blast_window}_window"
+        if window_col != "features_10000_window":
+            columns[columns.index("features_10000_window")] = window_col
+        pd.DataFrame(columns=columns).to_csv(blast_feat_out, index=None, sep="\t")
         print(f"BLAST output {blast_out} was empty. Wrote header-only feature file: {blast_feat_out}")
     
 
@@ -208,6 +285,10 @@ if __name__ == "__main__":
     if all_feat_outs:
         concatenated_df = pd.concat(all_feat_outs, ignore_index=True)
     else:
-        concatenated_df = pd.DataFrame(columns=blast_feature_columns(blast_window))
+        columns = BLAST_FEATURE_COLUMNS.copy()
+        window_col = f"features_{blast_window}_window"
+        if window_col != "features_10000_window":
+            columns[columns.index("features_10000_window")] = window_col
+        concatenated_df = pd.DataFrame(columns=columns)
     concatenated_df.to_csv(output_file, index=None, sep="\t")
     print(f"All .blastfeatout.tsv files have been concatenated into {output_file}")

@@ -149,7 +149,7 @@ def split_fasta(fasta_file, output_dir, num_seq=1):
 
 
 def run_blast(splitted_fasta, blast_folder, max_workers, taxid, local_blast_db=""):
-    fmt = "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send sstrand evalue qcovs sgi sacc slen staxids stitle"
+    fmt = "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send sstrand evalue qcovs sgi sacc slen staxids sscinames stitle"
     taxid = format_taxids(taxid)
     if local_blast_db:
         remote_flag = ""

@@ -101,20 +101,98 @@ def read_feather_data(file_path):
 
 
 def get_metadata_delimiter(file_path):
-    suffix = Path(file_path).suffix.lower()
+    suffixes = [suffix.lower() for suffix in Path(file_path).suffixes]
+    if suffixes and suffixes[-1] in {".gz", ".bz2", ".xz", ".zip"}:
+        suffixes = suffixes[:-1]
+    suffix = suffixes[-1] if suffixes else ""
     if suffix == ".csv":
         return ","
-    return "\t"
+    if suffix in {".tsv", ".tab", ".txt"}:
+        return "	"
+    raise ValueError(
+        f"Unsupported metadata suffix for {file_path}. "
+        "Use .csv, .tsv, .tab, or .txt, optionally with compression."
+    )
 
 
 def read_metadata(file_path):
     # Read all metadata columns as strings to avoid dtype mismatches later
     metadata = pd.read_csv(file_path, sep=get_metadata_delimiter(file_path), dtype=str)
     if "sample_name" not in metadata.columns:
-        raise ValueError("Metadata file must contain a sample_name column")
+        raise ValueError(
+            f"Metadata file {file_path} must contain a sample_name column; "
+            f"detected columns: {list(metadata.columns)}"
+        )
     # Ensure all columns are strings (defensive)
     metadata = metadata.astype(str)
     return metadata
+
+
+def append_confusion_log_rows(
+    rows,
+    raw_metadata,
+    metadata_col,
+    matrix_name,
+    y_true,
+    y_pred,
+    sample_names,
+    labels=None,
+):
+    if sample_names is None:
+        return
+
+    raw_lookup = raw_metadata.set_index("sample_name", drop=False)
+    rows.append(
+        {
+            "row_type": "confusion_table",
+            "metadata_category": metadata_col,
+            "matrix": matrix_name,
+            "true_label": "",
+            "predicted_label": "",
+            "n_samples": len(sample_names),
+        }
+    )
+
+    y_true = np.asarray(y_true).astype(str)
+    y_pred = np.asarray(y_pred).astype(str)
+    sample_names = np.asarray(sample_names).astype(str)
+    if labels is None:
+        labels = sorted(set(y_true) | set(y_pred))
+    else:
+        labels = [str(label) for label in labels]
+
+    for true_label in labels:
+        for predicted_label in labels:
+            entry_mask = (y_true == true_label) & (y_pred == predicted_label)
+            entry_samples = sample_names[entry_mask]
+            rows.append(
+                {
+                    "row_type": "entry",
+                    "metadata_category": metadata_col,
+                    "matrix": matrix_name,
+                    "true_label": true_label,
+                    "predicted_label": predicted_label,
+                    "n_samples": len(entry_samples),
+                }
+            )
+
+            for sample_name in entry_samples:
+                sample_row = {
+                    "row_type": "sample",
+                    "metadata_category": metadata_col,
+                    "matrix": matrix_name,
+                    "true_label": true_label,
+                    "predicted_label": predicted_label,
+                    "n_samples": "",
+                }
+                if sample_name in raw_lookup.index:
+                    raw_row = raw_lookup.loc[sample_name]
+                    if isinstance(raw_row, pd.DataFrame):
+                        raw_row = raw_row.iloc[0]
+                    sample_row.update(raw_row.to_dict())
+                else:
+                    sample_row["sample_name"] = sample_name
+                rows.append(sample_row)
 
 
 def get_metadata_columns(metadata, min_samples=50):
@@ -161,10 +239,9 @@ def merge_data(data, metadata, metadata_col, min_samples=50, even_samples=False)
     classes_to_keep = classes_to_keep[classes_to_keep != "nan"]
 
     if len(classes_to_keep) == 0:
-        return None, None, None
+        return None, None, None, None
     if len(classes_to_keep) < 2 and min_samples != 0:
-        print("This logic is true")
-        return None, None, None
+        return None, None, None, None
 
     merged_data = merged_data[merged_data[metadata_col].isin(classes_to_keep)]
 
@@ -182,7 +259,13 @@ def merge_data(data, metadata, metadata_col, min_samples=50, even_samples=False)
 
     X = merged_data.drop(["sample_name", metadata_col], axis=1)
     y = merged_data[metadata_col].to_numpy()
-    return np.asfortranarray(X), y, X.columns
+    sample_names = merged_data["sample_name"].to_numpy()
+    return (
+        np.asfortranarray(np.asarray(X, dtype=np.float64)),
+        y,
+        X.columns,
+        sample_names,
+    )
 
 
 def get_group_ids(column_names):
@@ -205,6 +288,38 @@ def get_group_ids(column_names):
             current_group = group
 
     return np.array(group_ids, dtype=np.int32)
+
+
+def remove_zero_variance_groups(X_train, X_test, column_names):
+    """Remove feature groups that are constant across the training genomes."""
+    X_train = np.asarray(X_train, dtype=np.float64)
+    column_names = pd.Index(column_names)
+    group_starts = get_group_ids(column_names)
+    group_ends = np.append(group_starts[1:], X_train.shape[1])
+    keep_columns = np.zeros(X_train.shape[1], dtype=bool)
+
+    for start, end in zip(group_starts, group_ends):
+        group = X_train[:, start:end]
+        if not np.isfinite(group).all() or np.any(np.var(group, axis=0) > 0):
+            keep_columns[start:end] = True
+
+    if not keep_columns.any():
+        raise ValueError("all feature groups have zero variance in the training data")
+
+    removed_groups = sum(
+        not keep_columns[start:end].any() for start, end in zip(group_starts, group_ends)
+    )
+    if removed_groups:
+        print(f"Removed {removed_groups} zero-variance groups from the training genomes.")
+
+    filtered_test = np.asfortranarray(
+        np.asarray(X_test, dtype=np.float64)[:, keep_columns]
+    )
+    return (
+        np.asfortranarray(X_train[:, keep_columns]),
+        filtered_test,
+        column_names[keep_columns],
+    )
 
 
 def train_adelie_model(
@@ -243,20 +358,17 @@ def train_adelie_model(
     return model, oh
 
 
-def append_confusion_matrix_rows(rows, metadata_col, matrix_name, cm, labels):
-    labels = list(map(str, labels))
-    for i, true_label in enumerate(labels):
-        for j, predicted_label in enumerate(labels):
-            count = int(cm[i, j]) if i < cm.shape[0] and j < cm.shape[1] else 0
-            rows.append(
-                {
-                    "metadata_category": metadata_col,
-                    "matrix": matrix_name,
-                    "true_label": true_label,
-                    "predicted_label": predicted_label,
-                    "n_samples": count,
-                }
-            )
+def flatten_coefficients(coef):
+    if hasattr(coef, "toarray"):
+        return coef.toarray().flatten()
+    return np.asarray(coef).flatten()
+
+
+def normalize_confusion_matrix(cm):
+    """Normalize rows while keeping empty rows at zero."""
+    cm = np.asarray(cm, dtype=np.float64)
+    row_sums = cm.sum(axis=1, keepdims=True)
+    return np.divide(cm, row_sums, out=np.zeros_like(cm), where=row_sums != 0)
 
 
 def main():
@@ -270,6 +382,8 @@ def main():
     train_metadata = read_metadata(args.train_metadata)
     test_features = read_feather_data(args.test_features)
     test_metadata = read_metadata(args.test_metadata)
+    raw_train_metadata = train_metadata.copy()
+    raw_test_metadata = test_metadata.copy()
 
     train_metadata_columns = get_metadata_columns(
         train_metadata, min_samples=args.min_samples
@@ -280,21 +394,21 @@ def main():
     ]
 
     all_model_features = None
-    confusion_matrix_rows = []
+    confusion_log_rows = []
 
     with PdfPages(output_pdf) as pdf:
         for metadata_col in metadata_columns:
             print(f"Processing metadata column: {metadata_col}")
             print()
 
-            X_train, y_train, model_features = merge_data(
+            X_train, y_train, model_features, train_sample_names = merge_data(
                 train_features,
                 train_metadata,
                 metadata_col,
                 min_samples=args.min_samples,
                 even_samples=args.even_samples,
             )
-            X_test, y_test, _ = merge_data(
+            X_test, y_test, _, test_sample_names = merge_data(
                 test_features, test_metadata, metadata_col, min_samples=0
             )
 
@@ -302,6 +416,7 @@ def main():
                 test_classes_to_keep = np.isin(y_test, np.unique(y_train))
                 X_test = X_test[test_classes_to_keep]
                 y_test = y_test[test_classes_to_keep]
+                test_sample_names = test_sample_names[test_classes_to_keep]
 
             if X_train is None or X_test is None:
                 print(
@@ -315,6 +430,14 @@ def main():
 
             # Set group ids based on feature names if --grouped is supplied
             if args.grouped and num_classes < 4:
+                try:
+                    X_train, X_test, model_features = remove_zero_variance_groups(
+                        X_train, X_test, model_features
+                    )
+                except ValueError as e:
+                    print(f"Skipping {metadata_col}: {e}")
+                    print()
+                    continue
                 group_ids = get_group_ids(model_features)
                 print(f"Using grouped elastic net with {len(group_ids)} groups.")
             else:
@@ -340,7 +463,6 @@ def main():
                 continue
 
             # Test predictions
-            print(X_test)
             yhat = model.predict(X_test.astype(np.float64))
             if len(np.unique(yhat)) < 2:
                 print(f"Test predictions for {metadata_col} are all of one class.")
@@ -355,6 +477,16 @@ def main():
                 y_pred = oh.inverse_transform(yhat).flatten()
 
             cm = confusion_matrix(y_test, y_pred, labels=oh.categories_[0])
+            append_confusion_log_rows(
+                confusion_log_rows,
+                raw_test_metadata,
+                metadata_col,
+                "test",
+                y_test,
+                y_pred,
+                test_sample_names,
+                labels=oh.categories_[0],
+            )
             print(f"Test confusion matrix for {metadata_col}")
             print(cm)
 
@@ -373,23 +505,19 @@ def main():
                 y_train_pred = oh.inverse_transform(yhat_train).flatten()
 
             cm_train = confusion_matrix(y_train, y_train_pred, labels=oh.categories_[0])
+            append_confusion_log_rows(
+                confusion_log_rows,
+                raw_train_metadata,
+                metadata_col,
+                "train",
+                y_train,
+                y_train_pred,
+                train_sample_names,
+                labels=oh.categories_[0],
+            )
             print(f"Train confusion matrix for {metadata_col}")
             print(cm_train)
 
-            append_confusion_matrix_rows(
-                confusion_matrix_rows,
-                metadata_col,
-                "test",
-                cm,
-                oh.categories_[0],
-            )
-            append_confusion_matrix_rows(
-                confusion_matrix_rows,
-                metadata_col,
-                "train",
-                cm_train,
-                oh.categories_[0],
-            )
 
             # Extract coefficients
             coef = model.coef_
@@ -403,7 +531,7 @@ def main():
             model_features_df = pd.DataFrame(
                 model_features_expanded, columns=["feature"]
             )
-            model_features_df["coefficient"] = coef.toarray().flatten()
+            model_features_df["coefficient"] = flatten_coefficients(coef)
             model_features_df = model_features_df[model_features_df["coefficient"] != 0]
 
             model_features_df["feature"] = model_features_df["feature"].str.split("+")
@@ -484,7 +612,7 @@ def main():
             # Plot confusion matrix
             plt.figure()
             plt.imshow(
-                cm / cm.sum(axis=1)[:, np.newaxis], cmap="viridis", vmin=0, vmax=1
+                normalize_confusion_matrix(cm), cmap="viridis", vmin=0, vmax=1
             )
             plt.colorbar()
             for i in range(cm.shape[0]):
@@ -534,16 +662,23 @@ def main():
                 output_coef, sep="\t", index=False, float_format="%.4f"
             )
 
-    pd.DataFrame(
-        confusion_matrix_rows,
-        columns=[
-            "metadata_category",
-            "matrix",
-            "true_label",
-            "predicted_label",
-            "n_samples",
-        ],
-    ).to_csv(output_confusion_tsv, sep="\t", index=False)
+    log_columns = [
+        "row_type",
+        "metadata_category",
+        "matrix",
+        "true_label",
+        "predicted_label",
+        "n_samples",
+    ]
+    metadata_columns = list(
+        dict.fromkeys(list(raw_train_metadata.columns) + list(raw_test_metadata.columns))
+    )
+    confusion_log_columns = log_columns + [
+        column for column in metadata_columns if column not in log_columns
+    ]
+    confusion_log = pd.DataFrame(confusion_log_rows)
+    confusion_log = confusion_log.reindex(columns=confusion_log_columns)
+    confusion_log.to_csv(output_confusion_tsv, sep="	", index=False)
 
 
 if __name__ == "__main__":

@@ -157,7 +157,7 @@ def run_blast(
     local_blast_db="",
     protein_db="refseq_protein",
 ):
-    fmt = "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send sstrand evalue qcovs qframe sgi sacc slen staxids stitle"
+    fmt = "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send sstrand evalue qcovs qframe sgi sacc slen staxids sscinames stitle"
     taxid = format_taxids(taxid)
     if local_blast_db:
         remote_flag = ""

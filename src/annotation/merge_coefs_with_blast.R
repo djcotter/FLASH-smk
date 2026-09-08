@@ -35,6 +35,23 @@ if (is.null(opt$blast_annotations) || is.null(opt$coefficients) || is.null(opt$o
   stop("All arguments must be supplied", call. = FALSE)
 }
 
+extract_blast_species <- function(x) {
+  x <- as.character(x)
+  matches <- stringr::str_match_all(x, "\[([^\]]+)\]")
+  vapply(matches, function(m) {
+    if (nrow(m) == 0) {
+      return(NA_character_)
+    }
+    stringr::str_squish(m[nrow(m), 2])
+  }, character(1))
+}
+
+clean_blast_species_field <- function(x) {
+  x <- stringr::str_squish(as.character(x))
+  x[x == "" | toupper(x) %in% c("NA", "N/A", "NONE", "NAN")] <- NA_character_
+  x
+}
+
 ensure_columns <- function(tbl, cols) {
   for (col in cols) {
     if (!col %in% colnames(tbl)) {
@@ -44,16 +61,26 @@ ensure_columns <- function(tbl, cols) {
   tbl
 }
 
+annotation_cols <- c(
+  "query", "subject", "sacc", "identity", "alignment_length", "mismatches",
+  "gap_opens", "q_start", "q_end", "s_start", "s_end", "sstrand", "evalue",
+  "qcovs", "qframe", "sgi", "slen", "staxids", "sscinames", "stitle",
+  "species_origin", "NCBI_protein_accession", "UniProt_accession", "method", "GO",
+  "features", "features_10000_window", "features_all", "blast_mode"
+)
+
 # Read in the data
 annotations <- fread(opt$blast_annotations, header = TRUE, sep = "\t", nThread = 60)
 
 if (str_detect(opt$blast_annotations, "blastp|swissprot")) {
-  blastp_cols <- c("query", "evalue", "identity", "qcovs", "qframe", "stitle",
-                   "NCBI_protein_accession", "UniProt_accession", "method", "GO")
-  annotations <- ensure_columns(annotations, blastp_cols)
+  annotations <- ensure_columns(annotations, annotation_cols)
   annotations <- annotations %>%
-    select(any_of(blastp_cols)) %>%
-    mutate(cluster = str_extract(query, "(^.*cluster_\\d+|\\w+_kmer_\\d+)_", group = 1))
+    select(any_of(annotation_cols), everything()) %>%
+    mutate(blast_mode = coalesce(as.character(blast_mode), "blastx")) %>%
+    mutate(cluster = str_extract(query, "(^.*cluster_\d+|\w+_kmer_\d+)_", group = 1)) %>%
+    mutate(species_origin = coalesce(clean_blast_species_field(species_origin),
+                                     clean_blast_species_field(sscinames),
+                                     extract_blast_species(stitle)))
 
   # we also add on the translated sequence for as a column. The query column contains cluster_X_{Sequence} and the qframe column contains the frame
   # we extract {sequence} and translate it using the qframe
@@ -160,11 +187,14 @@ if (str_detect(opt$blast_annotations, "blastp|swissprot")) {
   # now bind it all together
   annotations <- annotations %>% left_join(sequence_dt, by = c("query", "qframe"))
 } else {
-  blast_cols <- c("query", "evalue", "identity", "qcovs", "features", "features_10000_window")
-  annotations <- ensure_columns(annotations, blast_cols)
+  annotations <- ensure_columns(annotations, annotation_cols)
   annotations <- annotations %>%
-    select(any_of(blast_cols), contains("window")) %>%
-    mutate(cluster = str_extract(query, "(^.*cluster_\\d+|\\w+_kmer_\\d+)_", group = 1))
+    select(any_of(annotation_cols), everything()) %>%
+    mutate(blast_mode = coalesce(as.character(blast_mode), "blastn")) %>%
+    mutate(cluster = str_extract(query, "(^.*cluster_\d+|\w+_kmer_\d+)_", group = 1)) %>%
+    mutate(species_origin = coalesce(clean_blast_species_field(species_origin),
+                                     clean_blast_species_field(sscinames),
+                                     extract_blast_species(stitle)))
 }
 
 
