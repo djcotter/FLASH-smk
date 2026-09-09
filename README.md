@@ -98,30 +98,42 @@ The current wildcards and parameters are defined as follows:
 
 ```{yaml}
 options:
-  seqs_from_raw_data: true # set to true if you want FLASH to assemble it's sequences from raw FASTQ files, false if you want to default from the pre-processed SPLASH results
-  feature_processing_method: "pca" # set to either 'top_variance' or 'pca' for how to process embeddings prior to glmnet. default: 'top_variance'
+  seqs_from_raw_data: true # set to true if starting from raw FASTQ files, false if starting from pre-processed SPLASH results # must set to false if using anchor length shorter than 10 (i.e. 8-mers or 9-mers).
+  feature_processing:
+   method: "top_variance" # set to either 'top_variance' or 'pca' for how to process embeddings prior to glmnet. default: 'top_variance'
+   recode_missing: false # set to true to recode missing values to 0 after processing the embeddings by either method (i.e. top variance or pca) prior to glmnet modeling. # This circumvents the problem where the NNNN embedding can be a large outlier.
+  grouped_model: true # set to true to use cluster groups for glmnet modeling instead of individual embeddings or PCs
   generate_plots: false # set to true to generate plots after model training
+  minimal_blast: false # set to true to BLAST only sequences from clusters that will appear in BLAST plots
   num_clusters: 20000 # number of clusters to use for clustering anchors
   filters: ["filter1"] # define which anchor selection filters to use
-  cluster_types: ["shiftDist-levFilter", "masked-nucleotide-clustered"] # define which clustering methods to use
+  cluster_types: ["shiftDist-levFilter"] # define which clustering methods to use # see scripts section for available options
   models: ["hyena"] # currently only 'hyena' is supported
-  normalize_embeddings: ['normalized', 'unnormalized'] # define whether to use normalized or unnormalized embeddings, this will do both
+  normalize_embeddings: ['normalized'] # define whether to use normalized or unnormalized embeddings (for pca whether to scale/center prior to pca)
   train_proportion: 0.8 # proportion of samples to use for training GLMnet models
   anchor_length: 27 # this is the length of the anchor in nucleotides, change as needed for different SPLASH runs
   target_length: 27 # this is the length of the target in nucleotides, change as needed for different SPLASH runs
   target_rank: 1 # this is the rank of the target to use when assembling the anchor-target pairs, change as needed
+  cluster_filter:
+    # reccomend increasing the number of clusters if applying a cluster filter to ensure that you have enough clusters after filtering for embedding and prediction.
+    # leaving the cluster filter off will retain more clusters for processing and prediction.
+    apply: false # set to true to apply a cluster filter to the SPLASH data prior to embedding
+    type: "fractionMissing" # set to either 'fractionMissing' or 'binaryTarget' for the type of cluster filter to apply if applying a cluster filter
+    threshold: 0.05 # if using the fraction missing filter, this is the fraction (i.e. 0.05) of anchors that are allowed to be missing in a cluster for it to be retained
 
-# you should not need to change anything below this line but you can alter these if needed
+# you should not need to change anything below this line but you can alter them if needed
 extended_options:
   num_anchors_to_select: 3000000 # number of anchors to select from each dataset for clustering
   effect_size_cutoff: 0.6 # this is the cutoff for selecting an anchor from the SPLASH results
   distance_threshold: 5 # distance threshold for filtering anchors after clustering
   num_embedding_features_to_keep:
-    glmnet: 100 # number of top variance embedding features to keep for GLMnet
+    by_variance: 100 # number of top variance embedding features to keep for GLMnet
+    by_pca: 5 # number of principal components to keep for GLMnet
     umap: 1 # number of top variance embedding features to keep for UMAP
   num_PCs_umap: 10 # number of principal components to use for UMAP plotting
+  num_blast_plot_hits: 10 # number of top coefficient clusters per metadata category shown in BLAST plots
   min_samples_adelie: 28 # minimum number of samples in the smallest class for running adelie (requires at least N samples per class)
-
+  adelie_alpha: 1 # alpha parameter for elastic net regularization in adelie (0 = ridge, 1 = lasso)
 ```
 
 You can change these by specifying new values for the parameters.
@@ -135,7 +147,7 @@ To point at the folder containing the local blast databases, modify the config f
 
 These can be downloaded with `blast+`; they are installed using `update_blastdb.pl --decompress core_nt refseq_protein`. For further instructions on downloading local copies of these databases, see <https://www.ncbi.nlm.nih.gov/books/NBK569850/>.
 
-To enable taxonomic filtering of the blast features, using the `taxid` field in the file `dataset_table.csv`, you must A) be using local blast databases as remote blast does not support taxonomic filtering and B) You also must additionally download and decompress the file `taxdb.tar.gz` from <https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz> in the local blast database folder. Follow the instructions in the *Taxonomic filtering for BLAST databases* section of <https://www.ncbi.nlm.nih.gov/books/NBK569839/> for further details.
+To enable taxonomic filtering of the blast features, using the `taxid` field in the file `dataset_table.csv`, you must A) be using local blast databases as remote blast does not support taxonomic filtering and B) You also must additionally download and decompress the file `taxdb.tar.gz` from <https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz> in the local blast database folder. Follow the instructions in the *Taxonomic filtering for BLAST databases* section of <https://www.ncbi.nlm.nih.gov/books/NBK569839/> for further details. Taxonomy IDs (taxids) for species of interest can be found in the NCBI Taxonomy Browser <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi>. Setting taxid to `0` disables taxonomic filtering. One can specify either a single taxid (e.g., `9606` for human) or multiple taxids separated by semicolons (e.g., `{9606;9031}` for human and chicken).
 
 ### 4. Update all paths in the config file, `config.yaml`
 

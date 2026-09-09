@@ -41,23 +41,86 @@ plan(multisession, workers=opt$max_workers)
 # Read in the data
 blast_files <- list.files(path=opt$blast_folder, pattern="blastout.tsv", full.names = T)
 
-blast_dfs <- future_map(blast_files, \(x) ifelse(ncol(fread(x, sep="\t", nrow=5)) == 19, return(fread(x, sep="\t", col.names = c("query", "subject", "identity", "alignment_length", 
-                                                   "mismatches", "gap_opens", "q_start", "q_end",
-                                                   "s_start", "s_end", "sstrand", "evalue", "qcovs", "qframe",
-                                                   "sgi", "sacc", "slen", "staxids", "stitle"))),
-                                                 return(fread(x, sep="\t", col.names = c("query", "subject", "identity", "alignment_length", 
-                                                                        "mismatches", "gap_opens", "q_start", "q_end",
-                                                                        "s_start", "s_end", "sstrand", "evalue", "qcovs",
-                                                                        "sgi", "sacc", "slen", "staxids", "stitle")) %>% mutate(qframe="-"))))
+empty_blastp_df <- function() {
+  tibble(query=character(), subject=character(), identity=numeric(),
+         alignment_length=numeric(), mismatches=numeric(), gap_opens=numeric(),
+         q_start=numeric(), q_end=numeric(), s_start=numeric(), s_end=numeric(),
+         sstrand=character(), evalue=numeric(), qcovs=numeric(), qframe=character(),
+         sgi=character(), sacc=character(), slen=numeric(), staxids=character(),
+         sscinames=character(), stitle=character())
+}
+
+add_comprehensive_annotation_columns <- function(tbl) {
+  defaults <- list(
+    species_origin=NA_character_, features=NA_character_,
+    features_10000_window=NA_character_, features_all=NA_character_,
+    blast_mode="blastx"
+  )
+  for (column in names(defaults)) {
+    if (!column %in% colnames(tbl)) {
+      tbl[[column]] <- rep(defaults[[column]], nrow(tbl))
+    }
+  }
+  scientific_name <- str_squish(as.character(tbl$sscinames))
+  scientific_name[scientific_name == "" | toupper(scientific_name) %in% c("NA", "N/A", "NONE", "NAN")] <- NA_character_
+  title_species <- str_match(as.character(tbl$stitle), "\\[([^\\]]+)\\]\\s*$")[,2]
+  tbl$species_origin <- coalesce(as.character(tbl$species_origin), scientific_name, title_species)
+  canonical_columns <- c(
+    "query", "subject", "sacc", "identity", "alignment_length", "mismatches",
+    "gap_opens", "q_start", "q_end", "s_start", "s_end", "sstrand", "evalue",
+    "qcovs", "qframe", "sgi", "slen", "staxids", "sscinames", "stitle",
+    "species_origin", "NCBI_protein_accession", "UniProt_accession", "method", "GO",
+    "features", "features_10000_window", "features_all", "blast_mode"
+  )
+  tbl %>% select(any_of(canonical_columns), everything())
+}
+
+read_blastp_file <- function(file) {
+  if (!file.exists(file) || file.info(file)$size == 0) {
+    return(empty_blastp_df())
+  }
+  preview <- tryCatch(fread(file, sep="\t", nrow=5), error=function(e) NULL)
+  if (is.null(preview) || ncol(preview) == 0) {
+    return(empty_blastp_df())
+  }
+  if (ncol(preview) == 20) {
+    return(fread(file, sep="\t", col.names = c("query", "subject", "identity", "alignment_length",
+                                               "mismatches", "gap_opens", "q_start", "q_end",
+                                               "s_start", "s_end", "sstrand", "evalue", "qcovs", "qframe",
+                                               "sgi", "sacc", "slen", "staxids", "sscinames", "stitle")))
+  } else if (ncol(preview) == 19) {
+    return(fread(file, sep="\t", col.names = c("query", "subject", "identity", "alignment_length",
+                                               "mismatches", "gap_opens", "q_start", "q_end",
+                                               "s_start", "s_end", "sstrand", "evalue", "qcovs", "qframe",
+                                               "sgi", "sacc", "slen", "staxids", "stitle")) %>%
+             mutate(sscinames=NA_character_))
+  }
+  fread(file, sep="\t", col.names = c("query", "subject", "identity", "alignment_length",
+                                      "mismatches", "gap_opens", "q_start", "q_end",
+                                      "s_start", "s_end", "sstrand", "evalue", "qcovs",
+                                      "sgi", "sacc", "slen", "staxids", "stitle")) %>%
+    mutate(qframe="-", sscinames=NA_character_)
+}
+
+blast_dfs <- future_map(blast_files, read_blastp_file)
 
 # remove any data frames that had no data 
-valid_blast_dfs <- map_vec(blast_dfs, \(x) nrow(x)>1)
+valid_blast_dfs <- map_vec(blast_dfs, \(x) nrow(x)>0)
 blast_files <- blast_files[valid_blast_dfs]
 blast_dfs <- blast_dfs[valid_blast_dfs]
 
 df_lengths <- map(blast_dfs, \(x) nrow(x)) %>% unlist()
 
-if (mean(df_lengths) > 350) {
+if (length(df_lengths) == 0) {
+  empty_blastp_df() %>%
+    mutate(NCBI_protein_accession=character(), UniProt_accession=character(),
+           method=character(), GO=character()) %>%
+    add_comprehensive_annotation_columns() %>%
+    write_tsv(opt$output_file, col_names = T, quote="needed")
+  quit(save="no", status=0)
+}
+
+if (mean(as.numeric(df_lengths), na.rm=TRUE) > 350) {
   plan(multisession, workers=4)
 }
 
@@ -85,12 +148,17 @@ merge_on_go_terms <- function(file, df, uniprot_mapping, go_mapping) {
 }
 
 if (TRUE) {
-  merged_df <- map(blast_dfs, \(x) x %>% mutate(staxids=as.character(staxids))) %>% bind_rows() %>% mutate(NCBI_protein_accession=str_extract(subject, "ref\\|(.+)\\|", group=1)) %>%
+  merged_df <- map(blast_dfs, \(x) x %>% mutate(staxids=as.character(staxids))) %>% bind_rows() %>%
+    mutate(NCBI_protein_accession=coalesce(str_extract(subject, "ref\\|(.+)\\|", group=1), sacc)) %>%
     mutate(UniProt_accession=str_extract(subject, "sp\\|(.+)\\|", group=1), method=NA, GO=NA) %>%
-    select(query, identity, evalue, qcovs, qframe, staxids, stitle, NCBI_protein_accession, UniProt_accession, method, GO)
+    add_comprehensive_annotation_columns()
 } else {
   merged_df <- future_map2(blast_files, blast_dfs, \(x,y) merge_on_go_terms(x,y,opt$uniprot_mapping_path,opt$go_mapping_path)) %>% bind_rows()
 }
 
-merged_df %>% select(query, identity, evalue, qcovs, qframe, staxids, stitle, NCBI_protein_accession, UniProt_accession, method, GO) %>%
+if (!"sscinames" %in% colnames(merged_df)) {
+  merged_df$sscinames <- NA_character_
+}
+
+merged_df %>% add_comprehensive_annotation_columns() %>%
   write_tsv(opt$output_file, col_names = T, quote="needed")

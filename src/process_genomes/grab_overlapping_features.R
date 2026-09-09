@@ -41,7 +41,7 @@ option_list <- list(
 opt <- parse_args(OptionParser(option_list = option_list))
 
 # check that user specified all files
-if (!file.exists(opt$embeddings) | !file.exists(opt$ordering) | is.null(opt$output) | !file.exists(opt$original_feather)) {
+if (!file.exists(opt$embeddings) | !file.exists(opt$ordering) | is.null(opt$output_prefix) | !file.exists(opt$original_feather)) {
   stop("Must provide embeddings, ordering, original feather file, and output prefix")
 }
 
@@ -53,7 +53,7 @@ if (!is.null(opt$temp_dir)) {
   )
   system(paste("mkdir -p", temp_dir))
 } else {
-  temp_dir <- file.path(dirname(opt$output), "tmp/")
+  temp_dir <- file.path(dirname(opt$output_prefix), "tmp/")
   system(paste("mkdir -p", temp_dir))
 }
 
@@ -68,7 +68,7 @@ cat("Running grab_overlapping_features.R with the following arguments:\n")
 cat("Ordering file: ", opt$ordering, "\n")
 cat("Embeddings file: ", opt$embeddings, "\n")
 cat("Original feather file: ", opt$original_feather, "\n")
-cat("Output file: ", opt$output, "\n")
+cat("Output file: ", opt$output_prefix, "\n")
 cat("Temporary directory: ", temp_dir, "\n")
 cat("####################\n\n")
 
@@ -77,9 +77,7 @@ cat("####################\n\n")
 cat("\nLoading embeddings...\n")
 # copy the embeddings file to the temp directory to speed up I/O
 embeddings_temp <- file.path(temp_dir, "genomes_raw_embeddings_temp.tsv")
-if (!file.exists(embeddings_temp)) {
-  system(paste("cp", opt$embeddings, embeddings_temp))
-}
+system(paste("cp", opt$embeddings, embeddings_temp))
 embeddings <- fread(embeddings_temp, header = F)
 colnames(embeddings) <- c("kmer", paste0("embedding_", 1:(ncol(embeddings) - 1)))
 
@@ -87,9 +85,7 @@ colnames(embeddings) <- c("kmer", paste0("embedding_", 1:(ncol(embeddings) - 1))
 cat("Loading the ordering file...\n")
 # copy the ordering file to the temp directory to speed up I/O
 ordering_temp <- file.path(temp_dir, "genomes_ordering_temp.tsv")
-if (!file.exists(ordering_temp)) {
-  system(paste("cp", opt$ordering, ordering_temp))
-}
+system(paste("cp", opt$ordering, ordering_temp))
 ordering <- fread(ordering_temp,
   header = F, sep = "\t",
   col.names = c("sample_name", "seq", "kmer", "start", "end"),
@@ -123,9 +119,7 @@ cluster_files <- paste0(temp_embeddings_dir, "embeddings_cluster_", 0:(length(cl
 
 cat("Writing all clusters and their embeddings out to file in: ", temp_embeddings_dir)
 
-if (!sum(file.exists(cluster_files)) == length(cluster_files)) {
-  future_walk2(clusters, cluster_files, \(x, y) join_and_write_clusters(x, y, all_embeddings = embeddings))
-}
+future_walk2(clusters, cluster_files, \(x, y) join_and_write_clusters(x, y, all_embeddings = embeddings))
 
 
 # cluster_to_kmer_mapping <- ordering %>% select(cluster, kmer) %>% distinct()
@@ -173,17 +167,16 @@ grab_matching_columns <- function(in_file, normalized, original_cols) {
   temp_dt <- temp_dt %>%
     select(sample_name, all_of(cols_to_keep)) %>%
     arrange(sample_name)
-  if (cluster_num != 0) {
-    temp_dt <- temp_dt %>% select(-sample_name)
-  }
   return(temp_dt)
 }
 
 cat("Grabbing matching columns per cluster\n")
-top_col_dt <- future_map_dfc(
+top_col_dt <- future_map(
   cluster_files,
   \(x) grab_matching_columns(x, normalized = opt$normalized_embeddings, new_col_ordering)
-)
+) %>%
+  purrr::reduce(full_join, by = "sample_name") %>%
+  arrange(sample_name)
 
 # ensure the column names are in the same order as the original embeddings
 top_col_dt <- top_col_dt %>% select(all_of(new_col_ordering))

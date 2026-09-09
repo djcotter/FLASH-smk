@@ -420,7 +420,6 @@ for (category in categories) {
       p_sub <- summ_sub_dt %>%
         mutate(label = ifelse(nchar(label)<3 & nchar(label2)>3, label2, label)) %>%
         mutate(across(all_of(all_classes), \(x) replace_na(x, 0))) %>%  # Replace NA with 0 for all specified columns
-        mutate(prop_first_class = !!sym(first_class) / rowSums(across(all_of(all_classes)))) %>%  # Calculate proportion
         mutate(total_samples = rowSums(across(all_of(all_classes)))) %>% 
         mutate(label = ifelse(str_detect(sequence, "NNNNNNNN"), "NO TARGET", label)) %>%
         ungroup() %>%
@@ -436,59 +435,64 @@ for (category in categories) {
         mutate(label_both = ifelse(label_coverage != "-" | label_identity != "-", 
                                    paste0("I:", str_replace(label_identity, "-", "100%"),
                                           "; C:", str_replace(label_coverage, "-", "100%")), ""))
-      
-      if (length(unique(p_sub$`Blast Label`)) <= 6) {
-        p2 <- p_sub %>%
-          ggplot(aes(x=embedding, y=lev_dist, color=prop_first_class, 
-                     shape=`Blast Label`, size=total_samples,
-                     label=label_identity)) +
-          geom_vline(xintercept = 0, lty="dashed") +
-          geom_point(stroke=1.4) + 
-          scale_y_continuous(breaks=scales::breaks_width(1)) +
-          scale_size_continuous(
-            trans = "log", 
-            name = "Total Samples",
-            breaks = c(1, 10, 100, 1000, 10000),  # Specify breaks for the legend
-            limits = c(1, 10000), # Set limits for the size scale
-            labels = scales::label_log()
-          ) +
-          ggrepel::geom_text_repel(aes(label = label_both),
-                                   size = 3,        # Adjust the size of the text
-                                   hjust = 0,       # Horizontal justification (0 = left, 0.5 = center, 1 = right)
-                                   vjust = 0,        # Vertical justification (0 = bottom, 0.5 = center, 1 = top)
-                                   color="black"
-          ) +       
-          scale_color_gradient(paste0("Proportion\n", first_class), 
-                               low = "blue", high = "red", limits = c(0, 1)) +
-          theme_minimal() + xlab(expression("Embedding" ~ "\u00D7" ~ beta)) +
-          ylab("Levenshtein Distance\n(to most abundant anchor-target)") +
-          ggtitle(my_cluster)
-      } else {
-        p2 <- p_sub %>% 
-          mutate(`Blast Label`=ifelse(nchar(label_identity) >1, 
-                                      paste0(`Blast Label`, " (", label_identity, ")"),
-                                      `Blast Label`)) %>%
-          ggplot(aes(x=embedding, y=lev_dist, color=prop_first_class, 
-                     label=`Blast Label`, size=total_samples)) +
-          geom_vline(xintercept = 0, lty="dashed") +
-          geom_point(stroke=1.4) +
-          scale_y_continuous(breaks=scales::breaks_width(1)) +
-          scale_size_continuous(
-            trans = "log", 
-            name = "Total Samples",
-            breaks = c(1, 10, 100, 1000, 10000),  # Specify breaks for the legend
-            limits = c(1, 10000),  # Set limits for the size scale
-            labels = scales::label_log()
-          ) +
-          ggrepel::geom_text_repel(size=4) +
-          scale_color_gradient(paste0("Proportion\n", first_class), 
-                               low = "blue", high = "red", limits = c(0, 1)) +
-          theme_minimal() + xlab(expression("Embedding" ~ "\u00D7" ~ beta)) +
-          ylab("Levenshtein Distance\n(to most abundant anchor-target)") +
-          ggtitle(my_cluster)
+      for (class_to_plot in all_classes) {
+        p_class <- p_sub %>%
+          mutate(prop_current_class = ifelse(total_samples > 0,
+                                             !!sym(class_to_plot) / total_samples,
+                                             NA_real_))
+
+        if (length(unique(p_class$`Blast Label`)) <= 6) {
+          p2 <- p_class %>%
+            ggplot(aes(x=embedding, y=lev_dist, color=prop_current_class,
+                       shape=`Blast Label`, size=total_samples,
+                       label=label_identity)) +
+            geom_vline(xintercept = 0, lty="dashed") +
+            geom_point(stroke=1.4) +
+            scale_y_continuous(breaks=scales::breaks_width(1)) +
+            scale_size_continuous(
+              trans = "log",
+              name = "Total Samples",
+              breaks = c(1, 10, 100, 1000, 10000),
+              limits = c(1, 10000),
+              labels = scales::label_log()
+            ) +
+            ggrepel::geom_text_repel(aes(label = label_both),
+                                     size = 3,
+                                     hjust = 0,
+                                     vjust = 0,
+                                     color="black") +
+            scale_color_gradient(paste0("Proportion\n", class_to_plot),
+                                 low = "blue", high = "red", limits = c(0, 1)) +
+            theme_minimal() + xlab(expression("Embedding" ~ "\u00D7" ~ beta)) +
+            ylab("Levenshtein Distance\n(to most abundant anchor-target)") +
+            ggtitle(my_cluster)
+        } else {
+          p2 <- p_class %>%
+            mutate(`Blast Label`=ifelse(nchar(label_identity) >1,
+                                        paste0(`Blast Label`, " (", label_identity, ")"),
+                                        `Blast Label`)) %>%
+            ggplot(aes(x=embedding, y=lev_dist, color=prop_current_class,
+                       label=`Blast Label`, size=total_samples)) +
+            geom_vline(xintercept = 0, lty="dashed") +
+            geom_point(stroke=1.4) +
+            scale_y_continuous(breaks=scales::breaks_width(1)) +
+            scale_size_continuous(
+              trans = "log",
+              name = "Total Samples",
+              breaks = c(1, 10, 100, 1000, 10000),
+              limits = c(1, 10000),
+              labels = scales::label_log()
+            ) +
+            ggrepel::geom_text_repel(size=4) +
+            scale_color_gradient(paste0("Proportion\n", class_to_plot),
+                                 low = "blue", high = "red", limits = c(0, 1)) +
+            theme_minimal() + xlab(expression("Embedding" ~ "\u00D7" ~ beta)) +
+            ylab("Levenshtein Distance\n(to most abundant anchor-target)") +
+            ggtitle(my_cluster)
+        }
+
+        print(p2)
       }
-      
-      print(p2)
       summ_sub_dt <- summ_sub_dt %>% select(-label2) %>% ungroup() %>%
         mutate(across(-all_of(c("sequence", "aligned_sequence", "embedding","lev_dist","accuracy","identity","qcovs","label")), \(x) paste(cur_column(), replace_na(x, 0),sep=":"))) %>% 
         unite(col=metadata, -c(sequence, aligned_sequence, embedding,lev_dist,accuracy,identity,qcovs,label), sep="/") %>%

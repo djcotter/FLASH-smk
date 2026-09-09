@@ -43,4 +43,5 @@ cd H5N1-splash-results
     --n_most_freq_targets 10 \
     --dump_sample_anchor_target_count_binary \
     --satc_merge_dump_format satc \
+    --without_compactors \
     sample_sheet.txt
