@@ -42,7 +42,7 @@ options:
   train_proportion: 0.8 # proportion of samples to use for training GLMnet models
   min_samples_adelie: 28 # minimum number of samples in the smallest class for running adelie (requires at least N samples per class)
   anchor_length: 10 # this is the length of the anchor in nucleotides, change as needed for different SPLASH runs
-  target_length: 31 # this is the length of the target in nucleotides, change as needed for different SPLASH runs
+  target_length: 27 # this is the length of the target in nucleotides, change as needed for different SPLASH runs
   target_rank: 1 # this is the rank of the target to use when assembling the anchor-target pairs, change as needed
   cluster_filter:
     # reccomend increasing the number of clusters if applying a cluster filter to ensure that you have enough clusters after filtering for embedding and prediction.

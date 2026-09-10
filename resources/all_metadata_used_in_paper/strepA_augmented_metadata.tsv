@@ -1,0 +1,1516 @@
+sample_name	serotype	Year	Emm	ST	ARG type	ARGs	MGE50 type	pbp2x allele	PBP2X variant	Substitutions vs WT
+SRR11400747	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400748	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400749	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400750	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400751	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400752	emm12	2001	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400753	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400754	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400755	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400756	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400757	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400758	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400759	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400760	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400761	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400762	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400763	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400764	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400765	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400766	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400767	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400768	emm113	2001	113	134	14	erm(TR), tet(T)	75	pbp2x-94	PBP2X-8	Ile502Val
+SRR11400769	emm4	1998	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400770	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400771	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400772	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400773	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400774	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400775	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400776	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400777	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400778	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400779	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400780	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400781	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400782	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400783	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400784	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400785	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400786	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400787	emm89	2000	89	101	3	no ARGs detected	94	pbp2x-310	PBP2X-4	Ser562Thr
+SRR11400788	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400789	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400790	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400791	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400792	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400793	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400794	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400795	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400796	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400797	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400798	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400799	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400800	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400801	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400802	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400803	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400804	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400805	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400806	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400807	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400808	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400809	emm6	2008	6	382	1	mef(A), msr(D)	34	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400810	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400811	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400812	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400813	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400814	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400815	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400816	emm6	2008	6	382	1	mef(A), msr(D)	31	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400817	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400818	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400819	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400820	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400821	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400822	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400823	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400824	emm94	2008	94	89	10	erm(TR), tet(M)	103	pbp2x-143	PBP2X-1	WT, none
+SRR11400825	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400826	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400827	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400828	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400829	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400830	emm6	2008	6	382	1	mef(A), msr(D)	33	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400831	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400832	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400833	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400834	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400835	emm6	2007	6	382	1	mef(A), msr(D)	65	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400836	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400837	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400838	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400839	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400840	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400841	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400842	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400843	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400844	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400845	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400846	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400847	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400848	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400849	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400850	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400851	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400852	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400853	emm75	2007	75	150	3	no ARGs detected	36	pbp2x-54	PBP2X-1	WT, none
+SRR11400854	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400855	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400856	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400857	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400858	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400859	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400860	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400861	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400862	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400863	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400864	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400865	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400866	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400867	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11400868	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400869	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400870	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400871	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400872	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400873	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400874	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400875	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400876	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400877	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400878	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400879	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400880	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400881	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400882	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400883	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400884	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400885	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400886	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400887	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400888	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400889	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400890	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400891	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400892	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400893	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400894	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400895	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400896	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400897	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400898	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400899	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400900	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400901	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400902	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400903	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400904	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400905	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400906	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400907	emm4	2000	4	39	1	mef(A), msr(D)	22	pbp2x-284	PBP2X-1	WT, none
+SRR11400908	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400909	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400910	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400911	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400912	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400913	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400914	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400915	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400916	emm75	2000	75	150	1	mef(A), msr(D)	54	pbp2x-54	PBP2X-1	WT, none
+SRR11400917	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400918	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11400919	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400920	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400921	emm28	2007	28	52	8	ant(6)-Ia, aph(3"""")-III, sat4A, erm(B)	85	pbp2x-77	PBP2X-1	WT, none
+SRR11400922	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400923	emm12	2007	12	36	3	no ARGs detected	78	pbp2x-59	PBP2X-1	WT, none
+SRR11400924	emm12	2007	12	36	3	no ARGs detected	77	pbp2x-59	PBP2X-1	WT, none
+SRR11400925	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400926	emm12	2007	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400927	emm102	2007	102	46	7	erm(TR)	38	pbp2x-97	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400928	emm77	2007	77	63	4	erm(TR), tet(O)	20	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11400929	emm12	2007	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400930	emm1	2006	1	28	3	no ARGs detected	25	pbp2x-1	PBP2X-1	WT, none
+SRR11400931	emm102	2006	102	46	7	erm(TR)	38	pbp2x-97	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11400932	emm77	2006	77	63	4	erm(TR), tet(O)	60	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11400933	emm12	2006	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400934	emm12	2006	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400935	emm77	2006	77	63	4	erm(TR), tet(O)	20	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11400936	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400937	emm12	2006	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400938	emm75	2006	75	150	3	no ARGs detected	28	pbp2x-54	PBP2X-1	WT, none
+SRR11400939	emm75	2006	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11400940	emm44	2006	44	367	15	erm(TR), catA9, tet(M)	87	pbp2x-406	PBP2X-182	Ile48Val
+SRR11400941	emm12	2006	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400942	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400943	emm89	2004	89	101	1	mef(A), msr(D)	97	pbp2x-310	PBP2X-4	Ser562Thr
+SRR11400944	emm75	2004	75	150	1	mef(A), msr(D)	57	pbp2x-54	PBP2X-1	WT, none
+SRR11400945	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400946	emm12	2004	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400947	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400948	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400949	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400950	emm12	2004	12	36	1	mef(A), msr(D)	82	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400951	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400952	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11400953	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400954	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400955	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400956	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400957	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400958	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400959	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400960	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400961	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400962	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400963	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400964	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400965	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400966	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400967	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400968	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11400969	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400970	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400971	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400972	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400973	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400974	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400975	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400976	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400977	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11400978	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400979	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400980	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400981	emm4	2000	4	39	1	mef(A), msr(D)	56	pbp2x-284	PBP2X-1	WT, none
+SRR11400982	emm12	2000	12	36	1	mef(A), msr(D)	55	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400983	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400984	emm75	2004	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11400985	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400986	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400987	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400988	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400989	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400990	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400991	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400992	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11400993	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400994	emm12	2001	12	36	1	mef(A), msr(D)	58	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400995	emm43	2001	43	3	9	mef(A), msr(D), tet(M)	101	pbp2x-357	PBP2X-1	WT, none
+SRR11400996	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400997	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11400998	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11400999	emm28	2001	28	52	3	no ARGs detected	11	pbp2x-77	PBP2X-1	WT, none
+SRR11401000	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401001	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401002	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401003	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401004	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401005	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401006	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401007	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401008	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401009	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401010	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401011	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401012	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401013	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401014	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401015	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401016	emm4	1998	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401017	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401018	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401019	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401020	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401021	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401022	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401023	emm6	2000	6	382	3	no ARGs detected	30	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401024	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401025	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401026	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401027	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401028	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401029	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401030	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401031	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401032	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401033	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401034	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401035	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401036	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401037	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401038	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401039	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401040	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401041	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401042	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401043	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401044	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401045	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401046	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401047	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401048	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401049	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401050	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401051	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401052	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401053	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401054	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401055	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401056	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401057	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401058	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401059	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401060	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401061	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401062	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401063	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401064	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401065	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401066	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401067	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401068	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401069	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401070	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401071	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401072	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401073	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	12	pbp2x-1	PBP2X-1	WT, none
+SRR11401074	emm4	1999	4	39	1	mef(A), msr(D)	45	pbp2x-284	PBP2X-1	WT, none
+SRR11401075	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401076	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401077	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401078	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401079	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401080	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401081	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401082	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401083	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401084	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401085	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401086	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401087	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401088	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401089	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401090	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401091	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401092	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401093	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401094	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401095	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401096	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401097	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401098	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401099	emm77	1999	77	63	12	tet(O)	49	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401100	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401101	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401102	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401103	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401104	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401105	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401106	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401107	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401108	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401109	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401110	emm28	1999	28	52	3	no ARGs detected	11	pbp2x-77	PBP2X-1	WT, none
+SRR11401111	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401112	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401113	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401114	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401115	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401116	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401117	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401118	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401119	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401120	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401121	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401122	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401123	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401124	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401125	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401126	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401127	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401128	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401129	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401130	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401131	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401132	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401133	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401134	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401135	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401136	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401137	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401138	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401139	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401140	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401141	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401142	emm6	2008	6	382	9	mef(A), msr(D), tet(M)	66	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401143	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401144	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401145	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401146	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401147	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401148	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401149	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401150	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401151	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401152	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401153	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401154	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401155	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401156	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401157	emm4	1998	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401158	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401159	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401160	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401161	emm75	2004	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11401162	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401163	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401164	emm28	2004	28	52	8	ant(6)-Ia, aph(3"""")-III, sat4A, erm(B)	23	pbp2x-77	PBP2X-1	WT, none
+SRR11401165	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401166	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401167	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401168	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401169	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401170	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401171	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401172	emm75	2004	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11401173	emm12	2004	12	36	1	mef(A), msr(D)	17	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401174	emm28	2004	28	52	8	ant(6)-Ia, aph(3"""")-III, sat4A, erm(B)	23	pbp2x-77	PBP2X-1	WT, none
+SRR11401175	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401176	emm28	2003	28	52	8	ant(6)-Ia, aph(3"""")-III, sat4A, erm(B)	23	pbp2x-77	PBP2X-1	WT, none
+SRR11401177	emm12	2003	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401178	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401179	emm75	2008	75	150	1	mef(A), msr(D)	90	#N/A	#N/A	#N/A
+SRR11401180	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401181	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401182	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401183	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401184	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401185	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401186	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401187	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401188	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401189	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401190	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401191	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401192	emm6	2008	6	382	9	mef(A), msr(D), tet(M)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401193	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401194	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401195	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401196	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401197	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401198	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401199	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401200	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401201	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401202	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401203	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401204	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401205	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401206	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401207	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401208	emm6	2008	6	382	1	mef(A), msr(D)	32	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401209	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401210	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401211	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401212	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401213	emm77	2003	77	369	4	erm(TR), tet(O)	13	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401214	emm94	2003	94	89	10	erm(TR), tet(M)	104	pbp2x-143	PBP2X-1	WT, none
+SRR11401215	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401216	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401217	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401218	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401219	emm4	2002	4	39	1	mef(A), msr(D)	47	pbp2x-284	PBP2X-1	WT, none
+SRR11401220	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401221	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401222	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401223	emm4	2002	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401224	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401225	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401226	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401227	emm4	2002	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401228	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401229	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401230	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401231	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401232	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401233	emm48	1998	48	595	18	ant(6)-Ia, aph(3"""")-III, erm(B), catA9	43	pbp2x-195	PBP2X-1	WT, none
+SRR11401234	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401235	emm12	2002	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401236	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401237	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401238	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401239	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401240	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401241	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401242	emm12	2001	12	36	1	mef(A), msr(D)	17	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401243	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401244	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401245	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401246	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401247	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401248	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401249	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401250	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401251	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401252	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401253	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401254	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401255	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401256	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401257	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401258	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401259	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401260	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401261	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401262	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401263	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401264	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401265	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401266	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401267	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401268	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401269	emm6	2008	6	382	1	mef(A), msr(D)	33	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401270	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401271	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401272	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401273	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401274	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401275	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401276	emm6	2008	6	382	3	no ARGs detected	30	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401277	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401278	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401279	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401280	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401281	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401282	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401283	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401284	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401285	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401286	emm12	2008	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401287	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401288	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401289	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401290	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401291	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401292	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401293	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401294	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401295	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401296	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401297	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401298	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401299	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401300	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401301	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401302	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401303	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401304	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401305	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401306	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401307	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401308	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401309	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401310	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401311	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401312	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401313	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401314	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401315	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401316	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401317	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401318	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401319	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401320	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401321	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401322	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401323	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401324	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401325	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401326	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401327	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401328	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401329	emm6	2008	6	382	1	mef(A), msr(D)	63	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401330	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401331	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401332	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401333	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401334	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401335	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401336	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401337	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401338	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401339	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401340	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401341	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401342	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401343	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401344	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401345	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401346	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401347	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401348	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401349	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401350	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401351	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401352	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401353	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401354	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401355	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401356	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401357	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401358	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401359	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401360	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401361	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401362	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401363	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401364	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401365	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401366	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401367	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401368	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401369	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401370	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401371	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401372	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401373	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401374	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401375	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401376	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401377	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401378	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401379	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401380	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401381	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401382	emm12	2007	12	36	1	mef(A), msr(D)	91	pbp2x-59	PBP2X-1	WT, none
+SRR11401383	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401384	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401385	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401386	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401387	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401388	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401389	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401390	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401391	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401392	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401393	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401394	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401395	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401396	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401397	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401398	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401399	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401400	emm28	2007	28	52	3	no ARGs detected	11	pbp2x-77	PBP2X-1	WT, none
+SRR11401401	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401402	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401403	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401404	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401405	emm75	2007	75	150	7	erm(TR)	80	pbp2x-54	PBP2X-1	WT, none
+SRR11401406	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401407	emm12	2007	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401408	emm75	2007	75	150	3	no ARGs detected	36	pbp2x-54	PBP2X-1	WT, none
+SRR11401409	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401410	emm6	2007	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401411	emm12	2007	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401412	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401413	emm12	2007	12	36	1	mef(A), msr(D)	67	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401414	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401415	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401416	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401417	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401418	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401419	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401420	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401421	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401422	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401423	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401424	emm77	1998	77	63	4	erm(TR), tet(O)	26	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401425	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401426	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401427	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401428	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401429	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401430	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401431	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401432	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401433	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401434	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401435	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401436	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401437	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401438	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401439	emm4	2000	4	39	1	mef(A), msr(D)	10	pbp2x-284	PBP2X-1	WT, none
+SRR11401440	emm4	2001	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401441	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401442	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401443	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401444	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401445	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401446	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401447	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401448	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401449	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401450	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401451	emm9	2001	9	NF-1	1	mef(A), msr(D)	83	pbp2x-432	PBP2X-1	WT, none
+SRR11401452	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401453	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401454	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401455	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401456	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401457	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401458	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401459	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401460	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401461	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401462	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401463	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401464	emm4	2000	4	39	1	mef(A), msr(D)	10	pbp2x-284	PBP2X-1	WT, none
+SRR11401465	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401466	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401467	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401468	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401469	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401470	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401471	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401472	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401473	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401474	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401475	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401476	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401477	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401478	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401479	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401480	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401481	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401482	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401483	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401484	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401485	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401486	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401487	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401488	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401489	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401490	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401491	emm4	2000	4	39	1	mef(A), msr(D)	72	pbp2x-284	PBP2X-1	WT, none
+SRR11401492	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401493	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401494	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401495	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401496	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401497	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401498	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401499	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401500	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401501	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401502	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401503	emm11	2015	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401504	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	12	pbp2x-1	PBP2X-1	WT, none
+SRR11401505	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	35	pbp2x-1	PBP2X-1	WT, none
+SRR11401506	emm11	2015	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401507	emm11	2014	11	NF-2	6	aph(3"""")-III, sat4A, erm(B), tet(M)	14	pbp2x-326	PBP2X-1	WT, none
+SRR11401508	emm1	2014	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	12	pbp2x-1	PBP2X-1	WT, none
+SRR11401509	emm53	2014	53	11	17	spw, mef(A), msr(D), catQ, tet(M)	50	pbp2x-357	PBP2X-1	WT, none
+SRR11401510	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401511	emm77	1998	77	63	4	erm(TR), tet(O)	26	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401512	emm77	2014	77	63	4	erm(TR), tet(O)	21	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401513	emm77	2014	77	63	4	erm(TR), tet(O)	21	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401514	emm11	2014	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401515	emm11	2013	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401516	emm11	2013	11	NF-2	6	aph(3"""")-III, sat4A, erm(B), tet(M)	14	pbp2x-326	PBP2X-1	WT, none
+SRR11401517	emm11	2013	11	NF-2	2	erm(B), tet(M)	16	pbp2x-326	PBP2X-1	WT, none
+SRR11401518	emm11	2013	11	NF-2	6	aph(3"""")-III, sat4A, erm(B), tet(M)	14	pbp2x-326	PBP2X-1	WT, none
+SRR11401519	emm11	2013	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401520	emm11	2013	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401521	emm11	2012	11	NF-2	2	erm(B), tet(M)	16	pbp2x-326	PBP2X-1	WT, none
+SRR11401522	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401523	emm11	2012	11	NF-2	2	erm(B), tet(M)	16	pbp2x-326	PBP2X-1	WT, none
+SRR11401524	emm77	2012	77	63	4	erm(TR), tet(O)	61	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401525	emm11	2012	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401526	emm11	2012	11	NF-2	2	erm(B), tet(M)	16	pbp2x-326	PBP2X-1	WT, none
+SRR11401527	emm77	2012	77	63	4	erm(TR), tet(O)	27	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401528	emm77	2012	77	63	4	erm(TR), tet(O)	29	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11401529	emm11	2011	11	NF-2	6	aph(3"""")-III, sat4A, erm(B), tet(M)	100	pbp2x-326	PBP2X-1	WT, none
+SRR11401530	emm11	2011	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401531	emm11	2011	11	NF-2	2	erm(B), tet(M)	16	pbp2x-326	PBP2X-1	WT, none
+SRR11401532	emm11	2011	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401533	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401534	emm6	2011	6	382	9	mef(A), msr(D), tet(M)	62	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401535	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401536	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401537	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401538	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401539	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401540	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401541	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401542	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401543	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401544	emm12	2005	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401545	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401546	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401547	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401548	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401549	emm75	2005	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11401550	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401551	emm75	2005	75	150	3	no ARGs detected	18	pbp2x-54	PBP2X-1	WT, none
+SRR11401552	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401553	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401554	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401555	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401556	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401557	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401558	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401559	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401560	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401561	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401562	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401563	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401564	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401565	emm12	2001	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401566	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401567	emm4	2000	4	39	1	mef(A), msr(D)	10	pbp2x-284	PBP2X-1	WT, none
+SRR11401568	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401569	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401570	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401571	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401572	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401573	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401574	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401575	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401576	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401577	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401578	emm2	2009	2	55	3	no ARGs detected	37	pbp2x-164	PBP2X-1	WT, none
+SRR11401579	emm2	2009	2	55	3	no ARGs detected	37	pbp2x-164	PBP2X-1	WT, none
+SRR11401580	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401581	emm11	2009	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401582	emm6	2009	6	382	1	mef(A), msr(D)	64	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401583	emm92	2009	92	485	19	ant(6)-Ia, aph(3"""")-III, erm(B), catA9, tet(M)	41	pbp2x-180	PBP2X-1	WT, none
+SRR11401584	emm6	2009	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401585	emm28	2009	28	456	3	no ARGs detected	15	pbp2x-77	PBP2X-1	WT, none
+SRR11401586	emm6	2009	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401587	emm6	2009	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401588	emm6	2009	6	382	1	mef(A), msr(D)	34	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401589	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401590	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401591	emm1	1999	1	28	1	mef(A), msr(D)	69	pbp2x-1	PBP2X-1	WT, none
+SRR11401592	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401593	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401594	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401595	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401596	emm12	2008	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401597	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401598	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401599	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401600	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401601	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401602	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401603	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401604	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401605	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401606	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401607	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401608	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401609	emm4	2000	4	39	1	mef(A), msr(D)	81	pbp2x-284	PBP2X-1	WT, none
+SRR11401610	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401611	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401612	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401613	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401614	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401615	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401616	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401617	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401618	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401619	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401620	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401621	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401622	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401623	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401624	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401625	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401626	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401627	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401628	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401629	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401630	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401631	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401632	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401633	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401634	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401635	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401636	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401637	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11401638	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401639	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401640	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401641	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401642	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401643	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401644	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401645	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401646	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401647	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401648	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401649	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11401650	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401651	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401652	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401653	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401654	emm81	2015	81	NF-3	11	spw, msr(D), catQ, tet(M)	48	pbp2x-143	PBP2X-1	WT, none
+SRR11401655	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	12	pbp2x-1	PBP2X-1	WT, none
+SRR11401656	emm11	2015	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401657	emm102	2015	102	60	3	no ARGs detected	68	pbp2x-143	PBP2X-1	WT, none
+SRR11401658	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	12	pbp2x-1	PBP2X-1	WT, none
+SRR11401659	emm4	2000	4	39	1	mef(A), msr(D)	10	pbp2x-284	PBP2X-1	WT, none
+SRR11401660	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	12	pbp2x-1	PBP2X-1	WT, none
+SRR11401661	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	12	pbp2x-1	PBP2X-1	WT, none
+SRR11401662	emm1	2015	1	28	5	ant(6)-Ia, aph(3"""")-III, erm(B), tet(M)	35	pbp2x-1	PBP2X-1	WT, none
+SRR11401663	emm11	2011	11	NF-2	6	aph(3"""")-III, sat4A, erm(B), tet(M)	14	pbp2x-326	PBP2X-1	WT, none
+SRR11401664	emm11	2011	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401665	emm6	2011	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401666	emm11	2011	11	NF-2	2	erm(B), tet(M)	96	pbp2x-326	PBP2X-1	WT, none
+SRR11401667	emm4	2011	4	39	3	no ARGs detected	19	pbp2x-284	PBP2X-1	WT, none
+SRR11401668	emm73	2010	73	331	2	erm(B), tet(M)	39	pbp2x-113	PBP2X-56	Ser562Thr, Pro676Ser, Lys708Glu
+SRR11401669	emm73	2010	73	331	2	erm(B), tet(M)	39	pbp2x-113	PBP2X-56	Ser562Thr, Pro676Ser, Lys708Glu
+SRR11401670	emm11	2010	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401671	emm28	2010	28	456	3	no ARGs detected	15	pbp2x-77	PBP2X-1	WT, none
+SRR11401672	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401673	emm28	2010	28	456	3	no ARGs detected	15	pbp2x-77	PBP2X-1	WT, none
+SRR11401674	emm89	2010	89	101	2	erm(B), tet(M)	99	pbp2x-310	PBP2X-4	Ser562Thr
+SRR11401675	emm6	2010	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401676	emm6	2008	6	382	1	mef(A), msr(D)	32	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401677	emm28	2008	28	456	3	no ARGs detected	15	pbp2x-77	PBP2X-1	WT, none
+SRR11401678	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401679	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401680	emm11	2008	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401681	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401682	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401683	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401684	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401685	emm6	2008	6	382	1	mef(A), msr(D)	31	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401686	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401687	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401688	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401689	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401690	emm11	2008	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11401691	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401692	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401693	emm75	2008	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11401694	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401695	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401696	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401697	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401698	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401699	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401700	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401701	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401702	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401703	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401704	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401705	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401706	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401707	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401708	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401709	emm75	2008	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11401710	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401711	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401712	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401713	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401714	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401715	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401716	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401717	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401718	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401719	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401720	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401721	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401722	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401723	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401724	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401725	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401726	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11401727	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401728	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401729	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401730	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401731	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401732	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401733	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401734	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401735	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401736	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401737	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401738	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11401739	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401740	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401741	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401742	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401743	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401744	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11401745	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11401746	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403253	emm28	2004	28	52	7	erm(TR)	11	pbp2x-77	PBP2X-1	WT, none
+SRR11403254	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403255	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403256	emm75	2004	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403257	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403258	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403259	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403260	emm170	2004	170	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403261	emm12	2004	12	36	1	mef(A), msr(D)	17	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403262	emm12	2004	12	36	1	mef(A), msr(D)	17	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403263	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403264	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403265	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403266	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403267	emm77	2004	77	369	4	erm(TR), tet(O)	13	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403268	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403269	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403270	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403271	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403272	emm75	2004	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403273	emm75	2004	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403274	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403275	emm170	2004	170	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403276	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403277	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403278	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403279	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403280	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403281	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403282	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403283	emm77	2003	77	369	4	erm(TR), tet(O)	13	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403284	emm77	2003	77	369	4	erm(TR), tet(O)	13	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403285	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403286	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403287	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403288	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403289	emm4	1999	4	39	1	mef(A), msr(D)	74	pbp2x-284	PBP2X-1	WT, none
+SRR11403290	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403291	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403292	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403293	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403294	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403295	emm4	1999	4	39	1	mef(A), msr(D)	84	pbp2x-284	PBP2X-1	WT, none
+SRR11403296	emm4	1999	4	39	21	aadD, ant(9)-Ia, aph-Stph, spc, mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403297	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403298	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403299	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403300	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403301	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403302	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403303	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403304	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403305	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403306	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403307	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403308	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403309	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403310	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403311	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403312	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403313	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403314	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403315	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403316	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403317	emm12	2003	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403318	emm4	2003	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403319	emm77	2003	77	369	4	erm(TR), tet(O)	13	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403320	emm22	2003	22	46	3	no ARGs detected	92	pbp2x-97	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11403321	emm12	2003	12	36	7	erm(TR)	59	pbp2x-59	PBP2X-1	WT, none
+SRR11403322	emm28	2003	28	52	8	ant(6)-Ia, aph(3"""")-III, sat4A, erm(B)	86	pbp2x-77	PBP2X-1	WT, none
+SRR11403323	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403324	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403325	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403326	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403327	emm4	2001	4	39	1	mef(A), msr(D)	73	pbp2x-284	PBP2X-1	WT, none
+SRR11403328	emm12	2001	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403329	emm4	2001	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403330	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403331	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403332	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403333	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403334	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403335	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403336	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403337	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403338	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403339	emm1	2001	1	28	1	mef(A), msr(D)	76	pbp2x-1	PBP2X-1	WT, none
+SRR11403340	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403341	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403342	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403343	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403344	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403345	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403346	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403347	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403348	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403349	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403350	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403351	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403352	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403353	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403354	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403355	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403356	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403357	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403358	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403359	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403360	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403361	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403362	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403363	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403364	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403365	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403366	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403367	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403368	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403369	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403370	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403371	emm4	1999	4	39	1	mef(A), msr(D)	44	pbp2x-284	PBP2X-1	WT, none
+SRR11403372	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403373	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403374	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403375	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403376	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403377	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403378	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403379	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403380	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403381	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403382	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403383	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403384	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403385	emm12	2001	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403386	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403387	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403388	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403389	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403390	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403391	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403392	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403393	emm4	2001	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403394	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403395	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403396	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403397	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403398	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403399	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403400	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403401	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403402	emm4	2001	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403403	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403404	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403405	emm4	2000	4	39	1	mef(A), msr(D)	10	pbp2x-284	PBP2X-1	WT, none
+SRR11403406	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403407	emm4	2000	4	39	1	mef(A), msr(D)	10	pbp2x-284	PBP2X-1	WT, none
+SRR11403408	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403409	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403410	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403411	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403412	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403413	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403414	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403415	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403416	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403417	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403418	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403419	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403420	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403421	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403422	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403423	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403424	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403425	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403426	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403427	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403428	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403429	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403430	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403431	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403432	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403433	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403434	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403435	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403436	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403437	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403438	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403439	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403440	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403441	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403442	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403443	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403444	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403445	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403446	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403447	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403448	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-434	PBP2X-195	Ile236Asn
+SRR11403449	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403450	emm11	1999	11	NF-2	3	no ARGs detected	95	pbp2x-326	PBP2X-1	WT, none
+SRR11403451	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403452	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403453	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403454	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403455	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403456	emm28	1999	28	52	3	no ARGs detected	51	pbp2x-77	PBP2X-1	WT, none
+SRR11403457	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403458	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403459	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403460	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403461	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403462	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403463	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403464	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403465	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403466	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403467	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403468	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403469	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403470	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403471	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403472	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403473	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403474	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403475	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403476	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403477	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403478	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403479	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403480	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403481	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403482	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403483	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403484	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403485	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403486	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403487	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403488	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403489	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403490	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403491	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403492	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403493	emm4	2000	4	39	1	mef(A), msr(D)	10	pbp2x-284	PBP2X-1	WT, none
+SRR11403494	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403495	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403496	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403497	emm4	1999	4	39	1	mef(A), msr(D)	22	pbp2x-284	PBP2X-1	WT, none
+SRR11403498	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403499	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403500	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403501	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403502	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403503	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403504	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403505	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403506	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403507	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403508	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403509	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403510	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403511	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403512	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403513	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403514	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403515	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403516	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403517	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403518	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403519	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403520	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403521	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403522	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403523	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403524	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403525	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403526	emm12	1999	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403527	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403528	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403529	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11403530	emm12	2004	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403531	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403532	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403533	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403534	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403535	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403536	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403537	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403538	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403539	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403540	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403541	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403542	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403543	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403544	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403545	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403546	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403547	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403548	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403549	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403550	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403551	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403552	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403553	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403554	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403555	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403556	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403557	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403558	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403559	emm4	2000	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403560	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403561	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403562	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403563	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403564	emm4	2000	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403565	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403566	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403567	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403568	emm4	2000	4	39	1	mef(A), msr(D)	46	pbp2x-284	PBP2X-1	WT, none
+SRR11403569	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403570	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403571	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403572	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403573	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403574	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403575	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403576	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403577	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403578	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403579	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403580	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403581	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403582	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403583	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403584	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403585	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403586	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403587	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403588	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403589	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403590	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403591	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403592	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403593	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403594	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403595	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403596	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403597	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403598	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403599	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403600	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403601	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403602	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403603	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403604	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403605	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403606	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403607	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11403608	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11403609	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403610	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403611	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11403612	emm6	2008	6	382	1	mef(A), msr(D)	3	pbp2x-39	PBP2X-23	Ile502Val, Pro676Ser, Lys708Glu
+SRR11403613	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403614	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403615	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403616	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403617	emm4	2016	4	39	3	no ARGs detected	19	pbp2x-284	PBP2X-1	WT, none
+SRR11403618	emm11	2016	11	NF-2	2	erm(B), tet(M)	8	pbp2x-326	PBP2X-1	WT, none
+SRR11403619	emm11	2016	11	NF-2	6	aph(3"""")-III, sat4A, erm(B), tet(M)	14	pbp2x-326	PBP2X-1	WT, none
+SRR11403620	emm12	2016	12	36	3	no ARGs detected	71	pbp2x-59	PBP2X-1	WT, none
+SRR11403621	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403622	emm77	2016	77	63	4	erm(TR), tet(O)	29	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403623	emm73	2016	73	331	2	erm(B), tet(M)	88	pbp2x-113	PBP2X-56	Ser562Thr, Pro676Ser, Lys708Glu
+SRR11403624	emm82	2016	82	36	2	erm(B), tet(M)	89	pbp2x-59	PBP2X-1	WT, none
+SRR11403625	emm11	2016	11	NF-2	6	aph(3"""")-III, sat4A, erm(B), tet(M)	14	pbp2x-326	PBP2X-1	WT, none
+SRR11403626	emm76	2016	76	50	16	erm(B)	98	pbp2x-59	PBP2X-1	WT, none
+SRR11403627	emm28	2016	28	458	7	erm(TR)	52	pbp2x-77	PBP2X-1	WT, none
+SRR11403628	emm60	2016	60	53	2	erm(B), tet(M)	40	pbp2x-331	PBP2X-1	WT, none
+SRR11403629	emm28	2015	28	52	3	no ARGs detected	70	pbp2x-77	PBP2X-1	WT, none
+SRR11403630	emm4	2015	4	39	3	no ARGs detected	19	pbp2x-284	PBP2X-1	WT, none
+SRR11403631	emm77	2013	77	63	4	erm(TR), tet(O)	21	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403632	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403633	emm77	2012	77	63	4	erm(TR), tet(O)	27	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403634	emm1	2012	1	28	3	no ARGs detected	25	pbp2x-1	PBP2X-1	WT, none
+SRR11403635	emm28	2008	28	456	3	no ARGs detected	15	pbp2x-77	PBP2X-1	WT, none
+SRR11403636	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403637	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403638	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403639	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403640	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403641	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403642	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403643	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403644	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403645	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403646	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403647	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403648	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403649	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403650	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403651	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403652	emm4	1999	4	39	1	mef(A), msr(D)	5	pbp2x-284	PBP2X-1	WT, none
+SRR11403653	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403654	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403655	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403656	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403657	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403658	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403659	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403660	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403661	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403662	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403663	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403664	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403665	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403666	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403667	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403668	emm89	2008	89	101	3	no ARGs detected	24	pbp2x-310	PBP2X-4	Ser562Thr
+SRR11403669	emm89	2008	89	101	3	no ARGs detected	24	pbp2x-310	PBP2X-4	Ser562Thr
+SRR11403670	emm9	2008	9	75	3	no ARGs detected	53	pbp2x-188	PBP2X-1	WT, none
+SRR11403671	emm28	2008	28	52	3	no ARGs detected	11	pbp2x-77	PBP2X-1	WT, none
+SRR11403672	emm12	2007	12	36	1	mef(A), msr(D)	9	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403673	emm89	2007	89	101	3	no ARGs detected	24	pbp2x-310	PBP2X-4	Ser562Thr
+SRR11403674	emm1	2007	1	28	3	no ARGs detected	42	pbp2x-1	PBP2X-1	WT, none
+SRR11403675	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403676	emm12	2006	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403677	emm170	2006	170	150	3	no ARGs detected	28	pbp2x-54	PBP2X-1	WT, none
+SRR11403678	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403679	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403680	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403681	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403682	emm12	2001	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403683	emm28	2001	28	52	3	no ARGs detected	11	pbp2x-77	PBP2X-1	WT, none
+SRR11403684	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403685	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403686	emm4	1999	4	39	1	mef(A), msr(D)	22	pbp2x-284	PBP2X-1	WT, none
+SRR11403687	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403688	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403689	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403690	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403691	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403692	emm12	2000	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403693	emm4	2000	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403694	emm4	2000	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403695	emm28	1999	28	52	3	no ARGs detected	11	pbp2x-77	PBP2X-1	WT, none
+SRR11403696	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403697	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403698	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403699	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403700	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403701	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403702	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403703	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403704	emm4	1998	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403705	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403706	emm12	2006	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403707	emm12	2006	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403708	emm12	2006	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403709	emm75	2006	75	150	3	no ARGs detected	18	pbp2x-54	PBP2X-1	WT, none
+SRR11403710	emm75	2005	75	150	3	no ARGs detected	18	pbp2x-54	PBP2X-1	WT, none
+SRR11403711	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403712	emm103	2005	103	NF-4	11	spw, msr(D), catQ, tet(M)	102	pbp2x-100	PBP2X-1	WT, none
+SRR11403713	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403714	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403715	emm75	2005	75	150	3	no ARGs detected	18	pbp2x-54	PBP2X-1	WT, none
+SRR11403716	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403717	emm75	2005	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403718	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403719	emm2	2005	2	55	13	mef(A), msr(D), tet(O)	93	pbp2x-435	PBP2X-196	Thr374Ile
+SRR11403720	emm4	2005	4	38	3	no ARGs detected	19	pbp2x-284	PBP2X-1	WT, none
+SRR11403721	emm77	2005	77	369	4	erm(TR), tet(O)	13	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403722	emm77	2005	77	63	4	erm(TR), tet(O)	20	pbp2x-379	PBP2X-168	Asp125Tyr
+SRR11403723	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403724	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403725	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403726	emm75	2005	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403727	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403728	emm12	2005	12	36	1	mef(A), msr(D)	2	pbp2x-56	PBP2X-35	Met593Thr
+SRR11403729	emm75	2005	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403730	emm75	2004	75	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403731	emm170	2004	170	150	2	erm(B), tet(M)	7	pbp2x-54	PBP2X-1	WT, none
+SRR11403732	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403733	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403734	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403735	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403736	emm170	1996	170	150	3	no ARGs detected	79	pbp2x-54	PBP2X-1	WT, none
+SRR11403737	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403738	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403739	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403740	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403741	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403742	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403743	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403744	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403745	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403746	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403747	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403748	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403749	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403750	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403751	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403752	emm4	1999	4	39	1	mef(A), msr(D)	6	pbp2x-284	PBP2X-1	WT, none
+SRR11403753	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403754	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403755	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403756	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403757	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403758	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403759	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403760	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403761	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403762	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403763	emm4	1999	4	39	20	aadD, mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403764	emm4	1999	4	39	1	mef(A), msr(D)	4	pbp2x-284	PBP2X-1	WT, none
+SRR11403765	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403766	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none
+SRR11403767	emm4	1999	4	39	1	mef(A), msr(D)	1	pbp2x-284	PBP2X-1	WT, none

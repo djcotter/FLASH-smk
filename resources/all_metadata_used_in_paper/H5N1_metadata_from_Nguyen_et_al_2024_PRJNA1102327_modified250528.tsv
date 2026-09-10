@@ -1,0 +1,1227 @@
+sample_name	HOST	Instrument	Collection_month	species_paper_subset	State	Premises	isolation_source_cleaned	cleaned_host	binary_host
+SRR29953194	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953195	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953196	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953197	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953198	Chicken	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29953199	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953200	Chicken	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29953201	Chicken	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29953202	Chicken	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29953203	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953204	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953205	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953206	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953207	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953208	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953209	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953210	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953211	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953212	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953213	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953214	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953215	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953216	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953217	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953218	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953219	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953220	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953221	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953222	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953223	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953224	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953225	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953226	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953227	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953228	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953229	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953230	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29953231	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29953232	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953233	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953234	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953235	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953236	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953237	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953238	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953239	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953240	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953241	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953242	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953243	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953244	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953245	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953246	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953247	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953248	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953249	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953250	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953251	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953252	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953253	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953254	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953255	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953256	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953257	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953258	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953259	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953260	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953261	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953262	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953263	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953264	Turkey	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29953265	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953266	Turkey	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29953267	Turkey	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29953268	Turkey	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29953269	Turkey	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29953270	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953271	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953272	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953273	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953274	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953275	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953276	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29953277	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851687	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851688	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851689	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851696	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851697	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851698	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851701	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR28752446	Blackbird	Illumina iSeq 100	mar	BLACKBIRD	TX	peridomestic	NA	blackbird	bird
+SRR28752447	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752448	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752449	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752450	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752451	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752452	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752453	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752454	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752455	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-005	NA	cattle	cattle
+SRR28752456	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752457	Chicken	Illumina MiSeq	mar	CHICKEN	TX	Moore-01	NA	chicken	bird
+SRR28752458	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752459	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752460	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752461	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752462	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752463	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752464	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752465	Cattle	Illumina MiSeq	mar	CATTLE	MI	MI-001	NA	cattle	cattle
+SRR28752466	Cattle	Illumina iSeq 100	mar	CATTLE	MI	MI-001	NA	cattle	cattle
+SRR28752467	Cattle	Illumina MiSeq	mar	CATTLE	MI	MI-001	NA	cattle	cattle
+SRR28752468	Chicken	Illumina MiSeq	mar	CHICKEN	TX	Moore-01	NA	chicken	bird
+SRR28752469	Cattle	Illumina MiSeq	mar	CATTLE	MI	MI-001	NA	cattle	cattle
+SRR28752470	Cattle	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28752472	Cattle	Illumina iSeq 100	mar	CATTLE	MI	MI-001	NA	cattle	cattle
+SRR28752473	Cat	Illumina iSeq 100	mar	CAT	TX	TX-008	NA	cat	NA
+SRR28752474	Cat	Illumina iSeq 100	mar	CAT	TX	TX-008	NA	cat	NA
+SRR28752475	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-002	NA	cattle	cattle
+SRR28752476	Cattle	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28752478	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-004	NA	cattle	cattle
+SRR28752479	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-005	NA	cattle	cattle
+SRR28752480	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752481	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752482	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752483	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752484	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752485	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752486	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752487	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752488	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752489	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-002	NA	cattle	cattle
+SRR28752490	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-011	NA	cattle	cattle
+SRR28752491	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-011	NA	cattle	cattle
+SRR28752492	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-011	NA	cattle	cattle
+SRR28752493	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-011	NA	cattle	cattle
+SRR28752494	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752495	Chicken	Illumina iSeq 100	apr	CHICKEN	TX	Parmer-01	NA	chicken	bird
+SRR28752496	Chicken	Illumina iSeq 100	apr	CHICKEN	TX	Parmer-01	NA	chicken	bird
+SRR28752497	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752498	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752499	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752500	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752501	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752502	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752503	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752504	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752505	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752506	Cattle	Illumina iSeq 100	mar	CATTLE	OH	OH-001	NA	cattle	cattle
+SRR28752507	Chicken	Illumina iSeq 100	apr	CHICKEN	MI	Ionia-01	NA	chicken	bird
+SRR28752508	Chicken	Illumina iSeq 100	apr	CHICKEN	MI	Ionia-01	NA	chicken	bird
+SRR28752509	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752510	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752511	Cat	Illumina iSeq 100	mar	CAT	NM	NM-001	NA	cat	NA
+SRR28752512	Cat	Illumina iSeq 100	mar	CAT	NM	NM-001	NA	cat	NA
+SRR28752513	Cat	Illumina iSeq 100	mar	CAT	NM	NM-001	NA	cat	NA
+SRR28752514	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752515	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752516	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752517	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752518	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752519	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752520	Chicken	Illumina iSeq 100	mar	CHICKEN	TX	Deaf-Smith-01	NA	chicken	bird
+SRR28752521	Grackle	Illumina iSeq 100	mar	GRACKLE	TX	peridomestic	NA	grackle	bird
+SRR28752522	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28752523	Cat	Illumina iSeq 100	mar	CAT	TX	TX-007	NA	cat	NA
+SRR28752524	Cat	Illumina iSeq 100	mar	CAT	TX	TX-007	NA	cat	NA
+SRR28752525	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752526	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752527	Cattle	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28752529	Cattle	Illumina iSeq 100	apr	CATTLE	TX	TX-012	NA	cattle	cattle
+SRR28752530	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-010	NA	cattle	cattle
+SRR28752531	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-010	NA	cattle	cattle
+SRR28752532	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-010	NA	cattle	cattle
+SRR28752533	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-010	NA	cattle	cattle
+SRR28752534	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-010	NA	cattle	cattle
+SRR28752535	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-007	NA	cattle	cattle
+SRR28752536	Chicken	Illumina iSeq 100	apr	CHICKEN	KS	Grant-01	NA	chicken	bird
+SRR28752537	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752538	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752539	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752540	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752541	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752542	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752543	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752544	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752545	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752546	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752547	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752548	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752550	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752551	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752552	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752553	Chicken	Illumina iSeq 100	apr	CHICKEN	MI	Ionia-01	NA	chicken	bird
+SRR28752554	Cattle	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28752555	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-004	NA	cattle	cattle
+SRR28752556	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752557	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752558	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752559	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752560	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752561	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752562	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752563	Blackbird	Illumina iSeq 100	mar	BLACKBIRD	TX	peridomestic	NA	blackbird	bird
+SRR28752564	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752565	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752566	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752567	Cattle	Illumina iSeq 100	mar	CATTLE	KS	KS-003	NA	cattle	cattle
+SRR28752568	Raccoon	Illumina iSeq 100	mar	RACCOON	NM	peridomestic	NA	raccoon	NA
+SRR28752569	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752570	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752571	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752572	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752573	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752574	Grackle	Illumina iSeq 100	mar	GRACKLE	TX	peridomestic	NA	grackle	bird
+SRR28752575	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752576	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752577	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752578	Cattle	Illumina iSeq 100	mar	CATTLE	ID	ID-001	NA	cattle	cattle
+SRR28752579	Cattle	Illumina iSeq 100	mar	CATTLE	ID	ID-001	NA	cattle	cattle
+SRR28752580	Cattle	Illumina iSeq 100	mar	CATTLE	ID	ID-001	NA	cattle	cattle
+SRR28752581	Cattle	Illumina iSeq 100	mar	CATTLE	ID	ID-001	NA	cattle	cattle
+SRR28752582	Cattle	Illumina iSeq 100	mar	CATTLE	ID	ID-001	NA	cattle	cattle
+SRR28752583	Cattle	Illumina iSeq 100	mar	CATTLE	ID	ID-001	NA	cattle	cattle
+SRR28752584	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752585	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752586	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752587	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752588	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752589	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752590	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752591	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752592	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752593	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752594	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752595	Chicken	Illumina iSeq 100	mar	CHICKEN	TX	Deaf-Smith-01	NA	chicken	bird
+SRR28752596	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752597	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752598	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752599	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752600	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752601	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752602	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752603	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752604	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752605	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752606	Chicken	Illumina MiSeq	mar	CHICKEN	TX	Deaf-Smith-01	NA	chicken	bird
+SRR28752607	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752608	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752609	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752610	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752611	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752612	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752613	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752614	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752615	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752616	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752617	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752618	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752619	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752620	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752621	Cattle	Illumina iSeq 100	apr	CATTLE	SD	SD-001	NA	cattle	cattle
+SRR28752622	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-003	NA	cattle	cattle
+SRR28752623	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752624	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752625	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752626	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752627	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752628	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752629	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752630	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752631	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752632	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752633	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752634	Cattle	Illumina iSeq 100	apr	CATTLE	NM	NM-006	NA	cattle	cattle
+SRR28752635	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752636	PEFA	Illumina MiSeq	NA	NA	NA	NA	NA	pefa	NA
+SRR28752637	Cattle	Illumina iSeq 100	apr	CATTLE	NC	NC-001	NA	cattle	cattle
+SRR28752638	Chicken	Illumina iSeq 100	apr	CHICKEN	MI	Ionia-02	NA	chicken	bird
+SRR28752639	Chicken	Illumina iSeq 100	apr	CHICKEN	MI	Ionia-02	NA	chicken	bird
+SRR28752640	Chicken	Illumina iSeq 100	apr	CHICKEN	MI	Ionia-02	NA	chicken	bird
+SRR28752641	Chicken	Illumina iSeq 100	apr	CHICKEN	MI	Ionia-02	NA	chicken	bird
+SRR28752642	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-001	NA	cattle	cattle
+SRR28752643	Cattle	Illumina iSeq 100	apr	CATTLE	MI	MI-001	NA	cattle	cattle
+SRR28752644	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-003	NA	cattle	cattle
+SRR28752645	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-003	NA	cattle	cattle
+SRR28752646	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-004	NA	cattle	cattle
+SRR28752647	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-002	NA	cattle	cattle
+SRR28752648	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-004	NA	cattle	cattle
+SRR28752649	Grackle	Illumina iSeq 100	mar	GRACKLE	TX	peridomestic	NA	grackle	bird
+SRR28752650	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752651	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752652	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752653	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752654	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752655	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752656	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752657	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752658	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752659	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752660	Chicken	Illumina iSeq 100	mar	CHICKEN	TX	Deaf-Smith-01	NA	chicken	bird
+SRR28752661	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752662	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752663	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752664	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-009	NA	cattle	cattle
+SRR28752665	Cat	Illumina MiSeq	mar	CAT	TX	TX-008	NA	cat	NA
+SRR28752666	Cat	Illumina MiSeq	mar	CAT	TX	TX-008	NA	cat	NA
+SRR28752667	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752668	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752669	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752670	Cattle	Illumina iSeq 100	mar	CATTLE	TX	TX-007	NA	cattle	cattle
+SRR28752671	Chicken	Illumina MiSeq	mar	CHICKEN	TX	Deaf-Smith-01	NA	chicken	bird
+SRR28752672	Cattle	Illumina MiSeq	mar	CATTLE	NM	NM-002	NA	cattle	cattle
+SRR28752673	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-003	NA	cattle	cattle
+SRR28752674	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-003	NA	cattle	cattle
+SRR28752675	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-008	NA	cattle	cattle
+SRR28752676	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-008	NA	cattle	cattle
+SRR28752677	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-008	NA	cattle	cattle
+SRR28752678	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-002	NA	cattle	cattle
+SRR28752679	Cattle	Illumina iSeq 100	mar	CATTLE	NM	NM-002	NA	cattle	cattle
+SRR28752680	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752681	Cattle	Illumina MiSeq	mar	CATTLE	TX	TX-001	NA	cattle	cattle
+SRR28752682	Chicken	Illumina iSeq 100	mar	CHICKEN	TX	Deaf-Smith-01	NA	chicken	bird
+SRR28752683	CAGO	Illumina MiSeq	NA	NA	NA	NA	NA	cago	NA
+SRR28752684	Goose	Illumina MiSeq	NA	NA	NA	NA	NA	goose	bird
+SRR30090349	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090350	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090351	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090352	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090353	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090354	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090355	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090356	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090357	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090358	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090359	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090360	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090361	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090362	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090363	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090364	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090365	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090366	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090367	Cat	NextSeq 2000	NA	NA	NA	NA	NA	cat	NA
+SRR30090368	Cat	NextSeq 2000	NA	NA	NA	NA	NA	cat	NA
+SRR30090369	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090370	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090371	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090372	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090373	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090374	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090375	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090376	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090377	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090378	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090379	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090380	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090381	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090382	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090383	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090384	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090385	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090386	Raccoon	NextSeq 2000	NA	NA	NA	NA	swab	raccoon	NA
+SRR30090387	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090388	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090389	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090390	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090391	Western Kingbird	NextSeq 2000	NA	NA	NA	NA	swab	western kingbird	bird
+SRR30090392	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090393	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090394	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090395	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090396	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090397	House Sparrow	NextSeq 2000	NA	NA	NA	NA	swab	house sparrow	bird
+SRR30090398	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090399	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090400	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090401	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090402	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090403	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090404	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30090405	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090406	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090407	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090408	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30090409	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202021	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202024	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202029	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202030	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202031	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202037	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202038	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202043	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202049	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202050	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202051	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851700	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29851702	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851683	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851685	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851690	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851691	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851692	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851693	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851694	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29851695	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29851699	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851679	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851680	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851681	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851682	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851684	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29851686	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29377820	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377821	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377822	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377823	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377824	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377825	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377826	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377827	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377828	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377829	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377830	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377831	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377832	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377833	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377834	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377835	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377836	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377837	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377838	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377839	Alpaca	NextSeq 2000	NA	NA	NA	NA	NA	alpaca	NA
+SRR29377840	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377841	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377842	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377843	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377844	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377845	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377846	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377847	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377848	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377849	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377850	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377851	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377852	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377853	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377854	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377855	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377856	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377857	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377858	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377859	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377860	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377861	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377862	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377863	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377864	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377865	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377866	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377867	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377868	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377869	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377870	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377871	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377872	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR29377873	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377874	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377875	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377876	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377877	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377878	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377879	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR29377880	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR29377881	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377882	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377883	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR29377884	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29377885	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377886	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377887	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377888	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377889	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377890	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377891	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377892	Cat	NextSeq 2000	NA	NA	NA	NA	NA	cat	NA
+SRR29377893	Cat	NextSeq 2000	NA	NA	NA	NA	NA	cat	NA
+SRR29377894	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR29377895	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377896	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377897	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377898	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377899	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377900	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377901	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377902	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377903	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377904	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377905	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR29377906	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377907	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377908	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377909	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377910	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377911	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377912	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377913	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377914	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377915	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29377916	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR29377917	Chicken	NextSeq 2000	NA	NA	NA	NA	NA	chicken	bird
+SRR28912777	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912778	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912779	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912780	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912781	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912782	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912783	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912784	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912785	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912786	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912787	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912788	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912789	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912790	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912791	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912792	DOMESTIC-CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR28912793	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912794	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912795	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912796	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912797	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912798	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912799	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912800	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912801	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912802	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912803	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912804	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912805	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912806	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912807	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912808	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912809	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912810	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912811	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912812	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912813	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912814	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912815	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912816	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912817	DOMESTIC-CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR28912818	DOMESTIC-CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR28912819	DOMESTIC-CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR28912820	RACCOON	Illumina iSeq 100	NA	NA	NA	NA	NA	raccoon	NA
+SRR28912821	RACCOON	Illumina iSeq 100	NA	NA	NA	NA	NA	raccoon	NA
+SRR28912822	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912823	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912824	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912825	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912826	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912827	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912828	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912829	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912830	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912831	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912832	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912833	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912834	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912835	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912836	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912837	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912838	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28912839	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28912840	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912841	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912842	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912843	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912844	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912845	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912846	Cattle	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912847	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912848	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912849	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912850	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912851	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912852	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912853	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912854	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912855	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912856	CATTLE	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912857	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28912858	DOMESTIC-CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR29281427	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281428	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281429	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281430	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281431	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281432	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281433	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281434	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281435	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281436	FELINE	Illumina iSeq 100	NA	NA	NA	NA	NA	feline	NA
+SRR29281437	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281438	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281439	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281440	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281441	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281442	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281443	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281444	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281445	FELINE	Illumina iSeq 100	NA	NA	NA	NA	NA	feline	NA
+SRR29281446	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29281447	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29281448	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281449	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281450	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281451	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281452	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281453	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281454	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281455	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281456	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281457	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281458	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281459	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281460	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281461	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281462	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281463	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281464	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281465	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281466	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281467	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281468	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281469	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281470	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281471	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29281472	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	swab	turkey	bird
+SRR29455576	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455578	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455582	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455591	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455592	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455593	Cat	NextSeq 2000	NA	NA	NA	NA	NA	cat	NA
+SRR29455597	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455598	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455599	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455600	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455603	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455604	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455606	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455610	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455611	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455615	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455616	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455621	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455628	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455631	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455633	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455640	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455641	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455645	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455646	Alpaca	NextSeq 2000	NA	NA	NA	NA	NA	alpaca	NA
+SRR29455647	Alpaca	NextSeq 2000	NA	NA	NA	NA	NA	alpaca	NA
+SRR29455581	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455583	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455584	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455585	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455586	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455587	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455588	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455589	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455590	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455612	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455613	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455614	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455627	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455634	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455642	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455643	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182377	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29182378	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29182379	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	swab	chicken	bird
+SRR29182380	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182381	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182382	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	swab	cattle	cattle
+SRR29182383	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182384	GOOSE	NextSeq 2000	NA	NA	NA	NA	swab	goose	bird
+SRR29182385	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182386	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182387	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182388	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182389	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182390	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182391	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182392	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182393	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29182394	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29182395	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR28834894	cattle	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834895	Domestic Cat	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28834896	Domestic Cat	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28834897	GOAT	Illumina MiSeq	NA	NA	NA	NA	NA	goat	NA
+SRR28834898	Western Sandpiper	Illumina MiSeq	NA	NA	NA	NA	NA	western sandpiper	bird
+SRR28834912	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834913	Mute Swan	Illumina MiSeq	NA	NA	NA	NA	NA	mute swan	bird
+SRR28834914	Mountain Lion	Illumina iSeq 100	NA	NA	NA	NA	NA	mountain lion	NA
+SRR28834915	Duck	Illumina iSeq 100	NA	NA	NA	NA	NA	duck	bird
+SRR28834916	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834917	Canada Goose	Illumina MiSeq	NA	NA	NA	NA	NA	canada goose	bird
+SRR28834918	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834919	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834920	American Crow	Illumina MiSeq	NA	NA	NA	NA	NA	american crow	bird
+SRR28834921	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834922	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834923	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834924	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834925	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834931	Canada Goose	Illumina MiSeq	NA	NA	NA	NA	NA	canada goose	bird
+SRR28834933	Red Tailed Hawk	Illumina MiSeq	NA	NA	NA	NA	NA	red tailed hawk	bird
+SRR28834934	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834935	Bald Eagle	Illumina MiSeq	NA	NA	NA	NA	NA	bald eagle	bird
+SRR28834936	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834937	Snow Goose	Illumina MiSeq	NA	NA	NA	NA	NA	snow goose	bird
+SRR28834938	Chicken	Illumina MiSeq	NA	NA	NA	NA	NA	chicken	bird
+SRR28834939	Turkey Vulture	Illumina MiSeq	NA	NA	NA	NA	NA	turkey vulture	bird
+SRR28834940	Snow Goose	Illumina MiSeq	NA	NA	NA	NA	NA	snow goose	bird
+SRR28834941	Common Raven	Illumina MiSeq	NA	NA	NA	NA	NA	common raven	bird
+SRR28834942	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834943	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834953	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834954	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834955	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834956	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834957	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834958	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834959	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834960	GOAT	Illumina MiSeq	NA	NA	NA	NA	NA	goat	NA
+SRR28834961	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834962	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834963	Harris Hawk	Illumina MiSeq	NA	NA	NA	NA	NA	harris hawk	bird
+SRR28834964	Red Tailed Hawk	Illumina MiSeq	NA	NA	NA	NA	NA	red tailed hawk	bird
+SRR28834850	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834851	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834852	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834853	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834854	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834855	PIGEON	Illumina iSeq 100	NA	NA	NA	NA	NA	pigeon	bird
+SRR28834884	Chicken	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28834885	Mountain Lion	Illumina iSeq 100	NA	NA	NA	NA	NA	mountain lion	NA
+SRR28834886	Canada Goose	Illumina MiSeq	NA	NA	NA	NA	NA	canada goose	bird
+SRR28834887	cattle	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834888	cattle	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834889	cattle	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834890	cattle	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834891	cattle	Illumina MiSeq	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834892	cattle	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834893	cattle	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28834899	GOAT	Illumina MiSeq	NA	NA	NA	NA	NA	goat	NA
+SRR28834900	Mallard	Illumina MiSeq	NA	NA	NA	NA	NA	mallard	bird
+SRR28834901	American Crow	Illumina MiSeq	NA	NA	NA	NA	NA	american crow	bird
+SRR28834902	Ganada Goose	Illumina MiSeq	NA	NA	NA	NA	NA	ganada goose	bird
+SRR28834903	Great Horned Owl	Illumina MiSeq	NA	NA	NA	NA	NA	great horned owl	bird
+SRR28834904	Bald Eagle	Illumina iSeq 100	NA	NA	NA	NA	NA	bald eagle	bird
+SRR28834905	Red Tailed Hawk	Illumina MiSeq	NA	NA	NA	NA	NA	red tailed hawk	bird
+SRR28834906	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834907	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834908	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834909	American Crow	Illumina MiSeq	NA	NA	NA	NA	NA	american crow	bird
+SRR28834910	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834911	Skunk	Illumina MiSeq	NA	NA	NA	NA	NA	skunk	NA
+SRR28834926	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834927	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834928	Turkey	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28834929	Snow Goose	Illumina MiSeq	NA	NA	NA	NA	NA	snow goose	bird
+SRR28834930	Domestic Cat	Illumina MiSeq	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28834944	Chicken	Illumina MiSeq	NA	NA	NA	NA	NA	chicken	bird
+SRR28834945	Chicken	Illumina MiSeq	NA	NA	NA	NA	NA	chicken	bird
+SRR28834946	Turkey	Illumina MiSeq	NA	NA	NA	NA	NA	turkey	bird
+SRR28834947	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834948	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834949	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834950	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR28834951	Western Gull	Illumina MiSeq	NA	NA	NA	NA	NA	western gull	bird
+SRR28834952	GOAT	Illumina iSeq 100	NA	NA	NA	NA	NA	goat	NA
+SRR30202022	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202023	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202025	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202026	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202027	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202028	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202032	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202033	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202034	CAT	NextSeq 2000	NA	NA	NA	NA	NA	cat	NA
+SRR30202035	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202036	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202039	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR30202040	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202041	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202042	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202044	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202045	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202046	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202047	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR30202048	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29040269	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040270	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040271	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040272	DOMESTIC-CAT	NextSeq 2000	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR29040273	DOMESTIC-CAT	NextSeq 2000	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR29040274	DOMESTIC-CAT	NextSeq 2000	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR29040275	DOMESTIC-CAT	NextSeq 2000	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR29040276	RED FOX	NextSeq 2000	NA	NA	NA	NA	NA	red fox	NA
+SRR29040277	RED FOX	NextSeq 2000	NA	NA	NA	NA	NA	red fox	NA
+SRR29040278	RED FOX	NextSeq 2000	NA	NA	NA	NA	NA	red fox	NA
+SRR29040279	RED FOX	NextSeq 2000	NA	NA	NA	NA	NA	red fox	NA
+SRR29040280	RED FOX	NextSeq 2000	NA	NA	NA	NA	NA	red fox	NA
+SRR29040281	COMON-GRACKLE	NextSeq 2000	NA	NA	NA	NA	NA	comon-grackle	bird
+SRR29040282	HAWK	NextSeq 2000	NA	NA	NA	NA	NA	hawk	bird
+SRR29040283	TURKEY	NextSeq 2000	NA	NA	NA	NA	NA	turkey	bird
+SRR29040284	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040285	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040286	DOMESTIC-CAT	NextSeq 2000	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR29040287	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040288	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040289	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040290	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040291	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040292	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040293	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040294	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040295	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040296	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29040297	DOMESTIC-CAT	NextSeq 2000	NA	NA	NA	NA	NA	domestic-cat	NA
+SRR29040298	CATTLE	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980984	DOMESTIC CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28980985	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980986	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980987	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980988	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980989	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980990	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980991	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980992	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980993	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980994	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980995	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980996	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980997	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980998	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28980999	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981000	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981001	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981002	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981003	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981004	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981005	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981006	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981007	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981008	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981009	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981010	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981011	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981012	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981013	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981014	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981015	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981016	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981017	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981018	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981019	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981020	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981021	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981022	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981023	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981024	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981025	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981026	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981027	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981028	RACCOON	Illumina iSeq 100	NA	NA	NA	NA	NA	raccoon	NA
+SRR28981029	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28981030	CHICKEN	Illumina iSeq 100	NA	NA	NA	NA	NA	chicken	bird
+SRR28981031	DOMESTIC CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28981032	DOMESTIC CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28981033	DOMESTIC CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28981034	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28981035	TURKEY	Illumina iSeq 100	NA	NA	NA	NA	NA	turkey	bird
+SRR28981036	DOMESTIC CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR28981037	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981038	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	NA	cattle	cattle
+SRR28981039	DOMESTIC CAT	Illumina iSeq 100	NA	NA	NA	NA	NA	domestic cat	NA
+SRR29740685	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740689	Cattle	Illumina iSeq 100	NA	NA	NA	NA	swab	cattle	cattle
+SRR29740694	Cat	Illumina iSeq 100	NA	NA	NA	NA	swab	cat	NA
+SRR29740697	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740698	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740706	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740711	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740715	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740718	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740719	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740720	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740722	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740723	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740724	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740726	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740728	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740729	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740730	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740736	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29740742	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740743	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740744	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740747	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740749	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740753	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455573	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455574	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455575	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455577	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455579	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455580	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455594	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455595	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455596	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455601	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455602	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455605	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455607	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455608	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455609	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455617	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455618	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455619	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455620	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455622	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455623	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455624	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455625	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455626	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455629	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455630	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455632	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455635	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455636	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455637	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455638	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455639	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29455644	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543293	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29543294	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543295	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543296	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543297	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543298	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543299	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543300	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543301	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543302	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543303	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543304	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543305	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543306	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543307	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543308	CHICKEN	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29543309	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543310	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543311	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543312	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543313	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543314	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543315	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543316	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543317	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543318	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543319	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543320	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543321	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543322	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543323	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543324	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543325	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543326	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543327	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543328	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543329	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543330	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543331	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543332	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543333	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543334	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543335	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543336	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543337	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543338	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543339	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543340	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543341	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543342	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543343	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543344	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543345	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543346	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543347	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543348	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543349	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543350	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543351	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543352	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543353	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543354	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543355	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543356	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543357	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543358	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543359	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543360	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543361	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543362	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543363	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543364	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543365	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543366	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543367	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543368	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543369	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543370	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543371	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543372	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543373	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543374	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543375	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29543376	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543377	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543378	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543379	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543380	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543381	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29543382	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29543383	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29543384	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543385	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543386	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543387	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543388	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543389	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543390	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29543391	TURKEY	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29543392	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543393	CATTLE	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29543394	CATTLE	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29694475	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694476	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694477	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694478	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694479	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694480	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694481	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694482	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694483	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694484	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694485	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694486	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694487	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694488	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694489	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694490	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694491	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694492	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cat	cattle
+SRR29694493	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cat	cattle
+SRR29694494	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694495	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694496	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694497	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694498	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694499	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694500	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694501	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694502	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694503	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694504	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694505	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694506	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694507	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694508	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694509	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694510	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694511	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694512	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694513	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694514	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694515	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694516	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694517	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694518	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694519	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694520	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694521	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694522	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	turkey	cattle
+SRR29694523	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694524	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694525	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694526	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694527	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694528	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694529	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694530	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694531	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694532	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694533	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694534	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694535	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694536	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694537	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694538	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694539	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694540	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694541	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694542	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694543	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694544	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694545	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694546	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694547	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694548	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694549	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694550	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694551	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694552	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694553	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694554	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694555	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694556	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694557	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694558	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694559	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694560	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694561	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694562	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694563	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694564	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694565	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694566	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694567	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694568	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694569	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694570	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694571	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694572	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694573	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694574	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694575	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694576	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694577	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694578	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694579	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694580	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694581	Cat	NextSeq 2000	NA	NA	NA	NA	NA	cattle	NA
+SRR29694582	Cat	NextSeq 2000	NA	NA	NA	NA	NA	cattle	NA
+SRR29694583	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694584	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694585	Turkey	NextSeq 2000	NA	NA	NA	NA	NA	cattle	bird
+SRR29694586	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694587	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694588	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694589	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694590	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29694591	Cattle	NextSeq 2000	NA	NA	NA	NA	NA	cattle	cattle
+SRR29740674	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740675	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740676	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740677	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740678	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740679	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740680	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740681	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740682	Cattle	Illumina iSeq 100	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740683	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740684	Turkey	Illumina iSeq 100	NA	NA	NA	NA	swab	turkey	bird
+SRR29740686	Turkey	Illumina iSeq 100	NA	NA	NA	NA	swab	turkey	bird
+SRR29740687	Turkey	Illumina iSeq 100	NA	NA	NA	NA	swab	turkey	bird
+SRR29740688	Turkey	Illumina iSeq 100	NA	NA	NA	NA	swab	turkey	bird
+SRR29740690	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29740691	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29740692	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29740693	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29740695	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740696	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740699	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740700	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740701	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740702	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740703	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740704	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740705	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740707	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740708	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740709	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740710	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740712	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740713	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740714	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740716	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740717	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740721	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740725	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740727	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740731	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740732	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740733	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740734	Chicken	NextSeq 2000	NA	NA	NA	NA	swab	chicken	bird
+SRR29740735	Turkey	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29740737	Turkey	NextSeq 2000	NA	NA	NA	NA	swab	turkey	bird
+SRR29740738	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740739	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740740	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740741	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740745	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740746	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740748	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740750	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740751	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
+SRR29740752	Cattle	NextSeq 2000	NA	NA	NA	NA	milk	cattle	cattle
