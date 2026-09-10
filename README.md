@@ -90,7 +90,7 @@ There is an example script for running SPLASH in the `resources/utility_scripts`
 #### The metadata file needs to be formatted as follows
 
 1. Column 1 contains the same sample ids as were used to run `SPLASH` and is named `sample_name` (the script will attempt to assign the first column as `sample_name` otherwise)
-2. The other columns contain a simple column name describing the metadata as well as the observations of the metadata.
+2. The other columns contain a simple column name describing the metadata as well as the observations of the metadata. To avoid disrupting parsing, categorical metadata values should not contain `+`, `,`, `[]`, `;`.
 
 ### 3. Ensure that the parameters you want to use are specified in the `config.yaml` file. Snakemake will use these to fill out the wildcards in the `Snakefile`
 
@@ -218,7 +218,7 @@ Input files and paths are detailed in `dataset_table.csv` and the columns are de
 
 - `translation_table`: Integer corresponding to the correct genetic code for translation.
 
-- `taxid`: Taxonomic ID associated with the dataset. Used to restrict the BLAST-based annotation pipeline to a specific taxon.
+- `taxid`: Taxonomic ID associated with the dataset. Used to restrict the BLAST-based annotation pipeline to selected taxa.
 
 ### Additional inputs for genome predictions
 
@@ -263,7 +263,7 @@ These files are the necessary inputs for the FLASH pipeline. You can then procee
 
 You should not need to modify any of the parameters in the `config.yaml` unless you change the anchor or target lengths when running SPLASH as mentioned above. If you do change these lengths, ensure that the `anchor_length` and `target_length` variables in the `config.yaml` file are updated accordingly. After confirming that all paths and parameters are correctly set, you can run the FLASH pipeline using Snakemake as described in the previous sections.
 
-Note that if you use a very short anchor length, you should also modify the `CLUSTER_TYPES` variable in the `Snakefile` to avoid using clustering methods that rely on longer anchors, such as `shiftDist-levFilter`. This should instead be set to use `noCluster`:
+Note that if you use a very short anchor length, you should also modify the `CLUSTER_TYPES` variable in the `Snakefile` to avoid using clustering methods that rely on longer anchors, such as `shiftDist-levFilter`. This should instead be set to use `noCluster`. We have provided an alternative `config_short-anchors.yaml` in the config for reference. 
 
 ```{python}
 # If using default anchor length of 27, use:
@@ -279,7 +279,7 @@ CLUSTER_TYPES = ["noCluster"]
 
 ## Example Run of FLASH on H5N1 Sample Data (Step-by-Step)
 
-This section walks through a complete, reproducible example using the provided H5N1 dataset. The goal is to go from raw data → SPLASH → FLASH predictions.
+This section walks through a complete, reproducible example using the provided H5N1 dataset. The goal is to go from raw data → SPLASH → FLASH predictions. Note this provided dataset is a subset of the full H5N1 dataset used for the FLASH paper, and it's expected to see an lower accuracy of 0.67. 
 
 ### Step 0: Create and activate environment
 

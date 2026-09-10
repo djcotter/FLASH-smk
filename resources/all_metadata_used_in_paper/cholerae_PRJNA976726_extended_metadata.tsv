@@ -1,0 +1,345 @@
+sample_name	Collection_Month	Age_binned	Sex	Vomiting	Duration_of_Dirrhoea_in_Hrs_binned	Duration_of_Dirrhoea_binary	Nature_of_Stool	CIP_binned	CIP	AZI	DOX
+SRR25010922	2018-04	19-35 years	1	1	(0,1] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25010923	2018-03	36-50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010924	2018-04	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010925	2018-04	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010926	2018-04	0-5 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25010927	2018-04	0-5 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010928	2018-04	0-5 years	2	2	(0,1] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25010929	2018-09	>50 years	1	2	(0,1] hours	<24	Watery	zero	zero	nonZero	zero
+SRR25010930	2018-09	6-18 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010931	2018-09	>50 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010932	2018-12	36-50 years	2	1	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25010933	2018-04	36-50 years	1	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25010934	2018-12	0-5 years	1	2	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010935	2018-12	0-5 years	2	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010936	2018-12	0-5 years	2	2	(12,24] hours	>24	Loose Watery	>3	nonZero	nonZero	zero
+SRR25010937	2018-12	0-5 years	1	2	(12,24] hours	>24	Rice Watery	zero	zero	nonZero	nonZero
+SRR25010938	2018-11	0-5 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010939	2018-11	0-5 years	1	2	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010940	2018-11	0-5 years	2	1	(48,72] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25010941	2018-11	>50 years	2	1	(48,72] hours	>24	Rice Watery	zero	zero	nonZero	zero
+SRR25010942	2018-11	19-35 years	2	1	(48,72] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25010943	2018-11	>50 years	2	2	(48,72] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25010944	2018-04	36-50 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25010945	2018-09	36-50 years	2	2	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25010946	2018-05	19-35 years	1	2	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010947	2018-05	19-35 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010948	2018-04	19-35 years	2	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25010949	2018-04	19-35 years	1	2	(12,24] hours	>24	Rice Watery	>3	nonZero	zero	zero
+SRR25010950	2018-04	36-50 years	2	2	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010951	2018-04	36-50 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010952	2018-04	6-18 years	2	1	(24,48] hours	>24	Loose Watery	(0,1]	nonZero	nonZero	zero
+SRR25010953	2018-04	19-35 years	2	2	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010954	2018-04	19-35 years	2	1	(48,72] hours	>24	Loose Watery	(1,3]	nonZero	zero	zero
+SRR25010955	2018-04	19-35 years	1	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010956	2018-04	19-35 years	1	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010957	2018-04	19-35 years	2	1	>72 hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25010958	2018-04	19-35 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010959	2018-04	0-5 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010960	2018-04	19-35 years	1	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010961	2018-04	36-50 years	2	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010962	2018-04	19-35 years	1	2	>72 hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25010963	2018-04	>50 years	2	1	(24,48] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25010964	2018-04	19-35 years	2	2	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010965	2018-04	0-5 years	1	1	(24,48] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	zero
+SRR25010966	2018-04	6-18 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010967	2018-04	6-18 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010968	2018-11	0-5 years	1	1	(24,48] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25010969	2018-11	0-5 years	1	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010970	2018-04	>50 years	1	2	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25010971	2018-11	19-35 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25010972	2018-11	0-5 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010973	2018-11	0-5 years	2	1	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010974	2018-11	36-50 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25010975	2018-11	0-5 years	1	1	>72 hours	>24	Loose Watery	(0,1]	nonZero	nonZero	zero
+SRR25010976	2018-10	0-5 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010977	2018-10	6-18 years	2	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25010978	2018-09	36-50 years	1	2	(24,48] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25010979	2018-07	36-50 years	2	1	(12,24] hours	>24	Rice Watery	zero	zero	nonZero	zero
+SRR25010980	2018-07	6-18 years	1	1	(1,12] hours	<24	Rice Watery	zero	zero	zero	zero
+SRR25010981	2018-07	19-35 years	1	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25010982	2018-07	>50 years	1	2	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25010983	2018-06	36-50 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25010984	2018-06	36-50 years	2	2	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25010985	2018-05	36-50 years	2	1	(48,72] hours	>24	Rice Watery	(1,3]	nonZero	nonZero	zero
+SRR25010986	2018-05	19-35 years	1	2	(48,72] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25010987	2018-04	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010988	2018-05	36-50 years	2	1	(12,24] hours	<24	Loose Watery	zero	zero	nonZero	zero
+SRR25010989	2018-05	36-50 years	2	2	(24,48] hours	>24	Loose Watery	(0,1]	nonZero	nonZero	zero
+SRR25010990	2018-05	19-35 years	1	1	(12,24] hours	<24	Rice Watery	zero	zero	nonZero	zero
+SRR25010991	2018-05	36-50 years	2	1	(1,12] hours	<24	Rice Watery	zero	zero	nonZero	zero
+SRR25010992	2018-05	19-35 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	nonZero	zero
+SRR25010993	2018-05	36-50 years	2	2	(1,12] hours	<24	Loose Watery	(1,3]	nonZero	nonZero	zero
+SRR25010994	2018-05	19-35 years	2	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25010995	2018-05	19-35 years	2	2	(12,24] hours	>24	Rice Watery	zero	zero	nonZero	zero
+SRR25010996	2018-05	19-35 years	2	1	(24,48] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25010997	2018-05	36-50 years	2	2	(1,12] hours	<24	Rice Watery	>3	nonZero	zero	nonZero
+SRR25010998	2018-04	6-18 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25010999	2018-05	36-50 years	1	2	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	nonZero	zero
+SRR25011000	2018-05	36-50 years	1	2	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011001	2018-05	36-50 years	2	1	(12,24] hours	>24	Rice Watery	zero	zero	nonZero	zero
+SRR25011002	2018-05	19-35 years	1	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011003	2018-05	6-18 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011004	2018-05	19-35 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011005	2018-05	19-35 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011006	2018-05	6-18 years	2	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011007	2018-04	19-35 years	2	2	(48,72] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011008	2018-03	>50 years	1	2	(48,72] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011009	2018-04	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011010	2018-10	6-18 years	1	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	nonZero
+SRR25011011	2018-10	0-5 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011012	2018-10	>50 years	1	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011013	2018-04	36-50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011014	2018-08	19-35 years	1	1	(24,48] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011015	2018-07	19-35 years	1	1	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011016	2018-07	36-50 years	2	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011017	2018-06	36-50 years	2	1	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011018	2018-06	36-50 years	1	1	(24,48] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	zero
+SRR25011019	2018-06	19-35 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011020	2018-06	19-35 years	2	1	(24,48] hours	>24	Loose Watery	(1,3]	nonZero	zero	zero
+SRR25011021	2018-06	19-35 years	2	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	nonZero
+SRR25011022	2018-06	19-35 years	2	1	(12,24] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	nonZero
+SRR25011023	2018-05	19-35 years	2	1	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011024	2018-03	19-35 years	2	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011025	2018-03	6-18 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011026	2018-05	6-18 years	1	1	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011027	2018-05	36-50 years	2	1	(24,48] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011028	2018-05	>50 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011029	2018-05	19-35 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011030	2018-05	19-35 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011031	2018-05	19-35 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011032	2018-05	6-18 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011033	2018-05	19-35 years	1	1	(24,48] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011034	2018-05	36-50 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011035	2018-05	19-35 years	1	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011036	2018-03	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011037	2018-05	6-18 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011038	2018-04	0-5 years	1	1	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011039	2018-04	36-50 years	1	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011040	2018-04	19-35 years	2	1	(24,48] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011041	2018-04	19-35 years	1	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011042	2018-10	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011043	2018-10	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011044	2018-10	0-5 years	2	1	(1,12] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25011045	2018-10	6-18 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011046	2018-10	>50 years	2	1	(0,1] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25011047	2018-10	>50 years	2	1	(1,12] hours	<24	Watery	(0,1]	nonZero	nonZero	zero
+SRR25011048	2018-09	0-5 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011049	2018-08	19-35 years	1	2	(1,12] hours	<24	Watery	(0,1]	nonZero	nonZero	zero
+SRR25011050	2018-08	36-50 years	1	1	(0,1] hours	<24	Watery	(1,3]	nonZero	nonZero	zero
+SRR25011051	2018-08	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011052	2018-03	6-18 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011053	2018-08	19-35 years	2	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011054	2018-07	>50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011055	2018-07	36-50 years	2	2	(1,12] hours	<24	Watery	zero	zero	nonZero	zero
+SRR25011056	2018-07	36-50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011057	2018-07	>50 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011058	2018-07	36-50 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011059	2018-06	>50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	nonZero
+SRR25011060	2018-06	0-5 years	1	1	(1,12] hours	<24	Watery	(0,1]	nonZero	zero	nonZero
+SRR25011061	2018-06	19-35 years	1	1	(0,1] hours	<24	Watery	(1,3]	nonZero	zero	zero
+SRR25011062	2018-06	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011063	2018-03	36-50 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011064	2018-06	36-50 years	2	1	(0,1] hours	<24	Watery	zero	zero	nonZero	nonZero
+SRR25011065	2018-06	19-35 years	2	1	(0,1] hours	<24	Watery	>3	nonZero	zero	zero
+SRR25011066	2018-03	19-35 years	1	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011067	2018-12	19-35 years	1	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011068	2018-10	0-5 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011069	2018-10	19-35 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011070	2018-08	6-18 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011071	2018-07	36-50 years	1	1	>72 hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011072	2018-06	36-50 years	1	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	nonZero
+SRR25011073	2018-06	36-50 years	1	1	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011074	2018-05	36-50 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011075	2018-05	0-5 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011076	2018-04	6-18 years	2	1	(24,48] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	zero
+SRR25011077	2018-04	36-50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011078	2018-04	36-50 years	1	1	(12,24] hours	<24	Loose Watery	zero	zero	zero	zero
+SRR25011079	2018-03	0-5 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	nonZero
+SRR25011080	2018-03	36-50 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011081	2019-03	36-50 years	2	2	(12,24] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	zero
+SRR25011082	2018-12	>50 years	1	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011083	2018-12	36-50 years	1	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011084	2018-11	6-18 years	2	2	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011085	2018-11	6-18 years	1	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011086	2018-11	36-50 years	1	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011087	2018-11	0-5 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011088	2018-04	>50 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011089	2018-11	36-50 years	2	2	(48,72] hours	>24	Loose Watery	(1,3]	nonZero	zero	zero
+SRR25011090	2018-11	>50 years	1	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011091	2018-11	36-50 years	1	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011092	2018-11	36-50 years	1	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011093	2018-11	19-35 years	1	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011094	2018-11	36-50 years	1	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011095	2018-11	36-50 years	1	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011096	2018-10	19-35 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011097	2018-09	19-35 years	1	1	>72 hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011098	2018-04	>50 years	1	1	(24,48] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011099	2018-04	19-35 years	2	1	(48,72] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011100	2018-04	19-35 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011101	2018-04	19-35 years	1	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011102	2018-11	0-5 years	2	1	(24,48] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011103	2018-03	19-35 years	2	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011104	2018-11	6-18 years	2	2	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011105	2018-10	0-5 years	2	1	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	nonZero	zero
+SRR25011106	2018-09	19-35 years	1	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011107	2018-08	>50 years	1	2	(24,48] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011108	2018-08	36-50 years	1	2	>72 hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011109	2018-08	19-35 years	2	2	(12,24] hours	<24	Rice Watery	zero	zero	zero	zero
+SRR25011110	2018-07	0-5 years	1	1	(24,48] hours	>24	Rice Watery	>3	nonZero	nonZero	zero
+SRR25011111	2018-07	36-50 years	2	2	(12,24] hours	>24	Rice Watery	>3	nonZero	nonZero	zero
+SRR25011112	2018-07	19-35 years	1	2	(48,72] hours	>24	Rice Watery	(1,3]	nonZero	nonZero	zero
+SRR25011113	2018-06	36-50 years	1	1	(24,48] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011114	2018-03	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011115	2018-05	>50 years	1	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011116	2018-05	19-35 years	1	1	(48,72] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011117	2018-05	>50 years	2	2	(1,12] hours	<24	Rice Watery	(1,3]	nonZero	zero	zero
+SRR25011118	2018-04	0-5 years	1	2	(24,48] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011119	2018-04	>50 years	2	1	(12,24] hours	>24	Rice Watery	(1,3]	nonZero	zero	zero
+SRR25011120	2018-03	0-5 years	2	1	(24,48] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011121	2018-11	0-5 years	2	2	>72 hours	>24	Loose Watery	(0,1]	nonZero	nonZero	zero
+SRR25011122	2018-10	6-18 years	1	2	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011123	2018-10	19-35 years	2	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011124	2018-10	0-5 years	1	2	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	nonZero	zero
+SRR25011125	2018-03	36-50 years	1	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011126	2018-10	19-35 years	2	2	(48,72] hours	>24	Loose Watery	(1,3]	nonZero	zero	zero
+SRR25011127	2018-10	0-5 years	1	2	(12,24] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011128	2018-10	0-5 years	2	2	(12,24] hours	>24	Rice Watery	>3	nonZero	zero	zero
+SRR25011129	2018-10	36-50 years	2	2	(48,72] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011130	2018-06	19-35 years	2	2	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011131	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011132	2018-05	6-18 years	2	1	(1,12] hours	<24	Watery	zero	zero	nonZero	zero
+SRR25011133	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011134	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011135	2018-05	6-18 years	1	1	(1,12] hours	<24	Watery	zero	zero	nonZero	zero
+SRR25011136	2018-05	19-35 years	2	1	(1,12] hours	<24	Watery	>3	nonZero	nonZero	zero
+SRR25011137	2018-05	36-50 years	1	2	(1,12] hours	<24	Watery	zero	zero	zero	nonZero
+SRR25011138	2018-03	6-18 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011139	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011140	2018-05	6-18 years	2	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011141	2018-05	36-50 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011142	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011143	2018-05	>50 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011144	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011145	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011146	2018-05	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011147	2018-05	>50 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011148	2018-05	36-50 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011149	2018-03	19-35 years	1	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011150	2018-05	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011151	2018-05	19-35 years	2	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011152	2018-05	6-18 years	1	1	(1,12] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25011153	2018-05	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011154	2018-05	6-18 years	1	1	(0,1] hours	<24	Watery	>3	nonZero	zero	zero
+SRR25011155	2018-05	36-50 years	1	1	(0,1] hours	<24	Watery	(1,3]	nonZero	nonZero	zero
+SRR25011156	2018-05	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011157	2018-05	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011158	2018-04	36-50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011159	2018-04	19-35 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011160	2018-03	36-50 years	1	1	(24,48] hours	>24	Watery	zero	zero	zero	zero
+SRR25011161	2018-04	36-50 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011162	2018-07	>50 years	1	2	(48,72] hours	>24	Loose Watery	>3	nonZero	nonZero	zero
+SRR25011163	2018-04	19-35 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011164	2018-07	36-50 years	1	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011165	2018-07	36-50 years	2	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011166	2018-07	19-35 years	1	1	(48,72] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011167	2018-07	19-35 years	2	1	(12,24] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011168	2018-07	>50 years	2	2	(24,48] hours	>24	Loose Watery	>3	nonZero	nonZero	zero
+SRR25011169	2018-06	0-5 years	1	2	>72 hours	>24	Loose Watery	(0,1]	nonZero	nonZero	zero
+SRR25011170	2018-06	19-35 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011171	2018-06	>50 years	1	2	(12,24] hours	>24	Loose Watery	>3	nonZero	nonZero	zero
+SRR25011172	2018-06	0-5 years	1	1	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011173	2018-06	19-35 years	2	2	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011174	2018-04	19-35 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011175	2018-06	36-50 years	1	1	(1,12] hours	<24	Loose Watery	zero	zero	zero	zero
+SRR25011176	2018-06	19-35 years	2	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011177	2018-06	19-35 years	2	1	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011178	2018-05	19-35 years	2	2	(48,72] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011179	2018-05	19-35 years	2	1	(24,48] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011180	2018-05	6-18 years	1	1	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011181	2018-05	19-35 years	2	2	(24,48] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011182	2018-05	36-50 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011183	2018-05	36-50 years	2	2	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011184	2018-05	19-35 years	2	1	(48,72] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011185	2018-04	19-35 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011186	2018-05	36-50 years	2	2	>72 hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011187	2018-05	19-35 years	1	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011188	2018-05	19-35 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011189	2018-05	19-35 years	2	2	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011190	2018-05	19-35 years	2	1	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011191	2018-05	6-18 years	1	1	(48,72] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011192	2018-05	19-35 years	2	2	(24,48] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011193	2018-05	19-35 years	2	2	>72 hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011194	2018-09	6-18 years	2	1	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011195	2018-09	19-35 years	2	1	(12,24] hours	>24	Rice Watery	zero	zero	nonZero	zero
+SRR25011196	2018-08	0-5 years	1	2	>72 hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011197	2018-08	0-5 years	1	2	(48,72] hours	>24	Loose Watery	zero	zero	nonZero	zero
+SRR25011198	2018-08	19-35 years	2	1	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011199	2018-07	19-35 years	2	1	(12,24] hours	<24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011200	2018-03	19-35 years	2	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011201	2018-07	36-50 years	1	2	>72 hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011202	2018-07	6-18 years	2	1	(12,24] hours	<24	Rice Watery	zero	zero	zero	zero
+SRR25011203	2018-07	19-35 years	2	1	(48,72] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	nonZero
+SRR25011204	2018-07	6-18 years	1	2	(12,24] hours	>24	Rice Watery	>3	nonZero	zero	zero
+SRR25011205	2018-06	19-35 years	2	1	>72 hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011206	2018-06	0-5 years	2	2	>72 hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011207	2018-06	6-18 years	2	1	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011208	2018-06	36-50 years	2	2	(48,72] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	zero
+SRR25011209	2018-06	36-50 years	2	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011210	2018-06	19-35 years	1	2	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011211	2018-03	36-50 years	1	1	(1,12] hours	<24	Watery	zero	zero	nonZero	zero
+SRR25011212	2018-06	36-50 years	2	1	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011213	2018-05	>50 years	1	1	(12,24] hours	>24	Rice Watery	>3	nonZero	zero	zero
+SRR25011214	2018-05	19-35 years	2	1	(1,12] hours	<24	Rice Watery	zero	zero	zero	zero
+SRR25011215	2018-05	19-35 years	1	2	(24,48] hours	>24	Loose Watery	(1,3]	nonZero	nonZero	zero
+SRR25011216	2018-05	6-18 years	2	1	(48,72] hours	>24	Loose Watery	>3	nonZero	zero	zero
+SRR25011217	2018-05	0-5 years	2	1	(48,72] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011218	2018-05	36-50 years	2	2	(12,24] hours	>24	Loose Watery	(1,3]	nonZero	zero	zero
+SRR25011219	2018-05	0-5 years	2	2	(12,24] hours	>24	Rice Watery	zero	zero	zero	nonZero
+SRR25011220	2018-05	19-35 years	2	1	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011221	2018-05	19-35 years	1	2	(12,24] hours	>24	Loose Watery	(0,1]	nonZero	zero	zero
+SRR25011222	2018-03	19-35 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011223	2018-05	19-35 years	2	2	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	zero	zero
+SRR25011224	2018-05	0-5 years	2	1	(1,12] hours	<24	Rice Watery	zero	zero	zero	zero
+SRR25011225	2018-05	>50 years	2	2	(24,48] hours	>24	Rice Watery	>3	nonZero	nonZero	zero
+SRR25011226	2018-05	19-35 years	2	1	(24,48] hours	>24	Rice Watery	(1,3]	nonZero	zero	zero
+SRR25011227	2018-05	0-5 years	2	2	>72 hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011228	2018-04	6-18 years	2	2	(24,48] hours	>24	Rice Watery	zero	zero	nonZero	zero
+SRR25011229	2018-04	0-5 years	1	1	>72 hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011230	2018-04	>50 years	1	2	(24,48] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011231	2018-04	0-5 years	1	2	(12,24] hours	>24	Loose Watery	zero	zero	zero	zero
+SRR25011232	2018-03	19-35 years	2	1	(12,24] hours	>24	Rice Watery	(0,1]	nonZero	zero	nonZero
+SRR25011233	2018-03	6-18 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011234	2018-03	6-18 years	1	1	(12,24] hours	>24	Rice Watery	zero	zero	zero	zero
+SRR25011235	2019-04	19-35 years	1	1	(12,24] hours	>24	Watery	(0,1]	nonZero	zero	zero
+SRR25011236	2019-04	19-35 years	2	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011237	2019-03	36-50 years	2	1	(12,24] hours	>24	Watery	(0,1]	nonZero	nonZero	zero
+SRR25011238	2019-03	6-18 years	2	1	(1,12] hours	<24	Non Watery	zero	zero	zero	zero
+SRR25011239	2019-03	19-35 years	2	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011240	2019-03	19-35 years	1	1	(12,24] hours	>24	Watery	zero	zero	nonZero	zero
+SRR25011241	2019-03	36-50 years	1	1	(1,12] hours	<24	Watery	(0,1]	nonZero	nonZero	zero
+SRR25011242	2019-03	36-50 years	2	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011243	2019-03	6-18 years	1	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011244	2018-03	>50 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011245	2019-03	>50 years	2	1	(1,12] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25011246	2018-12	0-5 years	2	1	(1,12] hours	<24	Watery	zero	zero	zero	nonZero
+SRR25011247	2018-11	19-35 years	1	1	(0,1] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25011248	2018-11	36-50 years	1	1	(0,1] hours	<24	Watery	zero	zero	nonZero	zero
+SRR25011249	2018-11	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011250	2018-11	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	nonZero	nonZero
+SRR25011251	2018-11	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	nonZero	zero
+SRR25011252	2018-10	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011253	2018-10	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011254	2018-10	36-50 years	1	1	(1,12] hours	<24	Watery	zero	zero	zero	zero
+SRR25011255	2018-03	6-18 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011256	2018-03	36-50 years	1	1	(1,12] hours	<24	Watery	>3	nonZero	zero	zero
+SRR25011257	2018-03	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011258	2018-04	6-18 years	1	1	(0,1] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25011259	2018-04	19-35 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011260	2018-04	36-50 years	2	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011261	2018-04	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011262	2018-04	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
+SRR25011263	2018-04	6-18 years	1	1	(12,24] hours	>24	Watery	zero	zero	zero	zero
+SRR25011264	2018-04	36-50 years	2	1	(0,1] hours	<24	Watery	(0,1]	nonZero	zero	zero
+SRR25011265	2018-04	19-35 years	1	1	(0,1] hours	<24	Watery	zero	zero	zero	zero
