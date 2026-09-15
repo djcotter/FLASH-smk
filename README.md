@@ -391,14 +391,28 @@ set-resources:
 #### Option A: CPU-only (One Hot Encoding)
 
 ```bash
-snakemake --profile profiles/local --sdm conda all_ohe
+MODE=all_ohe bash run_flash.sh Snakefile
 ```
 
 #### Option B: Embedding mode (requires GPU + container)
 
 ```bash
-snakemake --profile profiles/local --sdm conda all_embeddings
+bash run_flash.sh Snakefile
 ```
+
+In case one uses the short anchor settings, one should modify the config file the Snakefile uses by modifying the following line in `Snakefile`
+
+```bash
+configfile: "config.yaml" 
+```
+
+to 
+
+```bash
+configfile: "config_short-anchors.yaml" 
+```
+
+When running locally, one should also use to the local profile, by modifying `--profile slurm_profile/` to `--profile profiles/local/config.yaml` in `run_flash.sh`. 
 
 
 ### Step 8: Inspect outputs
@@ -503,7 +517,7 @@ The example profile in `slurm_profile/` demonstrates how to:
 
 ### Adapting for local execution
 
-If you are running FLASH on a local machine (no scheduler), you should:
+If you are running FLASH on a local machine (no scheduler), you should adjust `run_flash.sh`:
 
 1. Use the `-j` flag to reflect your available CPU cores.
 2. Review the `threads:` directives in the `Snakefile`.
@@ -564,11 +578,9 @@ set-resources:
     mem_mb: 16000
   all_genomes:
     mem_mb: 16000
-How to use it
-snakemake --profile profiles/local all_ohe
 ```
 
-This replaces the need to manually pass `-j`, `--cores`, and other flags every time.
+To use this profile, change `--profile slurm_profile/` to `--profile profiles/local` in `run_flash.sh`. This replaces the need to manually pass `-j`, `--cores`, and other flags every time.
 
 #### How to adapt it to your machine
 
