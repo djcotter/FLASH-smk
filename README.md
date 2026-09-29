@@ -34,6 +34,7 @@
 * [Types of data that can be analyzed](#types-of-data-that-can-be-analyzed)
 * [Very small datasets](#very-small-datasets)
 * [Data where SPLASH has few significant anchors](#data-where-splash-has-very-few-significant-anchors-or-anchors-that-pass-the-threshold)
+* [Continuous Data](#continuous-data)
 
 ### Resource management
 
@@ -453,7 +454,7 @@ This can be changed by adjusting the paramater `min_samples_adelie` in the `exte
 #### Data where SPLASH has very few significant anchors or anchors that pass the threshold 
 If SPLASH does not provide a good insight into the structure encoded in your set of samples, it will not provide many anchors with hgih effect size. Because we use a default of 0.6 to filter for high effect size anchors, this could mean too few anchors enter into the analysis in the first place. This can be dropped in the `config.yaml` by adjusting the `effect_size_cutoff` praramter under `extended_options`. 
 
-#### Continuous data
+#### Continuous Data
 We have included a script `resources/continuous_FLASH/run_adelie_continuous.py` for running FLASH on continuous phenotypes. This is not built into the standard pipeline but can be dropped in. This has been tested less extensively and may require some modifications. 
 
 ## Resource Management, Threads, and Profiles
