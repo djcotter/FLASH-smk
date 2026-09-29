@@ -169,6 +169,16 @@ def find_overlapping_features(record, window_start, window_end, strand):
             })
     return overlapping_features
 
+
+def blank_empty_feature_lists(df, feature_columns):
+    """Write missing feature annotations as empty TSV fields, not ``[]``."""
+    for column in feature_columns:
+        df[column] = df[column].map(
+            lambda value: None if isinstance(value, list) and not value else value
+        )
+    return df
+
+
 def featurize_blast_out(blast_out, window, sacc_records):
     df = read_blastn_output(blast_out)
     df["species_origin"] = df.apply(species_from_blast_fields, axis=1)
@@ -196,6 +206,8 @@ def featurize_blast_out(blast_out, window, sacc_records):
     df["GO"] = None
     df["features_all"] = df["features"]
     df["blast_mode"] = "blastn"
+    feature_columns = ["features", f"features_{window}_window", "features_all"]
+    df = blank_empty_feature_lists(df, feature_columns)
     columns = BLAST_FEATURE_COLUMNS.copy()
     window_col = f"features_{window}_window"
     if window_col != "features_10000_window":
@@ -223,7 +235,24 @@ def featurized_output_is_current(blast_feat_out, blast_window):
         header = pd.read_csv(blast_feat_out, sep="\t", nrows=0)
     except Exception:
         return False
-    return required_columns.issubset(set(header.columns))
+    if not required_columns.issubset(set(header.columns)):
+        return False
+
+    feature_columns = ["features", f"features_{blast_window}_window", "features_all"]
+    try:
+        for chunk in pd.read_csv(
+            blast_feat_out,
+            sep="\t",
+            usecols=feature_columns,
+            dtype=str,
+            keep_default_na=False,
+            chunksize=100000,
+        ):
+            if chunk.eq("[]").any().any():
+                return False
+    except Exception:
+        return False
+    return True
 
 def process_blast_file(blast_out, blast_feat_out, blast_window, sacc_records):
     if os.path.exists(blast_feat_out) and os.path.getsize(blast_feat_out) > 0:
@@ -233,14 +262,16 @@ def process_blast_file(blast_out, blast_feat_out, blast_window, sacc_records):
         print(f"Output file {blast_feat_out} is missing origin metadata. Regenerating.")
     if os.path.getsize(blast_out) > 0:
         df_features = featurize_blast_out(blast_out, blast_window, sacc_records)
-        df_features.to_csv(blast_feat_out, index=None, sep="\t")
+        df_features.to_csv(blast_feat_out, index=None, sep="\t", na_rep="")
         print(f"Featurize blast output complete for {blast_out}. Output file: {blast_feat_out}")
     else:
         columns = BLAST_FEATURE_COLUMNS.copy()
         window_col = f"features_{blast_window}_window"
         if window_col != "features_10000_window":
             columns[columns.index("features_10000_window")] = window_col
-        pd.DataFrame(columns=columns).to_csv(blast_feat_out, index=None, sep="\t")
+        pd.DataFrame(columns=columns).to_csv(
+            blast_feat_out, index=None, sep="\t", na_rep=""
+        )
         print(f"BLAST output {blast_out} was empty. Wrote header-only feature file: {blast_feat_out}")
     
 

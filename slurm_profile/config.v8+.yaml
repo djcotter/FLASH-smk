@@ -88,8 +88,8 @@ set-resources: # set specific resources for each rule
     embed_kmers_hyena:
         mem_mb: 32000
         time: "6:00:00"
-        partition: "horence,gpu,owners"
-        slurm_extra: "-G 1 -C 'GPU_GEN:HPR|GPU_GEN:AMP|GPU_GEN:TUR'"
+        partition: "horence"
+        slurm_extra: "-G 1 -C 'GPU_SKU:H100_SXM5'"
     prepare_data_for_prediction_top_variance:
         mem_mb: 256000 + ((attempt - 1) * 256000)
         time: "6:00:00"

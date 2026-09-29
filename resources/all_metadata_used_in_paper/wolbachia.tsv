@@ -1,0 +1,145 @@
+sample_name	sra_study	host_species	host_strain	sex	tissue	infectant	infection_status	post_injection_hours
+SRR13198393	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198394	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198395	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198396	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198397	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR13198398	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR13198399	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR13198400	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR13198401	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198402	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198403	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198404	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198405	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198406	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198407	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198408	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198409	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198410	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198411	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198412	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198413	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198414	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198415	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198416	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198425	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198426	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198427	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198428	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	48
+SRR13198429	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198430	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198431	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198432	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	6
+SRR13198433	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198434	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198435	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198436	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	24
+SRR13198437	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198438	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198439	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198440	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	wolbachia	infected	48
+SRR13198417	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198418	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198419	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198420	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	6
+SRR13198421	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR13198422	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR13198423	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR13198424	SRP295874	Drosophila melanogaster	w[1118]	female	whole_body	none	uninfected	24
+SRR8447183	SRP179717	Drosophila paulistorum	O11	male	head	wolbachia_reduced	infected	
+SRR8447184	SRP179717	Drosophila paulistorum	O11	male	head	wolbachia	infected	
+SRR8447185	SRP179717	Drosophila paulistorum	O11	male	abdomen	wolbachia_reduced	infected	
+SRR8447186	SRP179717	Drosophila paulistorum	O11	male	abdomen	wolbachia	infected	
+SRR8447187	SRP179717	Drosophila paulistorum	O11	female	head	wolbachia	infected	
+SRR8447188	SRP179717	Drosophila paulistorum	O11	female	head	wolbachia_reduced	infected	
+SRR8447189	SRP179717	Drosophila paulistorum	O11	female	abdomen	wolbachia	infected	
+SRR8447190	SRP179717	Drosophila paulistorum	O11	female	abdomen	wolbachia_reduced	infected	
+SRR8447191	SRP179717	Drosophila paulistorum	C2	male	head	wolbachia	infected	
+SRR8447192	SRP179717	Drosophila paulistorum	C2	male	head	wolbachia_reduced	infected	
+SRR8447193	SRP179717	Drosophila paulistorum	C2	male	abdomen	wolbachia	infected	
+SRR8447194	SRP179717	Drosophila paulistorum	C2	male	abdomen	wolbachia_reduced	infected	
+SRR8447195	SRP179717	Drosophila paulistorum	C2	female	head	wolbachia	infected	
+SRR8447196	SRP179717	Drosophila paulistorum	C2	female	head	wolbachia_reduced	infected	
+SRR8447197	SRP179717	Drosophila paulistorum	A28	male	head	wolbachia	infected	
+SRR8447198	SRP179717	Drosophila paulistorum	A28	male	head	wolbachia_reduced	infected	
+SRR8447199	SRP179717	Drosophila paulistorum	A28	male	abdomen	wolbachia	infected	
+SRR8447200	SRP179717	Drosophila paulistorum	A28	male	abdomen	wolbachia_reduced	infected	
+SRR8447201	SRP179717	Drosophila paulistorum	A28	female	head	wolbachia	infected	
+SRR8447202	SRP179717	Drosophila paulistorum	A28	female	head	wolbachia_reduced	infected	
+SRR8447203	SRP179717	Drosophila paulistorum	A28	female	abdomen	wolbachia	infected	
+SRR8447204	SRP179717	Drosophila paulistorum	A28	female	abdomen	wolbachia_reduced	infected	
+SRR8447205	SRP179717	Drosophila paulistorum	C2	female	abdomen	wolbachia	infected	
+SRR8447206	SRP179717	Drosophila paulistorum	C2	female	abdomen	wolbachia_reduced	infected	
+SRR23510673	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	none	uninfected	
+SRR23510674	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	none	uninfected	
+SRR23510675	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	wolbachia	infected	
+SRR23510676	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	wolbachia	infected	
+SRR23510677	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	wolbachia	infected	
+SRR23510678	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	wolbachia	infected	
+SRR23510679	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	wolbachia	infected	
+SRR23510680	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	wolbachia	infected	
+SRR23510681	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	none	uninfected	
+SRR23510682	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	wolbachia	infected	
+SRR23510683	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	wolbachia	infected	
+SRR23510684	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	none	uninfected	
+SRR23510685	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	none	uninfected	
+SRR23510686	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	none	uninfected	
+SRR23510687	SRP423200	Drosophila melanogaster	DGRP_853	female	ovary	none	uninfected	
+SRR23510688	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	wolbachia	infected	
+SRR23510689	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	wolbachia	infected	
+SRR23510690	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	wolbachia	infected	
+SRR23510691	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	wolbachia	infected	
+SRR23510692	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	none	uninfected	
+SRR23510693	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	none	uninfected	
+SRR23510694	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	none	uninfected	
+SRR23510695	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	none	uninfected	
+SRR23510696	SRP423200	Drosophila melanogaster	DGRP_783	female	ovary	none	uninfected	
+SRR23510697	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	wolbachia	infected	
+SRR23510698	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	wolbachia	infected	
+SRR23510699	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	wolbachia	infected	
+SRR23510700	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	wolbachia	infected	
+SRR23510701	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	none	uninfected	
+SRR23510702	SRP423200	Drosophila melanogaster	DGRP_73	female	ovary	none	uninfected	
+SRR23510703	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	none	uninfected	
+SRR23510704	SRP423200	Drosophila melanogaster	DGRP_306	female	ovary	none	uninfected	
+SRR10915867	SRP243262	Drosophila melanogaster	mi_2	female	whole_body	wolbachia	infected	
+SRR10915868	SRP243262	Drosophila melanogaster	mi_2	female	whole_body	wolbachia	infected	
+SRR10915869	SRP243262	Drosophila melanogaster	mi_2	female	whole_body	wolbachia	infected	
+SRR10915870	SRP243262	Drosophila melanogaster	mi_2	female	whole_body	wolbachia	infected	
+SRR10915871	SRP243262	Drosophila melanogaster	mi_2	female	whole_body	wolbachia	infected	
+SRR10915872	SRP243262	Drosophila melanogaster	mi_1	female	whole_body	wolbachia	infected	
+SRR10915873	SRP243262	Drosophila nigrosparsa	ni_8	female	whole_body	wolbachia	infected	
+SRR10915874	SRP243262	Drosophila nigrosparsa	ni_8	female	whole_body	wolbachia	infected	
+SRR10915875	SRP243262	Drosophila nigrosparsa	ni_8	female	whole_body	wolbachia	infected	
+SRR10915876	SRP243262	Drosophila nigrosparsa	ni_8	female	whole_body	wolbachia	infected	
+SRR10915877	SRP243262	Drosophila nigrosparsa	ni_8	female	whole_body	wolbachia	infected	
+SRR10915878	SRP243262	Drosophila nigrosparsa	ni_6	female	whole_body	wolbachia	infected	
+SRR10915879	SRP243262	Drosophila nigrosparsa	ni_6	female	whole_body	wolbachia	infected	
+SRR10915880	SRP243262	Drosophila nigrosparsa	ni_6	female	whole_body	wolbachia	infected	
+SRR10915881	SRP243262	Drosophila nigrosparsa	ni_6	female	whole_body	wolbachia	infected	
+SRR10915882	SRP243262	Drosophila nigrosparsa	ni_6	female	whole_body	wolbachia	infected	
+SRR10915883	SRP243262	Drosophila melanogaster	mi_1	female	whole_body	wolbachia	infected	
+SRR10915884	SRP243262	Drosophila nigrosparsa	ni_3	female	whole_body	wolbachia	infected	
+SRR10915885	SRP243262	Drosophila nigrosparsa	ni_3	female	whole_body	wolbachia	infected	
+SRR10915886	SRP243262	Drosophila nigrosparsa	ni_3	female	whole_body	wolbachia	infected	
+SRR10915887	SRP243262	Drosophila nigrosparsa	ni_3	female	whole_body	wolbachia	infected	
+SRR10915888	SRP243262	Drosophila nigrosparsa	ni_3	female	whole_body	wolbachia	infected	
+SRR10915889	SRP243262	Drosophila nigrosparsa	nu_0	female	whole_body	none	uninfected	
+SRR10915890	SRP243262	Drosophila nigrosparsa	nu_0	female	whole_body	none	uninfected	
+SRR10915891	SRP243262	Drosophila nigrosparsa	nu_0	female	whole_body	none	uninfected	
+SRR10915892	SRP243262	Drosophila nigrosparsa	nu_0	female	whole_body	none	uninfected	
+SRR10915893	SRP243262	Drosophila nigrosparsa	nu_0	female	whole_body	none	uninfected	
+SRR10915894	SRP243262	Drosophila melanogaster	mi_1	female	whole_body	wolbachia	infected	
+SRR10915895	SRP243262	Drosophila melanogaster	mu_0	female	whole_body	none	uninfected	
+SRR10915896	SRP243262	Drosophila melanogaster	mu_0	female	whole_body	none	uninfected	
+SRR10915897	SRP243262	Drosophila melanogaster	mu_0	female	whole_body	none	uninfected	
+SRR10915898	SRP243262	Drosophila melanogaster	mu_0	female	whole_body	none	uninfected	
+SRR10915899	SRP243262	Drosophila melanogaster	mu_0	female	whole_body	none	uninfected	
+SRR10915900	SRP243262	Drosophila melanogaster	mi_3	female	whole_body	wolbachia	infected	
+SRR10915901	SRP243262	Drosophila melanogaster	mi_3	female	whole_body	wolbachia	infected	
+SRR10915902	SRP243262	Drosophila melanogaster	mi_3	female	whole_body	wolbachia	infected	
+SRR10915903	SRP243262	Drosophila melanogaster	mi_3	female	whole_body	wolbachia	infected	
+SRR10915904	SRP243262	Drosophila melanogaster	mi_3	female	whole_body	wolbachia	infected	
+SRR10915905	SRP243262	Drosophila melanogaster	mi_1	female	whole_body	wolbachia	infected	
+SRR10915906	SRP243262	Drosophila melanogaster	mi_1	female	whole_body	wolbachia	infected	

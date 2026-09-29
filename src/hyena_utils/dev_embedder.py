@@ -1,8 +1,11 @@
-import torch 
-import argparse
 import os
+os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
+
+import argparse
+import random
 import sys
-import yaml 
+import yaml
+import torch
 from tqdm import tqdm
 import json 
 import numpy as np
@@ -16,6 +19,23 @@ try:
 except:
     pass
 
+
+DEFAULT_SEED = 42
+
+
+def configure_reproducibility(seed):
+    """Configure Python, NumPy, and PyTorch for deterministic inference."""
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
+    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic = True
+    torch.use_deterministic_algorithms(True)
+
+
 class HG38Encoder:
     "Encoder inference for HG38 sequences"
     def __init__(self, model_cfg, ckpt_path, max_seq_len, nlayer):
@@ -24,6 +44,7 @@ class HG38Encoder:
         self.model, self.tokenizer = self.load_model(model_cfg, ckpt_path, max_seq_len, nlayer)
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model = self.model.to(self.device)
+        self.model.eval()
 
     def encode(self, seqs):
             
@@ -38,7 +59,10 @@ class HG38Encoder:
                 tokenized_seq = self.tokenizer.encode(seq)
             
             # can accept a batch, shape [B, seq_len, hidden_dim]
-            logits, hidden_states = self.model(torch.tensor([tokenized_seq]).to(device=self.device))
+            with torch.inference_mode():
+                logits, hidden_states = self.model(
+                    torch.tensor([tokenized_seq]).to(device=self.device)
+                )
 
             # Using head, so just have logits
             results.append(hidden_states)
@@ -131,9 +155,19 @@ if __name__ == "__main__":
       default=f"",
       help="don't add two"
     )
+
+    parser.add_argument(
+      "--seed",
+      type=int,
+      default=DEFAULT_SEED,
+      help="Random seed used for deterministic model inference (default: 42)"
+    )
         
     args = parser.parse_args()
-        
+
+    configure_reproducibility(args.seed)
+    print(f'Configured deterministic inference with seed {args.seed}.', flush=True)
+
     task = HG38Encoder(args.model_cfg, args.ckpt_path, max_seq_len=int(args.max_seqlen), nlayer=int(args.nlayers))
     print('Successfully loaded encoder.', flush =True)
     # sample sequence, can pass a list of seqs (themselves a list of chars)

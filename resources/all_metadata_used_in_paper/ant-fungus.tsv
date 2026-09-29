@@ -1,0 +1,107 @@
+sample_name	infection_status	fungus	fungus_species	timepoint_code	zt_time	tissue	host_species	dataset
+0_CH1	no	no	none			head	cfloridanus	manipulation
+0_CH2	no	no	none			head	cfloridanus	manipulation
+0_CH3	no	no	none			head	cfloridanus	manipulation
+0_CH4	no	no	none			head	cfloridanus	manipulation
+0_CH5	no	no	none			head	cfloridanus	manipulation
+0_CT1	no	no	none			thorax	cfloridanus	manipulation
+0_CT2	no	no	none			thorax	cfloridanus	manipulation
+0_CT3	no	no	none			thorax	cfloridanus	manipulation
+0_CT4	no	no	none			thorax	cfloridanus	manipulation
+0_CT5	no	no	none			thorax	cfloridanus	manipulation
+1_BLT25H1	yes	yes	bbassiana	LT25		head	cfloridanus	manipulation
+1_BLT25H2	yes	yes	bbassiana	LT25		head	cfloridanus	manipulation
+1_BLT25H3	yes	yes	bbassiana	LT25		head	cfloridanus	manipulation
+1_BLT25H4	yes	yes	bbassiana	LT25		head	cfloridanus	manipulation
+1_BLT25H5	yes	yes	bbassiana	LT25		head	cfloridanus	manipulation
+1_BLT25T1	yes	yes	bbassiana	LT25		thorax	cfloridanus	manipulation
+1_BLT25T2	yes	yes	bbassiana	LT25		thorax	cfloridanus	manipulation
+1_BLT25T3	yes	yes	bbassiana	LT25		thorax	cfloridanus	manipulation
+1_BLT25T4	yes	yes	bbassiana	LT25		thorax	cfloridanus	manipulation
+1_BLT25T5	yes	yes	bbassiana	LT25		thorax	cfloridanus	manipulation
+1_OLT25H1	yes	yes	ocamponoti-floridani	LT25		head	cfloridanus	manipulation
+1_OLT25H2	yes	yes	ocamponoti-floridani	LT25		head	cfloridanus	manipulation
+1_OLT25H3	yes	yes	ocamponoti-floridani	LT25		head	cfloridanus	manipulation
+1_OLT25H4	yes	yes	ocamponoti-floridani	LT25		head	cfloridanus	manipulation
+1_OLT25H5	yes	yes	ocamponoti-floridani	LT25		head	cfloridanus	manipulation
+1_OLT25T1	yes	yes	ocamponoti-floridani	LT25		thorax	cfloridanus	manipulation
+1_OLT25T2	yes	yes	ocamponoti-floridani	LT25		thorax	cfloridanus	manipulation
+1_OLT25T3	yes	yes	ocamponoti-floridani	LT25		thorax	cfloridanus	manipulation
+1_OLT25T4	yes	yes	ocamponoti-floridani	LT25		thorax	cfloridanus	manipulation
+1_OLT25T5	yes	yes	ocamponoti-floridani	LT25		thorax	cfloridanus	manipulation
+2_BLMH1	yes	yes	bbassiana	LM		head	cfloridanus	manipulation
+2_BLMH2	yes	yes	bbassiana	LM		head	cfloridanus	manipulation
+2_BLMH3	yes	yes	bbassiana	LM		head	cfloridanus	manipulation
+2_BLMH4	yes	yes	bbassiana	LM		head	cfloridanus	manipulation
+2_BLMH5	yes	yes	bbassiana	LM		head	cfloridanus	manipulation
+2_BLMT1	yes	yes	bbassiana	LM		thorax	cfloridanus	manipulation
+2_BLMT2	yes	yes	bbassiana	LM		thorax	cfloridanus	manipulation
+2_BLMT3	yes	yes	bbassiana	LM		thorax	cfloridanus	manipulation
+2_BLMT4	yes	yes	bbassiana	LM		thorax	cfloridanus	manipulation
+2_BLMT5	yes	yes	bbassiana	LM		thorax	cfloridanus	manipulation
+2_OLMH1	yes	yes	ocamponoti-floridani	LM		head	cfloridanus	manipulation
+2_OLMH2	yes	yes	ocamponoti-floridani	LM		head	cfloridanus	manipulation
+2_OLMH3	yes	yes	ocamponoti-floridani	LM		head	cfloridanus	manipulation
+2_OLMH4	yes	yes	ocamponoti-floridani	LM		head	cfloridanus	manipulation
+2_OLMH5	yes	yes	ocamponoti-floridani	LM		head	cfloridanus	manipulation
+2_OLMT1	yes	yes	ocamponoti-floridani	LM		thorax	cfloridanus	manipulation
+2_OLMT2	yes	yes	ocamponoti-floridani	LM		thorax	cfloridanus	manipulation
+2_OLMT3	yes	yes	ocamponoti-floridani	LM		thorax	cfloridanus	manipulation
+2_OLMT4	yes	yes	ocamponoti-floridani	LM		thorax	cfloridanus	manipulation
+2_OLMT5	yes	yes	ocamponoti-floridani	LM		thorax	cfloridanus	manipulation
+3_BDMH1	yes	yes	bbassiana	DM		head	cfloridanus	manipulation
+3_BDMH2	yes	yes	bbassiana	DM		head	cfloridanus	manipulation
+3_BDMH3	yes	yes	bbassiana	DM		head	cfloridanus	manipulation
+3_BDMH4	yes	yes	bbassiana	DM		head	cfloridanus	manipulation
+3_BDMH5	yes	yes	bbassiana	DM		head	cfloridanus	manipulation
+3_BDMT1	yes	yes	bbassiana	DM		thorax	cfloridanus	manipulation
+3_BDMT2	yes	yes	bbassiana	DM		thorax	cfloridanus	manipulation
+3_BDMT3	yes	yes	bbassiana	DM		thorax	cfloridanus	manipulation
+3_BDMT4	yes	yes	bbassiana	DM		thorax	cfloridanus	manipulation
+3_BDMT5	yes	yes	bbassiana	DM		thorax	cfloridanus	manipulation
+3_ODMH1	yes	yes	ocamponoti-floridani	DM		head	cfloridanus	manipulation
+3_ODMH2	yes	yes	ocamponoti-floridani	DM		head	cfloridanus	manipulation
+3_ODMH3	yes	yes	ocamponoti-floridani	DM		head	cfloridanus	manipulation
+3_ODMH4	yes	yes	ocamponoti-floridani	DM		head	cfloridanus	manipulation
+3_ODMH5	yes	yes	ocamponoti-floridani	DM		head	cfloridanus	manipulation
+3_ODMT1	yes	yes	ocamponoti-floridani	DM		thorax	cfloridanus	manipulation
+3_ODMT2	yes	yes	ocamponoti-floridani	DM		thorax	cfloridanus	manipulation
+3_ODMT3	yes	yes	ocamponoti-floridani	DM		thorax	cfloridanus	manipulation
+3_ODMT4	yes	yes	ocamponoti-floridani	DM		thorax	cfloridanus	manipulation
+3_ODMT5	yes	yes	ocamponoti-floridani	DM		thorax	cfloridanus	manipulation
+TC7-02A_GTAGAG	yes	yes	ocamponoti-floridani		2	head	cfloridanus	timecourse
+TC7-02B_ATCACG	yes	yes	bbassiana		2	head	cfloridanus	timecourse
+TC7-02C_AGTCAA	no	no	none		2	head	cfloridanus	timecourse
+TC7-04A_GGTAGC	yes	yes	ocamponoti-floridani		4	head	cfloridanus	timecourse
+TC7-04B_CGATGT	yes	yes	bbassiana		4	head	cfloridanus	timecourse
+TC7-04C_AGTTCC	no	no	none		4	head	cfloridanus	timecourse
+TC7-06A_ATGAGC	yes	yes	ocamponoti-floridani		6	head	cfloridanus	timecourse
+TC7-06B_TTAGGC	yes	yes	bbassiana		6	head	cfloridanus	timecourse
+TC7-06C_ATGTCA	no	no	none		6	head	cfloridanus	timecourse
+TC7-08A_CAAAAG	yes	yes	ocamponoti-floridani		8	head	cfloridanus	timecourse
+TC7-08B_TGACCA	yes	yes	bbassiana		8	head	cfloridanus	timecourse
+TC7-08C_CCGTCC	no	no	none		8	head	cfloridanus	timecourse
+TC7-10A_CAACTA	yes	yes	ocamponoti-floridani		10	head	cfloridanus	timecourse
+TC7-10B_GTCCGC	yes	yes	bbassiana		10	head	cfloridanus	timecourse
+TC7-10C_ACAGTG	no	no	none		10	head	cfloridanus	timecourse
+TC7-12A_CACGAT	yes	yes	ocamponoti-floridani		12	head	cfloridanus	timecourse
+TC7-12B_GTGAAA	yes	yes	bbassiana		12	head	cfloridanus	timecourse
+TC7-12C_GCCAAT	no	no	none		12	head	cfloridanus	timecourse
+TC7-14A_CACTCA	yes	yes	ocamponoti-floridani		14	head	cfloridanus	timecourse
+TC7-14B_GTGGCC	yes	yes	bbassiana		14	head	cfloridanus	timecourse
+TC7-14C_CAGATC	no	no	none		14	head	cfloridanus	timecourse
+TC7-16A_CAGGCG	yes	yes	ocamponoti-floridani		16	head	cfloridanus	timecourse
+TC7-16B_GTTTCG	yes	yes	bbassiana		16	head	cfloridanus	timecourse
+TC7-16C_ACTTGA	no	no	none		16	head	cfloridanus	timecourse
+TC7-18A_CATGGC	yes	yes	ocamponoti-floridani		18	head	cfloridanus	timecourse
+TC7-18B_GATCAG	yes	yes	bbassiana		18	head	cfloridanus	timecourse
+TC7-18C_CGTACG	no	no	none		18	head	cfloridanus	timecourse
+TC7-20A_CATTTT	yes	yes	ocamponoti-floridani		20	head	cfloridanus	timecourse
+TC7-20B_TAGCTT	yes	yes	bbassiana		20	head	cfloridanus	timecourse
+TC7-20C_GAGTGG	no	no	none		20	head	cfloridanus	timecourse
+TC7-22A_CCAACA	yes	yes	ocamponoti-floridani		22	head	cfloridanus	timecourse
+TC7-22B_GGCTAC	yes	yes	bbassiana		22	head	cfloridanus	timecourse
+TC7-22C_ACTGAT	no	no	none		22	head	cfloridanus	timecourse
+TC7-24A_TAATCG	yes	yes	ocamponoti-floridani		24	head	cfloridanus	timecourse
+TC7-24B_CTTGTA	yes	yes	bbassiana		24	head	cfloridanus	timecourse
+TC7-24C_ATTCCT	no	no	none		24	head	cfloridanus	timecourse
