@@ -36,13 +36,24 @@ if (is.null(opt$blast_annotations) || is.null(opt$coefficients) || is.null(opt$o
 }
 
 extract_blast_species <- function(x) {
-  x <- as.character(x)
-  matches <- stringr::str_match_all(x, "\[([^\]]+)\]")
-  vapply(matches, function(m) {
-    if (nrow(m) == 0) {
+  vapply(as.character(x), function(value) {
+    if (is.na(value) || !nzchar(value)) {
       return(NA_character_)
     }
-    stringr::str_squish(m[nrow(m), 2])
+
+    parts <- strsplit(value, "[", fixed = TRUE)[[1]]
+    if (length(parts) < 2) {
+      return(NA_character_)
+    }
+
+    candidate <- parts[[length(parts)]]
+    closing_bracket <- regexpr("]", candidate, fixed = TRUE)[[1]]
+    if (closing_bracket <= 1) {
+      return(NA_character_)
+    }
+
+    species <- stringr::str_squish(substr(candidate, 1, closing_bracket - 1))
+    if (nzchar(species)) species else NA_character_
   }, character(1))
 }
 
@@ -66,21 +77,37 @@ annotation_cols <- c(
   "gap_opens", "q_start", "q_end", "s_start", "s_end", "sstrand", "evalue",
   "qcovs", "qframe", "sgi", "slen", "staxids", "sscinames", "stitle",
   "species_origin", "NCBI_protein_accession", "UniProt_accession", "method", "GO",
-  "features", "features_10000_window", "features_all", "blast_mode"
+  "features", "features_10000_window", "features_all", "blast_mode", "blast_scope"
+)
+
+compactor_cols <- c(
+  "compactor_annotation", "compactor_query", "compactor_sequence",
+  "compactor_blast_query_sequence", "compactor_length", "compactor_exact_support",
+  "compactor_support", "compactor_expected_read_count", "compactor_extender_specificity",
+  "compactor_num_extended", "compactor_support_threshold", "compactor_selection_reason",
+  "compactor_raw_annotation", "compactor_species", "compactor_staxids",
+  "compactor_sscinames", "compactor_blast_subject_id", "compactor_blast_accession",
+  "compactor_ncbi_protein_accession", "compactor_uniprot_accession",
+  "blast_subject_id_origin", "blast_accession_origin", "blast_annotation_source_id"
 )
 
 # Read in the data
 annotations <- fread(opt$blast_annotations, header = TRUE, sep = "\t", nThread = 60)
 
 if (str_detect(opt$blast_annotations, "blastp|swissprot")) {
-  annotations <- ensure_columns(annotations, annotation_cols)
+  annotations <- ensure_columns(annotations, c(annotation_cols, compactor_cols))
   annotations <- annotations %>%
-    select(any_of(annotation_cols), everything()) %>%
+    select(any_of(c(annotation_cols, compactor_cols)), everything()) %>%
     mutate(blast_mode = coalesce(as.character(blast_mode), "blastx")) %>%
-    mutate(cluster = str_extract(query, "(^.*cluster_\d+|\w+_kmer_\d+)_", group = 1)) %>%
-    mutate(species_origin = coalesce(clean_blast_species_field(species_origin),
-                                     clean_blast_species_field(sscinames),
-                                     extract_blast_species(stitle)))
+    mutate(cluster = str_extract(query, "(^.*cluster_\\d+|\\w+_kmer_\\d+)_", group = 1))
+  if (!"sscinames" %in% colnames(annotations)) {
+    annotations$sscinames <- NA_character_
+  }
+  if (!"species_origin" %in% colnames(annotations)) {
+    annotations <- annotations %>% mutate(species_origin = coalesce(clean_blast_species_field(sscinames), extract_blast_species(stitle)))
+  } else {
+    annotations <- annotations %>% mutate(species_origin = coalesce(clean_blast_species_field(species_origin), clean_blast_species_field(sscinames), extract_blast_species(stitle)))
+  }
 
   # we also add on the translated sequence for as a column. The query column contains cluster_X_{Sequence} and the qframe column contains the frame
   # we extract {sequence} and translate it using the qframe
@@ -142,20 +169,14 @@ if (str_detect(opt$blast_annotations, "blastp|swissprot")) {
   align_cluster <- function(aa_dt) {
     aa_dt_filtered <- aa_dt %>%
       mutate(translated_sequence = str_remove(translated_sequence, "\\*.+$")) %>%
-      filter(!is.na(translated_sequence), nchar(translated_sequence) > 5)
-
+      filter(nchar(translated_sequence) > 5)
     if (nrow(aa_dt_filtered) == 0) {
-      return(aa_dt %>%
-              select(-translated_sequence) %>%
-              mutate(aligned_sequence = NA_character_))
+      return(aa_dt %>% select(-translated_sequence) %>% mutate(aligned_sequence = NA))
     } else if (nrow(aa_dt_filtered) == 1) {
-      return(aa_dt_filtered %>%
-              transmute(query = query, aligned_sequence = translated_sequence))
+      return(aa_dt_filtered %>% rename(aligned_sequence = translated_sequence))
     }
-
-    aas <- Biostrings::AAStringSet(aa_dt_filtered$translated_sequence)
+    aas <- Biostrings::AAStringSet(aa_dt_filtered$translated_sequence %>% str_remove("\\*.+$"))
     names(aas) <- aa_dt_filtered$query
-
     aligned <- tryCatch(
       msa::msa(aas, order = "input"),
       error = function(e) {
@@ -165,14 +186,13 @@ if (str_detect(opt$blast_annotations, "blastp|swissprot")) {
         return(NULL)
       }
     )
-
     if (is.null(aligned)) {
       return(aa_dt_filtered %>%
-              transmute(query = query, aligned_sequence = translated_sequence))
+               transmute(query = query, aligned_sequence = translated_sequence))
     }
-
     aligned <- Biostrings::AAStringSet(aligned)
-    data.frame(query = names(aligned), aligned_sequence = as.character(aligned))
+    aligned_seqs <- data.frame(query = names(aligned), aligned_sequence = aligned)
+    return(aligned_seqs)
   }
 
   aa_aligned <- map(aa_temps, align_cluster)
@@ -187,14 +207,19 @@ if (str_detect(opt$blast_annotations, "blastp|swissprot")) {
   # now bind it all together
   annotations <- annotations %>% left_join(sequence_dt, by = c("query", "qframe"))
 } else {
-  annotations <- ensure_columns(annotations, annotation_cols)
+  annotations <- ensure_columns(annotations, c(annotation_cols, compactor_cols))
   annotations <- annotations %>%
-    select(any_of(annotation_cols), everything()) %>%
+    select(any_of(c(annotation_cols, compactor_cols)), everything()) %>%
     mutate(blast_mode = coalesce(as.character(blast_mode), "blastn")) %>%
-    mutate(cluster = str_extract(query, "(^.*cluster_\d+|\w+_kmer_\d+)_", group = 1)) %>%
-    mutate(species_origin = coalesce(clean_blast_species_field(species_origin),
-                                     clean_blast_species_field(sscinames),
-                                     extract_blast_species(stitle)))
+    mutate(cluster = str_extract(query, "(^.*cluster_\\d+|\\w+_kmer_\\d+)_", group = 1))
+  if (!"sscinames" %in% colnames(annotations)) {
+    annotations$sscinames <- NA_character_
+  }
+  if (!"species_origin" %in% colnames(annotations) && "stitle" %in% colnames(annotations)) {
+    annotations <- annotations %>% mutate(species_origin = coalesce(clean_blast_species_field(sscinames), extract_blast_species(stitle)))
+  } else if ("species_origin" %in% colnames(annotations) && "stitle" %in% colnames(annotations)) {
+    annotations <- annotations %>% mutate(species_origin = coalesce(clean_blast_species_field(species_origin), clean_blast_species_field(sscinames), extract_blast_species(stitle)))
+  }
 }
 
 
@@ -209,7 +234,9 @@ get_max_coef <- function(coef_string) {
   if (length(coef_string) == 0 || is.na(coef_string) || !nzchar(coef_string)) {
     return(NA_real_)
   }
-  coef_string <- gsub("\\[|\\]|c\\(|\\)", "", coef_string)
+  for (delimiter in c("[", "]", "(", ")")) {
+    coef_string <- gsub(delimiter, " ", coef_string, fixed = TRUE)
+  }
   coefs <- suppressWarnings(as.numeric(unlist(strsplit(coef_string, "[,;[:space:]]+"))))
   coefs <- coefs[is.finite(coefs)]
   if (length(coefs) == 0) {

@@ -90,7 +90,7 @@ There is an example script for running SPLASH in the `resources/utility_scripts`
 #### The metadata file needs to be formatted as follows
 
 1. Column 1 contains the same sample ids as were used to run `SPLASH` and is named `sample_name` (the script will attempt to assign the first column as `sample_name` otherwise)
-2. The other columns contain a simple column name describing the metadata as well as the observations of the metadata. To avoid disrupting parsing, categorical metadata values should not contain `+`, `,`, `[]`, `;`.
+2. The other columns contain a simple column name describing the metadata as well as the observations of the metadata.
 
 ### 3. Ensure that the parameters you want to use are specified in the `config.yaml` file. Snakemake will use these to fill out the wildcards in the `Snakefile`
 
@@ -98,42 +98,30 @@ The current wildcards and parameters are defined as follows:
 
 ```{yaml}
 options:
-  seqs_from_raw_data: true # set to true if starting from raw FASTQ files, false if starting from pre-processed SPLASH results # must set to false if using anchor length shorter than 10 (i.e. 8-mers or 9-mers).
-  feature_processing:
-   method: "top_variance" # set to either 'top_variance' or 'pca' for how to process embeddings prior to glmnet. default: 'top_variance'
-   recode_missing: false # set to true to recode missing values to 0 after processing the embeddings by either method (i.e. top variance or pca) prior to glmnet modeling. # This circumvents the problem where the NNNN embedding can be a large outlier.
-  grouped_model: true # set to true to use cluster groups for glmnet modeling instead of individual embeddings or PCs
+  seqs_from_raw_data: true # set to true if you want FLASH to assemble it's sequences from raw FASTQ files, false if you want to default from the pre-processed SPLASH results
+  feature_processing_method: "pca" # set to either 'top_variance' or 'pca' for how to process embeddings prior to glmnet. default: 'top_variance'
   generate_plots: false # set to true to generate plots after model training
-  minimal_blast: false # set to true to BLAST only sequences from clusters that will appear in BLAST plots
   num_clusters: 20000 # number of clusters to use for clustering anchors
   filters: ["filter1"] # define which anchor selection filters to use
-  cluster_types: ["shiftDist-levFilter"] # define which clustering methods to use # see scripts section for available options
+  cluster_types: ["shiftDist-levFilter", "masked-nucleotide-clustered"] # define which clustering methods to use
   models: ["hyena"] # currently only 'hyena' is supported
-  normalize_embeddings: ['normalized'] # define whether to use normalized or unnormalized embeddings (for pca whether to scale/center prior to pca)
+  normalize_embeddings: ['normalized', 'unnormalized'] # define whether to use normalized or unnormalized embeddings, this will do both
   train_proportion: 0.8 # proportion of samples to use for training GLMnet models
   anchor_length: 27 # this is the length of the anchor in nucleotides, change as needed for different SPLASH runs
   target_length: 27 # this is the length of the target in nucleotides, change as needed for different SPLASH runs
   target_rank: 1 # this is the rank of the target to use when assembling the anchor-target pairs, change as needed
-  cluster_filter:
-    # reccomend increasing the number of clusters if applying a cluster filter to ensure that you have enough clusters after filtering for embedding and prediction.
-    # leaving the cluster filter off will retain more clusters for processing and prediction.
-    apply: false # set to true to apply a cluster filter to the SPLASH data prior to embedding
-    type: "fractionMissing" # set to either 'fractionMissing' or 'binaryTarget' for the type of cluster filter to apply if applying a cluster filter
-    threshold: 0.05 # if using the fraction missing filter, this is the fraction (i.e. 0.05) of anchors that are allowed to be missing in a cluster for it to be retained
 
-# you should not need to change anything below this line but you can alter them if needed
+# you should not need to change anything below this line but you can alter these if needed
 extended_options:
   num_anchors_to_select: 3000000 # number of anchors to select from each dataset for clustering
   effect_size_cutoff: 0.6 # this is the cutoff for selecting an anchor from the SPLASH results
   distance_threshold: 5 # distance threshold for filtering anchors after clustering
   num_embedding_features_to_keep:
-    by_variance: 100 # number of top variance embedding features to keep for GLMnet
-    by_pca: 5 # number of principal components to keep for GLMnet
+    glmnet: 100 # number of top variance embedding features to keep for GLMnet
     umap: 1 # number of top variance embedding features to keep for UMAP
   num_PCs_umap: 10 # number of principal components to use for UMAP plotting
-  num_blast_plot_hits: 10 # number of top coefficient clusters per metadata category shown in BLAST plots
   min_samples_adelie: 28 # minimum number of samples in the smallest class for running adelie (requires at least N samples per class)
-  adelie_alpha: 1 # alpha parameter for elastic net regularization in adelie (0 = ridge, 1 = lasso)
+
 ```
 
 You can change these by specifying new values for the parameters.
@@ -147,7 +135,7 @@ To point at the folder containing the local blast databases, modify the config f
 
 These can be downloaded with `blast+`; they are installed using `update_blastdb.pl --decompress core_nt refseq_protein`. For further instructions on downloading local copies of these databases, see <https://www.ncbi.nlm.nih.gov/books/NBK569850/>.
 
-To enable taxonomic filtering of the blast features, using the `taxid` field in the file `dataset_table.csv`, you must A) be using local blast databases as remote blast does not support taxonomic filtering and B) You also must additionally download and decompress the file `taxdb.tar.gz` from <https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz> in the local blast database folder. Follow the instructions in the *Taxonomic filtering for BLAST databases* section of <https://www.ncbi.nlm.nih.gov/books/NBK569839/> for further details. Taxonomy IDs (taxids) for species of interest can be found in the NCBI Taxonomy Browser <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi>. Setting taxid to `0` disables taxonomic filtering. One can specify either a single taxid (e.g., `9606` for human) or multiple taxids separated by semicolons (e.g., `{9606;9031}` for human and chicken).
+To enable taxonomic filtering of the blast features, using the `taxid` field in the file `dataset_table.csv`, you must A) be using local blast databases as remote blast does not support taxonomic filtering and B) You also must additionally download and decompress the file `taxdb.tar.gz` from <https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz> in the local blast database folder. Follow the instructions in the *Taxonomic filtering for BLAST databases* section of <https://www.ncbi.nlm.nih.gov/books/NBK569839/> for further details.
 
 ### 4. Update all paths in the config file, `config.yaml`
 
@@ -192,13 +180,7 @@ snakemake --sdm conda -j $NUM_CORES all_embeddings # for embedding mode
 snakemake --sdm conda -j $NUM_CORES all_genomes # for genomes mode, requires additional files/setup
 ```
 
-The code can also be run using an automatic scheduler. The included example submission script (`resources/utility_scripts/run_snakemake.sbatch`) and profile (`slurm_profile/config.v8+.yaml`) can submit the pipeline and request the required resources including GPU resources. For running on a cluster using `slurm` you can use this config using the --profile slurm_profile/config.v8+.yaml. On some clusters, Snakemake needs to know where the shared Conda/Miniforge installation lives. In that case, explicitly pass the Conda base path.
-
-```{bash}
-snakemake --sdm conda --use-conda --conda-base-path /path/to/miniforge3 --profile slurm_profile/ all_embeddings
-
-snakemake --sdm conda --use-conda --conda-base-path /path/to/miniforge3 --profile slurm_profile/ all_embeddings
-```
+The code can also be run using an automatic scheduler. The included example submission script (`resources/utility_scripts/run_snakemake.sbatch`) and profile (`slurm_profile/config.v8+.yaml`) can submit the pipeline and request the required resources including GPU resources. For running on a cluster using `slurm` you can use this config using the --profile slurm_profile/config.v8+.yaml.
 
 **NOTE: You must modify the profile to match your own partitions resources, and constraints necessary for your cluster. The provided config is an example for our local HPC resources. This can be adapted to different schedulers by modifying the profile but is currently only set to work for `slurm`.**
 
@@ -209,7 +191,7 @@ Input files and paths are detailed in `dataset_table.csv` and the columns are de
 - `dataset_short_name`: A short name for the dataset (Don't include underscores).
 
 - `SPLASH_results`: Path to the SPLASH run folder containing results. Should contain `result.after_correction.scores.tsv`, `sample_name_to_id.mapping.txt`, and the folder `result_satc`. (An example script for running SPLASH to produce these outputs is in the `resources/helper_scripts` folder).
-  - If using the flag `seqs_from_raw_data: true` in the config file, this step will additionaly allow the script to find the `sample_sheet.txt` file. This file is the default one used to run SPLASH and contains two columns (`sample_name` and `file_path`) that map sample names to raw FASTQ files. This will allow the script to extract sequences directly from the raw data instead of from the SPLASH outputs which circumvents the limitations of SPLASH in terms of outputting sequences that appear less frequently.
+  - If using the flag `seqs_from_raw_data: true` in the config file, this step will additionaly allow the script to find the `sample_sheet.tsv` file. This file is the default one used to run SPLASH and contains two columns (`sample_name` and `file_path`) that map sample names to raw FASTQ files. This will allow the script to extract sequences directly from the raw data instead of from the SPLASH outputs which circumvents the limitations of SPLASH in terms of outputting sequences that appear less frequently.
 
 - `metadata_file`: Path to the metadata file associated with the dataset.
   - The metadata file must contain a column named `sample_name` that matches the sample names used in the SPLASH run.
@@ -218,7 +200,7 @@ Input files and paths are detailed in `dataset_table.csv` and the columns are de
 
 - `translation_table`: Integer corresponding to the correct genetic code for translation.
 
-- `taxid`: Taxonomic ID associated with the dataset. Used to restrict the BLAST-based annotation pipeline to selected taxa.
+- `taxid`: Taxonomic ID associated with the dataset. Used to restrict the BLAST-based annotation pipeline to a specific taxon.
 
 ### Additional inputs for genome predictions
 
@@ -263,7 +245,7 @@ These files are the necessary inputs for the FLASH pipeline. You can then procee
 
 You should not need to modify any of the parameters in the `config.yaml` unless you change the anchor or target lengths when running SPLASH as mentioned above. If you do change these lengths, ensure that the `anchor_length` and `target_length` variables in the `config.yaml` file are updated accordingly. After confirming that all paths and parameters are correctly set, you can run the FLASH pipeline using Snakemake as described in the previous sections.
 
-Note that if you use a very short anchor length, you should also modify the `CLUSTER_TYPES` variable in the `Snakefile` to avoid using clustering methods that rely on longer anchors, such as `shiftDist-levFilter`. This should instead be set to use `noCluster`. We have provided an alternative `config_short-anchors.yaml` in the config for reference. 
+Note that if you use a very short anchor length, you should also modify the `CLUSTER_TYPES` variable in the `Snakefile` to avoid using clustering methods that rely on longer anchors, such as `shiftDist-levFilter`. This should instead be set to use `noCluster`:
 
 ```{python}
 # If using default anchor length of 27, use:
@@ -279,7 +261,7 @@ CLUSTER_TYPES = ["noCluster"]
 
 ## Example Run of FLASH on H5N1 Sample Data (Step-by-Step)
 
-This section walks through a complete, reproducible example using the provided H5N1 dataset. The goal is to go from raw data → SPLASH → FLASH predictions. Note this provided dataset is a subset of the full H5N1 dataset used for the FLASH paper, and it's expected to see an lower accuracy of 0.67. 
+This section walks through a complete, reproducible example using the provided H5N1 dataset. The goal is to go from raw data → SPLASH → FLASH predictions.
 
 ### Step 0: Create and activate environment
 
@@ -391,28 +373,14 @@ set-resources:
 #### Option A: CPU-only (One Hot Encoding)
 
 ```bash
-MODE=all_ohe bash run_flash.sh Snakefile
+snakemake --profile profiles/local --sdm conda all_ohe
 ```
 
 #### Option B: Embedding mode (requires GPU + container)
 
 ```bash
-bash run_flash.sh Snakefile
+snakemake --profile profiles/local --sdm conda all_embeddings
 ```
-
-In case one uses the short anchor settings, one should modify the config file the Snakefile uses by modifying the following line in `Snakefile`
-
-```bash
-configfile: "config.yaml" 
-```
-
-to 
-
-```bash
-configfile: "config_short-anchors.yaml" 
-```
-
-When running locally, one should also use to the local profile, by modifying `--profile slurm_profile/` to `--profile profiles/local/config.yaml` in `run_flash.sh`. 
 
 
 ### Step 8: Inspect outputs
@@ -447,7 +415,7 @@ Key outputs include:
 In principal FLASH has been written to run on any data with sturctured phenotype/metadata labels provided. However, there are some caveats to this. 
 
 #### Very small datasets
-The FLASH paramaters are built to only include metadata categories from a metadata file with >= 28 samples in the smallest class of a metadata category. This means that only datasets with exactly 56 samples that are evenly split into 28 and 28 will pass the adelie step of the pipeline. 
+The FLASH paramaters are built to only include metadata categories from a metadata file with >= 28 samples in the smallest class of a metadata category. This means that only datasets with exactly 56 samples (that are evenly split into 28 and 28 will pass the adelie step of the pipeline. 
 This can be changed by adjusting the paramater `min_samples_adelie` in the `extended_options` section of the `config.yml` file. The default number was chosen after extensive testing in many datasets but feel free to experiment with smaller datasets. It is possilbe the the unsupervised clustering mode will still work for smaller amounts of data. 
 
 #### Data where SPLASH has very few significant anchors or anchors that pass the threshold 
@@ -517,7 +485,7 @@ The example profile in `slurm_profile/` demonstrates how to:
 
 ### Adapting for local execution
 
-If you are running FLASH on a local machine (no scheduler), you should adjust `run_flash.sh`:
+If you are running FLASH on a local machine (no scheduler), you should:
 
 1. Use the `-j` flag to reflect your available CPU cores.
 2. Review the `threads:` directives in the `Snakefile`.
@@ -578,9 +546,11 @@ set-resources:
     mem_mb: 16000
   all_genomes:
     mem_mb: 16000
+How to use it
+snakemake --profile profiles/local all_ohe
 ```
 
-To use this profile, change `--profile slurm_profile/` to `--profile profiles/local` in `run_flash.sh`. This replaces the need to manually pass `-j`, `--cores`, and other flags every time.
+This replaces the need to manually pass `-j`, `--cores`, and other flags every time.
 
 #### How to adapt it to your machine
 
