@@ -262,7 +262,7 @@ CLUSTER_TYPES = ["noCluster"]
 
 ## Example Run of FLASH on H5N1 Sample Data (Step-by-Step)
 
-This section walks through a complete, reproducible example using the provided H5N1 dataset. The goal is to go from raw data → SPLASH → FLASH predictions.
+This section walks through a complete, reproducible example using the provided H5N1 dataset. The goal is to go from raw data → SPLASH → FLASH predictions. This example uses only a small subset of the H5N1 data analyzed in the FLASH manuscript. As expected, its predictive performance is lower than that reported for the full dataset.
 
 ### Step 0: Create and activate environment
 
